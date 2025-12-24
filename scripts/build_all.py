@@ -6,9 +6,12 @@ import requests
 
 # ================= KONFIG =================
 BASE = Path(__file__).resolve().parent.parent
+
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
+
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
+NEXT_LIVE_URL = "https://bwifi.my.id/hls/playlist.m3u"
 
 WIB = timezone(timedelta(hours=7))
 NOW = datetime.now(WIB)
@@ -30,9 +33,10 @@ def parse_time(t: str) -> datetime:
         base = base.replace(tzinfo=timezone.utc)
     return base.astimezone(WIB)
 
+# ================= FILTER =================
 REPLAY_WORDS = ["replay", "rerun", "highlight", "review", "classic", "full match"]
 
-def is_bad_vol(title, cat):
+def is_badminton_volley(title, cat):
     t = f"{title} {cat}".lower()
     return any(k in t for k in [
         "badminton", "bwf", "thomas", "uber", "sudirman",
@@ -41,38 +45,61 @@ def is_bad_vol(title, cat):
 
 def is_motogp(title, cat):
     t = f"{title} {cat}".lower()
-    return any(k in t for k in ["motogp", "moto gp", "moto2", "moto3", "grand prix", "wsbk"])
+    return any(k in t for k in [
+        "motogp", "moto gp", "moto2", "moto3",
+        "grand prix", "wsbk"
+    ])
 
 def is_liga_indo(title, cat):
     t = f"{title} {cat}".lower()
-    return any(k in t for k in ["liga 1", "liga indonesia", "bri liga"])
+    return any(k in t for k in [
+        "liga 1", "liga indonesia", "bri liga"
+    ])
+
+def is_afc(title, cat):
+    t = f"{title} {cat}".lower()
+    return any(k in t for k in [
+        "afc champions", "afc championship",
+        "afc cup", "asian champions"
+    ])
 
 def valid_live_time(title, cat, start):
     h = start.hour
     t = f"{title} {cat}".lower()
 
-    if is_bad_vol(title, cat):
+    # Badminton & Voli (ikut EPG)
+    if is_badminton_volley(title, cat):
         return True
 
+    # MotoGP
     if is_motogp(title, cat):
         return 12 <= h <= 22
 
+    # Liga Indonesia
     if is_liga_indo(title, cat):
         return 15 <= h <= 21
 
+    # AFC / Asia (biasanya malam)
+    if is_afc(title, cat):
+        return 18 <= h <= 23
+
+    # Football internasional (Eropa)
     if " vs " in f" {t} ":
         return 0 <= h <= 5
 
     return False
 
-def max_live_end(start, stop, title, cat):
-    if is_bad_vol(title, cat):
+def calc_live_end(start, stop, title, cat):
+    # Badminton & Voli ikut EPG
+    if is_badminton_volley(title, cat):
         return stop if stop else start + timedelta(hours=3)
 
+    # MotoGP
     if is_motogp(title, cat):
         cap = start + timedelta(hours=4)
         return min(stop, cap) if stop else cap
 
+    # Football default
     cap = start + timedelta(hours=2, minutes=30)
     return min(stop, cap) if stop else cap
 
@@ -104,7 +131,7 @@ for p in root.findall("programme"):
     if not valid_live_time(title, cat, start):
         continue
 
-    live_end = max_live_end(start, stop, title, cat)
+    live_end = calc_live_end(start, stop, title, cat)
 
     programmes.append({
         "cid": p.get("channel"),
@@ -155,12 +182,19 @@ for p in programmes:
     for block in m3u_channels[key]:
         if live_start <= NOW <= p["live_end"]:
             label = f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | {p["title"]}'
-            out.extend([f'#EXTINF:-1 group-title="LIVE NOW",{label}\n'] + block[1:])
+            out.extend([
+                f'#EXTINF:-1 group-title="LIVE NOW",{label}\n'
+            ] + block[1:])
+
         elif NOW < live_start:
             label = f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | {p["title"]}'
-            out.extend([f'#EXTINF:-1 group-title="NEXT LIVE",{label}\n'] + block[1:])
+            out.extend([
+                f'#EXTINF:-1 group-title="NEXT LIVE",{label}\n',
+                NEXT_LIVE_URL + "\n"
+            ])
 
+# ================= SAVE =================
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ FINAL STRICT LIVE: anti replay semua channel (jam-based)")
+print("✅ FINAL: LIVE NOW asli, NEXT LIVE pakai URL sendiri, AFC Asia aktif")
