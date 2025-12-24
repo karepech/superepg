@@ -16,15 +16,35 @@ TZ = timezone(timedelta(hours=7))  # WIB
 NOW = datetime.now(TZ)
 
 # ================= HELPER =================
-def norm(text):
+def norm(text: str) -> str:
     return re.sub(r"[^a-z0-9]", "", text.lower())
 
-def parse_time(t):
-    return datetime.strptime(t[:14], "%Y%m%d%H%M%S") \
-        .replace(tzinfo=timezone.utc) \
-        .astimezone(TZ)
+def parse_time(t: str) -> datetime:
+    """
+    Parse waktu EPG dengan aman:
+    - Support format UTC
+    - Support format +HHMM / -HHMM
+    - Output selalu WIB
+    """
+    dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
 
-# ================= LOAD EPG =================
+    # Jika ada timezone offset di string EPG
+    if len(t) > 14:
+        try:
+            sign = 1 if t[14] == "+" else -1
+            hours = int(t[15:17])
+            minutes = int(t[17:19])
+            offset = timezone(sign * timedelta(hours=hours, minutes=minutes))
+            dt = dt.replace(tzinfo=offset)
+        except Exception:
+            dt = dt.replace(tzinfo=timezone.utc)
+    else:
+        # Fallback jika tidak ada offset
+        dt = dt.replace(tzinfo=timezone.utc)
+
+    return dt.astimezone(TZ)
+
+# ================= LOAD EPG (REMOTE) =================
 print("📥 Download EPG...")
 resp = requests.get(EPG_URL, timeout=120)
 resp.raise_for_status()
@@ -41,7 +61,10 @@ for ch in root.findall("channel"):
 
     if name:
         key = norm(name)
-        epg_by_id[cid] = {"name": name.strip(), "logo": logo}
+        epg_by_id[cid] = {
+            "name": name.strip(),
+            "logo": logo
+        }
         epg_by_key[key] = cid
 
 for p in root.findall("programme"):
@@ -72,7 +95,7 @@ while i < len(lines):
         blocks.append(block)
     i += 1
 
-# ================= MAP CHANNEL =================
+# ================= MAP CHANNEL ↔ EPG =================
 channel_blocks = {}
 
 for block in blocks:
@@ -87,6 +110,7 @@ for block in blocks:
         cid = epg_by_key[key]
         epg = epg_by_id[cid]
 
+        # Ganti EXTINF agar sinkron EPG
         block[0] = (
             f'#EXTINF:-1 '
             f'tvg-id="{cid}" '
@@ -104,7 +128,7 @@ out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
 for block in channel_blocks.values():
     out.extend(block)
 
-# 2️⃣ LIVE EVENTS (SALIN BLOK UTUH)
+# 2️⃣ LIVE EVENTS (SALIN BLOK UTUH + DRM)
 for start, stop, title, cat, cid in sorted(programmes):
     if cid not in channel_blocks:
         continue
@@ -117,17 +141,17 @@ for start, stop, title, cat, cid in sorted(programmes):
         out.append(
             f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{event_name}\n'
         )
-        out.extend(src_block[1:])  # 🔥 SALIN SEMUA BARIS DRM + URL
+        out.extend(src_block[1:])  # SALIN KODIPROP + EXTVLCOPT + URL
 
     elif start > NOW:
         event_name = f"NEXT LIVE {start.strftime('%d-%m %H:%M')} WIB | {cat} | {title}"
         out.append(
             f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{event_name}\n'
         )
-        out.extend(src_block[1:])  # 🔥 SALIN SEMUA BARIS DRM + URL
+        out.extend(src_block[1:])  # SALIN KODIPROP + EXTVLCOPT + URL
 
 # ================= SAVE =================
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ SUCCESS: LIVE EVENT FULL DRM AMAN, TIDAK ERROR")
+print("✅ SUCCESS: EPG sinkron, LIVE EVENT aktif, JAM WIB AKURAT")
