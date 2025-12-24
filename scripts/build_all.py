@@ -15,6 +15,9 @@ EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.
 TZ = timezone(timedelta(hours=7))  # WIB
 NOW = datetime.now(TZ)
 
+PRELIVE = timedelta(minutes=5)     # 5 menit sebelum kickoff
+POSTLIVE = timedelta(minutes=30)   # 30 menit setelah selesai
+
 # ================= HELPER =================
 def norm(txt: str) -> str:
     return re.sub(r"[^a-z0-9]", "", txt.lower())
@@ -26,7 +29,9 @@ def parse_time(t: str) -> datetime:
             sign = 1 if t[14] == "+" else -1
             hh = int(t[15:17])
             mm = int(t[17:19])
-            dt = dt.replace(tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm)))
+            dt = dt.replace(
+                tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm))
+            )
         except:
             dt = dt.replace(tzinfo=timezone.utc)
     else:
@@ -51,10 +56,14 @@ for ch in root.findall("channel"):
         }
 
 for p in root.findall("programme"):
+    title = p.findtext("title", "").strip()
+    if not title:
+        continue
+
     programmes.append({
         "start": parse_time(p.get("start")),
         "stop": parse_time(p.get("stop")),
-        "title": p.findtext("title", "").strip(),
+        "title": title,
         "cat": p.findtext("category", "SPORT").strip(),
         "cid": p.get("channel")
     })
@@ -77,7 +86,7 @@ while i < len(lines):
         blocks.append(block)
     i += 1
 
-# key: normalized channel name → LIST block (AMAN DUPLIKAT)
+# key: normalized channel name → list of blocks
 m3u_channels = {}
 for block in blocks:
     m = re.search(r",(.+)$", block[0])
@@ -99,26 +108,35 @@ for p in sorted(programmes, key=lambda x: x["start"]):
 
     epg = epg_channels[cid]
     key = epg["key"]
-
     if key not in m3u_channels:
         continue
 
     for block in m3u_channels[key]:
         logo = epg["logo"]
 
-        if p["start"] <= NOW < p["stop"]:
-            title = f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | {p["cat"]} | {p["title"]}'
+        # 🔴 LIVE NOW (5 menit sebelum kickoff sampai stop+30m)
+        if (p["start"] - PRELIVE) <= NOW < (p["stop"] + POSTLIVE):
+            title = (
+                f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | '
+                f'{p["cat"]} | {p["title"]}'
+            )
             live_now.append(
-                [f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{title}\n'] + block[1:]
+                [f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{title}\n']
+                + block[1:]
             )
 
-        elif p["start"] > NOW:
-            title = f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | {p["cat"]} | {p["title"]}'
+        # ⏭ NEXT LIVE (masih lama)
+        elif NOW < (p["start"] - PRELIVE):
+            title = (
+                f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | '
+                f'{p["cat"]} | {p["title"]}'
+            )
             next_live.append(
-                [f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{title}\n'] + block[1:]
+                [f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{title}\n']
+                + block[1:]
             )
 
-# 🔴 LIVE NOW
+# 🔴 LIVE NOW PALING ATAS
 for blk in live_now:
     out.extend(blk)
 
@@ -130,4 +148,4 @@ for blk in next_live:
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ FINAL: HANYA LIVE NOW & NEXT LIVE | TANPA CHANNEL NORMAL")
+print("✅ FINAL: NEXT → LIVE otomatis 5 menit sebelum kickoff")
