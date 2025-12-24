@@ -1,12 +1,11 @@
 import re
-import random
 import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone, date
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-# ================= CONFIG =================
-BASE = Path(__file__).resolve().parent.parent
+# ================= KONFIG =================
+BASE = Path(__file__).resolve().parent
 
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
@@ -14,13 +13,13 @@ OUTPUT_M3U = BASE / "live_all.m3u"
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 PLACEHOLDER_URL = "https://bwifi.my.id/hls/video.m3u8"
 
-TZ = timezone(timedelta(hours=7))
+TZ = timezone(timedelta(hours=7))  # WIB
 NOW = datetime.now(TZ)
 TODAY = NOW.date()
 
-LIVE_SWITCH_MIN = 5      # menit sebelum kickoff
-FOOTBALL_MAX = 2         # jam
-RACE_MAX = 4             # jam
+LIVE_SWITCH_MIN = 5       # menit sebelum kickoff
+FOOTBALL_MAX = 2          # jam
+RACE_MAX = 4              # jam
 
 CURRENT_YEAR = str(NOW.year)
 
@@ -29,8 +28,7 @@ def norm(t):
     return re.sub(r"[^a-z0-9]", "", t.lower())
 
 def parse_time(t):
-    dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
-    dt = dt.replace(tzinfo=timezone.utc)
+    dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc)
     return dt.astimezone(TZ)
 
 def is_replay(title):
@@ -76,11 +74,10 @@ for p in root.findall("programme"):
         "start": parse_time(p.get("start")),
         "stop": parse_time(p.get("stop")),
         "title": p.findtext("title", "").strip(),
-        "cat": p.findtext("category", "SPORT").strip(),
         "cid": p.get("channel")
     })
 
-# ================= PARSE M3U =================
+# ================= PARSE M3U (BLOK UTUH) =================
 lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
 
 blocks = []
@@ -139,35 +136,30 @@ for p in programmes:
     if not is_match(title):
         continue
 
-    # HITUNG STATUS
     minutes_to_start = (start - NOW).total_seconds() / 60
     hours_from_start = (NOW - start).total_seconds() / 3600
 
-    # batas durasi
     max_hour = FOOTBALL_MAX if "vs" in title.lower() else RACE_MAX
     if hours_from_start > max_hour:
         continue
 
-    # ================= H0 =================
+    # ================= H0 → LIVE NOW =================
     if event_day == TODAY:
-        # selalu LIVE NOW jika belum terlewat
-        if hours_from_start < max_hour:
-            # tentukan URL
-            if minutes_to_start <= LIVE_SWITCH_MIN:
-                # pakai URL asli
-                block_body = m3u_map[key][1:]
-                if "beinsports1" in key:
-                    bein1_live_detected = True
-            else:
-                # pakai placeholder
-                block_body = [PLACEHOLDER_URL + "\n"]
+        # Tentukan URL
+        if minutes_to_start <= LIVE_SWITCH_MIN:
+            body = m3u_map[key][1:]
+            if "beinsports1" in key:
+                bein1_live_detected = True
+        else:
+            body = [PLACEHOLDER_URL + "\n"]
 
-            live_now_blocks.append(
-                [f'#EXTINF:-1 tvg-logo="{ch["logo"]}" group-title="LIVE NOW",'
-                 f'LIVE NOW | {title}\n'] + block_body
-            )
+        live_now_blocks.append(
+            [f'#EXTINF:-1 tvg-logo="{ch["logo"]}" group-title="LIVE NOW",'
+             f'LIVE NOW {start.strftime("%H:%M")} WIB | {title}\n']
+            + body
+        )
 
-    # ================= NEXT LIVE (H+1..H+3) =================
+    # ================= NEXT LIVE (H+1 s/d H+3) =================
     elif TODAY < event_day <= TODAY + timedelta(days=3):
         k = norm(title)
         if k not in next_live_map:
@@ -177,17 +169,18 @@ for p in programmes:
                 "logo": ch["logo"]
             }
 
-# ================= OUTPUT =================
-# LIVE NOW
-for b in live_now_blocks:
-    out.extend(b)
+# ================= OUTPUT URUTAN FINAL =================
 
-# beIN Sports 1 fallback
+# 1️⃣ LIVE EVENT (PALING ATAS)
 if not bein1_live_detected and bein1_block:
     out.append('#EXTINF:-1 group-title="LIVE NOW",LIVE EVENT\n')
     out.extend(bein1_block[1:])
 
-# NEXT LIVE
+# 2️⃣ LIVE NOW (PERTANDINGAN + JAM)
+for b in live_now_blocks:
+    out.extend(b)
+
+# 3️⃣ LIVE NEXT
 for k in sorted(next_live_map, key=lambda x: next_live_map[x]["time"]):
     ev = next_live_map[k]
     out.append(
@@ -198,4 +191,4 @@ for k in sorted(next_live_map, key=lambda x: next_live_map[x]["time"]):
 
 # ================= SAVE =================
 OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
-print("✅ UPDATE OK | H0 logic + URL switch applied")
+print("✅ FINAL BUILD OK | LIVE EVENT first, LIVE NOW with time")
