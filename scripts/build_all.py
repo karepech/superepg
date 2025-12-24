@@ -12,88 +12,72 @@ OUTPUT_M3U = BASE / "live_all.m3u"
 
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 
-TZ = timezone(timedelta(hours=7))  # WIB
-NOW = datetime.now(TZ)
-
-PRELIVE = timedelta(minutes=5)     # 5 menit sebelum kickoff
-POSTLIVE = timedelta(minutes=30)   # 30 menit setelah selesai
-
-# ================= FILTER =================
-REPLAY_KEYWORDS = [
-    "replay", "re-live", "rerun", "repeat",
-    "highlight", "highlights", "recap",
-    "full match", "delayed"
-]
-
-MATCH_SIGNS = [" vs ", " v ", " @ ", " - "]
-
-MAJOR_SPORTS = [
-    # Football – dunia
-    "premier league", "epl",
-    "la liga", "laliga",
-    "serie a",
-    "bundesliga",
-    "ligue 1",
-    "champions league", "uefa champions",
-    "europa league", "conference league",
-    "world cup", "euro", "copa america",
-    "afc champions", "club world cup",
-
-    # Football – Indonesia
-    "liga 1", "liga 2", "bri liga", "liga indonesia",
-
-    # Badminton
-    "badminton", "bwf",
-    "thomas cup", "uber cup", "sudirman cup",
-    "all england", "indonesia open", "malaysia open",
-    "china open", "japan open",
-
-    # Volleyball
-    "volleyball", "volley", "voli",
-    "vnl", "volleyball nations league",
-    "world championship", "avc", "proliga",
-
-    # MotoGP & Motorsport
-    "motogp", "moto gp",
-    "motogp race", "motogp sprint", "motogp qualifying",
-    "moto2", "moto3",
-    "grand prix", "gp race",
-    "world superbike", "wsbk"
-]
+WIB = timezone(timedelta(hours=7))
+NOW = datetime.now(WIB)
 
 # ================= HELPER =================
 def norm(txt: str) -> str:
     return re.sub(r"[^a-z0-9]", "", txt.lower())
 
 def parse_time(t: str) -> datetime:
-    dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
-    if len(t) > 14:
-        try:
-            sign = 1 if t[14] == "+" else -1
-            hh = int(t[15:17])
-            mm = int(t[17:19])
-            dt = dt.replace(
-                tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm))
-            )
-        except:
-            dt = dt.replace(tzinfo=timezone.utc)
+    base = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
+
+    if len(t) >= 19:
+        sign = 1 if t[14] == "+" else -1
+        hh = int(t[15:17])
+        mm = int(t[17:19])
+        base = base.replace(
+            tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm))
+        )
     else:
-        dt = dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(TZ)
+        base = base.replace(tzinfo=timezone.utc)
 
-def is_replay(title: str) -> bool:
-    t = title.lower()
-    return any(k in t for k in REPLAY_KEYWORDS)
+    return base.astimezone(WIB)
 
-def looks_like_match(title: str) -> bool:
-    t = title.lower()
-    return any(s in t for s in MATCH_SIGNS)
+# ================= FILTER SPORT =================
+MAJOR_KEYWORDS = [
+    # Football dunia
+    "vs", "premier", "la liga", "serie a", "bundesliga", "ligue",
+    "champions", "europa", "conference", "world cup", "afc",
 
-def is_target_sport(title: str, category: str) -> bool:
+    # Indonesia
+    "liga 1", "liga indonesia", "bri liga",
+
+    # Badminton
+    "badminton", "bwf", "thomas", "uber", "sudirman",
+
+    # Volleyball
+    "volleyball", "volley", "voli", "vnl",
+
+    # MotoGP
+    "motogp", "moto gp", "moto2", "moto3",
+    "grand prix", "race", "wsbk"
+]
+
+def is_valid_event(title: str, category: str) -> bool:
     text = f"{title} {category}".lower()
-    return any(k in text for k in MAJOR_SPORTS)
+
+    if any(x in text for x in ["replay", "highlight", "rerun"]):
+        return False
+
+    return any(k in text for k in MAJOR_KEYWORDS)
+
+def max_live_duration(title: str, category: str) -> timedelta:
+    text = f"{title} {category}".lower()
+
+    if any(k in text for k in ["motogp", "moto gp", "race", "grand prix", "wsbk"]):
+        return timedelta(hours=4)
+
+    if any(k in text for k in ["badminton", "bwf"]):
+        return timedelta(hours=2)
+
+    if any(k in text for k in ["volley", "volleyball", "vnl"]):
+        return timedelta(hours=2)
+
+    return timedelta(hours=2, minutes=30)  # football default
 
 # ================= LOAD EPG =================
+print("📥 Download EPG")
 root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
 
 epg_channels = {}
@@ -101,36 +85,26 @@ programmes = []
 
 for ch in root.findall("channel"):
     cid = ch.get("id")
-    name = ch.findtext("display-name", "")
+    name = ch.findtext("display-name", "").strip()
     logo = ch.find("icon").get("src") if ch.find("icon") is not None else ""
     if name:
         epg_channels[cid] = {
-            "name": name.strip(),
+            "name": name,
             "key": norm(name),
             "logo": logo
         }
 
 for p in root.findall("programme"):
     title = p.findtext("title", "").strip()
-    if not title:
-        continue
-
-    if is_replay(title):
-        continue
-
-    if not looks_like_match(title):
-        continue
-
-    category = p.findtext("category", "SPORT").strip()
-    if not is_target_sport(title, category):
+    cat = p.findtext("category", "").strip()
+    if not is_valid_event(title, cat):
         continue
 
     programmes.append({
-        "start": parse_time(p.get("start")),
-        "stop": parse_time(p.get("stop")),
+        "cid": p.get("channel"),
         "title": title,
-        "cat": category,
-        "cid": p.get("channel")
+        "cat": cat,
+        "start": parse_time(p.get("start"))
     })
 
 # ================= PARSE M3U (BLOCK UTUH) =================
@@ -151,7 +125,6 @@ while i < len(lines):
         blocks.append(block)
     i += 1
 
-# key: normalized channel name → list of blocks (duplikat aman)
 m3u_channels = {}
 for block in blocks:
     m = re.search(r",(.+)$", block[0])
@@ -166,7 +139,7 @@ out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
 live_now = []
 next_live = []
 
-for p in sorted(programmes, key=lambda x: x["start"]):
+for p in programmes:
     cid = p["cid"]
     if cid not in epg_channels:
         continue
@@ -176,41 +149,32 @@ for p in sorted(programmes, key=lambda x: x["start"]):
     if key not in m3u_channels:
         continue
 
+    live_start = p["start"] - timedelta(minutes=5)
+    live_end = p["start"] + max_live_duration(p["title"], p["cat"])
+
     for block in m3u_channels[key]:
-        logo = epg["logo"]
-
-        # 🔴 LIVE NOW
-        if (p["start"] - PRELIVE) <= NOW < (p["stop"] + POSTLIVE):
-            title = (
-                f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | '
-                f'{p["cat"]} | {p["title"]}'
-            )
+        if live_start <= NOW <= live_end:
+            title = f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | SPORT | {p["title"]}'
             live_now.append(
-                [f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{title}\n']
+                [f'#EXTINF:-1 tvg-logo="{epg["logo"]}" group-title="LIVE NOW",{title}\n']
                 + block[1:]
             )
 
-        # ⏭ NEXT LIVE
-        elif NOW < (p["start"] - PRELIVE):
-            title = (
-                f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | '
-                f'{p["cat"]} | {p["title"]}'
-            )
+        elif NOW < live_start:
+            title = f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | SPORT | {p["title"]}'
             next_live.append(
-                [f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{title}\n']
+                [f'#EXTINF:-1 tvg-logo="{epg["logo"]}" group-title="NEXT LIVE",{title}\n']
                 + block[1:]
             )
 
-# 🔴 LIVE NOW PALING ATAS
+# ================= OUTPUT =================
 for blk in live_now:
     out.extend(blk)
 
-# ⏭ NEXT LIVE
 for blk in next_live:
     out.extend(blk)
 
-# ================= SAVE =================
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ FINAL: LIVE MATCH ONLY (FOOTBALL + BADMINTON + VOLLEY + MOTOGP)")
+print("✅ SUCCESS: LIVE NOW & NEXT LIVE only (WIB accurate)")
