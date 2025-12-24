@@ -2,6 +2,7 @@ import re, random, requests
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from collections import defaultdict
 
 # ================= CONFIG =================
 BASE = Path(__file__).resolve().parent.parent
@@ -18,8 +19,8 @@ PRELIVE = timedelta(minutes=5)
 SOCCER_MAX = timedelta(hours=2)
 RACE_MAX = timedelta(hours=4)
 
-# ================= HELPER =================
-def norm(t): 
+# ================= UTIL =================
+def norm(t):
     return re.sub(r"[^a-z0-9]", "", t.lower())
 
 def parse_time(t):
@@ -30,75 +31,70 @@ def parse_time(t):
         tz = timezone(sign * timedelta(hours=int(t[15:17]), minutes=int(t[17:19])))
     return dt.replace(tzinfo=tz).astimezone(TZ)
 
-def has_year(title):
-    return bool(re.search(r"20\d{2}/20\d{2}", title))
-
 def is_replay(title):
     t = title.lower()
-    return any(x in t for x in ["replay", "highlight", "hl", "hls"])
-
-def is_football(title):
-    t = title.lower()
-    return any(x in t for x in ["football", "soccer", "liga", "premier", "uefa", "serie", "laliga", "bundesliga"])
+    return any(x in t for x in ["replay","highlight","hl","hls"])
 
 def football_valid(title):
     t = title.lower()
-    has_vs = " vs " in t or " vs." in t
     has_live = "live" in t
+    has_vs = " vs " in t
     has_md = "md" in t
-
     if has_live and has_vs:
         return True
     if has_live and has_md:
         return True
-
-    # ❌ hide rules
-    if has_vs and not has_live:
-        return False
-    if has_md and not has_live:
-        return False
-    if has_year(title) and not has_live:
-        return False
-
     return False
 
-def event_duration(title):
-    return RACE_MAX if "motogp" in title.lower() else SOCCER_MAX
+def duration(title):
+    return RACE_MAX if "moto" in title.lower() else SOCCER_MAX
+
+def region_from_name(name):
+    n = name.lower()
+    if any(x in n for x in ["champions","sportstars","soccer","tvri","sctv","rcti"]):
+        return "LIVE LOCAL"
+    if any(x in n for x in ["spotv","astro","sony","star"]):
+        return "SPORTS ASIA"
+    if any(x in n for x in ["tnt","sky","dazn","canal"]):
+        return "SPORTS EUROPE"
+    if any(x in n for x in ["espn","fox","fubo","nbc","cbs"]):
+        return "SPORTS AMERICA"
+    return "SPORTS WORLD"
 
 # ================= LOAD EPG =================
 root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
 
-channels = {}
+epg_ch = {}
 programs = []
 
 for ch in root.findall("channel"):
     cid = ch.get("id")
-    name = ch.findtext("display-name", "")
+    name = ch.findtext("display-name","").strip()
     logo = ch.find("icon").get("src") if ch.find("icon") is not None else ""
-    channels[cid] = {"name": name, "key": norm(name), "logo": logo}
+    epg_ch[cid] = {"name": name, "key": norm(name), "logo": logo}
 
 for p in root.findall("programme"):
     programs.append({
+        "cid": p.get("channel"),
         "start": parse_time(p.get("start")),
         "stop": parse_time(p.get("stop")),
-        "title": p.findtext("title", ""),
-        "cid": p.get("channel")
+        "title": p.findtext("title","").strip()
     })
 
 # ================= PARSE M3U =================
 lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines()
-blocks = []
-i = 0
+blocks, i = [], 0
+
 while i < len(lines):
     if lines[i].startswith("#EXTINF"):
-        blk = [lines[i] + "\n"]
+        b = [lines[i]+"\n"]
         i += 1
         while i < len(lines):
-            blk.append(lines[i] + "\n")
+            b.append(lines[i]+"\n")
             if lines[i].startswith("http"):
                 break
             i += 1
-        blocks.append(blk)
+        blocks.append(b)
     i += 1
 
 m3u = {}
@@ -108,14 +104,18 @@ for b in blocks:
         m3u[norm(m.group(1))] = b
 
 # ================= BUILD =================
-live_now = []
-next_live = {}
+out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
+
+live_channels = set()
+live_blocks = []
+next_events = defaultdict(list)
+normal_blocks = defaultdict(list)
 
 for p in programs:
-    if p["cid"] not in channels:
+    if p["cid"] not in epg_ch:
         continue
 
-    ch = channels[p["cid"]]
+    ch = epg_ch[p["cid"]]
     if ch["key"] not in m3u:
         continue
 
@@ -123,37 +123,45 @@ for p in programs:
     if is_replay(title):
         continue
 
-    if is_football(title) and not football_valid(title):
+    if not football_valid(title):
         continue
 
     start = p["start"]
-    dur = event_duration(title)
+    end = start + duration(title)
     live_start = start - PRELIVE
-    live_end = start + dur
 
-    if live_start <= NOW <= live_end:
-        live_now.append([
-            f'#EXTINF:-1 tvg-logo="{ch["logo"]}" group-title="LIVE NOW",'
-            f'LIVE NOW {start.strftime("%H:%M")} WIB | {title}\n'
-        ] + m3u[ch["key"]][1:])
+    blk = m3u[ch["key"]]
+    logo = ch["logo"]
 
+    if live_start <= NOW <= end:
+        live_channels.add(ch["key"])
+        live_blocks.append(
+            [f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",'
+             f'LIVE NOW {start.strftime("%H:%M")} WIB | {title}\n'] + blk[1:]
+        )
     elif NOW < live_start:
-        k = norm(title)
-        next_live.setdefault(k, []).append({
+        next_events[norm(title)].append({
             "title": title,
             "start": start,
-            "logo": ch["logo"]
+            "logo": logo
         })
 
-# ================= OUTPUT =================
-out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
+# ================= NORMAL CHANNELS =================
+for key, blk in m3u.items():
+    if key in live_channels:
+        continue
+    region = region_from_name(blk[0])
+    blk[0] = re.sub(r'group-title="[^"]+"',
+                    f'group-title="{region}"', blk[0])
+    normal_blocks[region].append(blk)
 
-# LIVE NOW (ALL)
-for b in live_now:
+# ================= WRITE OUTPUT =================
+# LIVE NOW
+for b in live_blocks:
     out.extend(b)
 
-# NEXT LIVE (RANDOM CHANNEL)
-for ev in sorted(next_live.values(), key=lambda x: x[0]["start"]):
+# NEXT LIVE (1 event = 1 channel acak)
+for ev in sorted(next_events.values(), key=lambda x: x[0]["start"]):
     pick = random.choice(ev)
     out.append(
         f'#EXTINF:-1 tvg-logo="{pick["logo"]}" group-title="NEXT LIVE",'
@@ -161,5 +169,10 @@ for ev in sorted(next_live.values(), key=lambda x: x[0]["start"]):
     )
     out.append(NEXT_LIVE_URL + "\n")
 
+# NORMAL CHANNELS
+for region in sorted(normal_blocks):
+    for blk in normal_blocks[region]:
+        out.extend(blk)
+
 OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
-print("✅ DONE: Football rules enforced, LIVE clean")
+print("✅ BUILD OK: LIVE pindah kategori, NEXT acak, regional clean")
