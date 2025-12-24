@@ -1,908 +1,4 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 01:40 WIB | Epic Series Global MTB 2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 01:40 WIB | Match Hls 25/26: MW17: Fulham Vs Nottingham
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 02:00 WIB | 第77回全日本大学バスケットボール選手権 男子決勝 早稲田大学×白鴎大学
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 02:10 WIB | FEI North American League 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 25-12 02:10 WIB | ATP Tour Review Show (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 25-12 02:10 WIB | Arcadia, California
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 02:10 WIB | The Final Word
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 02:20 WIB | PL: Tottenham vs Liverpool
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 25-12 02:40 WIB | NBA攻守時間
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 02:40 WIB | Extra Time
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 02:40 WIB | Epic 系列全球MTB山地自行車錦標賽 第6集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 02:45 WIB | 歐洲聯賽冠軍盃 第114集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 03:10 WIB | Champions of the Water 2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 25-12 03:10 WIB | ATP Tour 1000 (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194807542512_16" group-title="LIVE NEXT",NEXT LIVE 25-12 03:10 WIB | 請留意下場播映賽事
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 25-12 03:10 WIB | Miami
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 03:10 WIB | Match Hls 25/26: MW17: Brighton Vs Sunderland
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NEXT",NEXT LIVE 25-12 03:10 WIB | URC
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 25-12 03:10 WIB | URC Cardiff v Scarlets
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 03:10 WIB | 2025 非洲國家盃 - 摩洛哥 第5集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 25-12 03:12 WIB | URC: Cardiff V Scarlets
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 03:40 WIB | This Is Paris 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 25-12 03:40 WIB | 籃球廣播室 第1集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 03:40 WIB | Netbusters: Erling Haaland's 100
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 25-12 04:00 WIB | Carabao Cup: Arsenal vs Crystal Palace
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 04:00 WIB | 【45分】ラグビーリーグワン2025-26 D1 第2節 三重×神戸
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 04:05 WIB | 法國甲組足球聯賽精華 第35集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 04:10 WIB | TotalEnergies Africa Cup of Nations, Morocco : Senegal Vs Botswana - Group Stage
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 25-12 04:10 WIB | HARDWOOD經典
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 25-12 04:10 WIB | TotalEnergies Africa Cup of Nations, Morocco 2025: Senegal vs Botswana - Group S
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 04:10 WIB | Netbusters: Ep17
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 04:40 WIB | 德國甲組足球聯賽 第127集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 04:40 WIB | PL Masterclass: Ep05
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 04:40 WIB | 歐霸盃 第95集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 04:45 WIB | 【45分】ラグビーリーグワン2025-26 D1 第2節 相模原×横浜
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 25-12 05:00 WIB | UCI Cyclo-Cross WC: Antwerpen: Women Elite
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 05:00 WIB | 2025 非洲國家盃 - 摩洛哥 第6集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 05:20 WIB | Netbusters 2025/26: Ep17
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 05:30 WIB | [無料]【白銀の頂へ！】FISワールドカップ2025/26 ナビ
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 05:40 WIB | PL Moments: Ep08: Andy Cole Ep08
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 05:45 WIB | [生]高校バスケ ウインターカップ2025(12/24 Bコート)男子1回戦
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 05:50 WIB | Match HL 2025/26: WK17: MCI vs WHU
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 06:00 WIB | UCL Classic Matches: Barcelona Vs Lyon
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 25-12 06:00 WIB | URC Leinster v Ulster
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 25-12 06:02 WIB | URC: Leinster V Ulster
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 06:10 WIB | Mass Participation 2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 25-12 06:10 WIB | BWF: Indonesia Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 25-12 06:10 WIB | 籃球聯盟
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 25-12 06:10 WIB | Cape to Cape
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 06:20 WIB | PL: Wolves vs Brentford
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 06:30 WIB | 法國甲組足球聯賽 第141集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 25-12 06:30 WIB | UCI Cyclo-Cross WC: Antwerpen: Men Elite
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 06:30 WIB | 歐洲協會聯賽 第97集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 06:40 WIB | The Big Interview: Ep18: Harry Maguire Ep18
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79" group-title="LIVE NEXT",NEXT LIVE 25-12 06:40 WIB | South Africa tour of India 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 06:50 WIB | 2025 非洲國家盃 - 摩洛哥 第7集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 25-12 07:10 WIB | BWF: Taipei Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 07:10 WIB | Rewind: Ep10: Dion Dublin: My Premier League Years Ep10
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 25-12 07:10 WIB | EFL: Derby vs Leicester
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 25-12 07:40 WIB | Nitto ATP Finals (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 07:40 WIB | Match Hls 25/26: MW17: Aston Villa Vs Man Utd
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 25-12 07:50 WIB | URC Stormers v Lions
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 25-12 07:52 WIB | URC: Stormers V Lions
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 25-12 08:10 WIB | BWF World Tour: SF 2
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 08:10 WIB | Review
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 25-12 08:10 WIB | Own The Moment: Ep1 - Sekys
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 08:20 WIB | 意大利甲組足球聯賽 第154集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 08:20 WIB | 女子歐洲聯賽冠軍盃 第49集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 08:30 WIB | PL: Brighton vs Sunderland
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 25-12 08:40 WIB | EASL: Golden Kings vs Black Bears
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 08:40 WIB | 2025 非洲國家盃 - 摩洛哥 第8集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 09:10 WIB | The Big Interview: Ep19
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 25-12 09:10 WIB | EFL: West Brom vs Sheffield
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 09:40 WIB | PL Stories: Ep29: Yankuba Minteh Ep29
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 10:10 WIB | 德甲特輯 第10集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 10:10 WIB | 歐洲協會聯賽 第105集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 10:30 WIB | 意甲全面睇 第16集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 25-12 10:40 WIB | (L) EASL: Fubon Braves vs SK Knights
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 10:40 WIB | ガンバレ日本プロ野球!?リターンズ25/26 #2【中田翔編】
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 25-12 11:00 WIB | URC Benetton v Zebre Parma
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 11:00 WIB | 意甲內部直擊 第18集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 25-12 11:02 WIB | URC: Benetton V Zebre Parma
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 11:10 WIB | 德國甲組足球聯賽 第129集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 11:10 WIB | 中日ドラゴンズ ファンフェスタ2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 11:10 WIB | Generation XG 2025/26: Ep16
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 11:28 WIB | 2025 非洲國家盃 - 摩洛哥 第9集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 12:00 WIB | 歐霸盃 第102集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 12:10 WIB | Generation Xg
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 25-12 12:10 WIB | Carabao Cup: Cardiff vs Chelsea
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 12:10 WIB | [初]サッカーニュース Foot!超高校サッカー通信(12/24)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 12:10 WIB | PL: Leeds vs Crystal Palace
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 12:40 WIB | PSG TV : Vendee Fontenay Foot Vs PSG - Coupe De France
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 25-12 12:40 WIB | PSG TV 2025/26: Vendee Fontenay Foot vs PSG - Coupe de France
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 25-12 12:50 WIB | URC Ospreys v Munster
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 25-12 12:52 WIB | URC: Ospreys V Munster
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 12:55 WIB | [無料]ラグビー わんだほー！〜ラグビー情報番組〜 #114
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 13:00 WIB | 德國甲組足球聯賽 第135集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 25-12 13:10 WIB | BWF: Macau Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 13:40 WIB | 德甲球會集 第15集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 13:50 WIB | 歐洲協會聯賽 第96集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 13:55 WIB | [無料]フリースタイルスキー FIS W杯25/26【男女SX】イニヒェン(12/21)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 13:58 WIB | 2025 非洲國家盃 - 摩洛哥 第10集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 25-12 14:10 WIB | BWF Sudirman Cup: Final: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 14:10 WIB | The Catch-up Show: Ep19
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 25-12 14:10 WIB | UFC 300: Pereira vs Hill
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 14:20 WIB | PL: Bournemouth vs Burnley
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 25-12 14:40 WIB | UFC 317: Topuria vs Oliveira
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 14:50 WIB | 意大利甲組足球聯賽 第152集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 25-12 15:10 WIB | ATP Tour 250 (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 25-12 15:10 WIB | BWF World Tour 2025: Pre-Show
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 15:10 WIB | Classic Match: Mun Vs New
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 25-12 15:10 WIB | K-League: Suwon Samsung vs Jeju
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 25-12 15:10 WIB | Tour de France 2025: Stage 4
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 25-12 15:40 WIB | BWF World Tour 2025: Finals
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 15:40 WIB | 歐洲聯賽冠軍盃 第112集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 15:55 WIB | スーパーフォーミュラ2025【ダイジェスト】第11戦 鈴鹿サーキット
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NEXT",NEXT LIVE 25-12 16:00 WIB | Premiership Rugby
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 25-12 16:00 WIB | Premiership Rugby Leicester v Gloucester
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 25-12 16:02 WIB | Premiership Rugby: Leicester V Gloucester
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 16:10 WIB | [無料]エクストリームH 2025【ハイライト】サウジアラビア
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 16:10 WIB | 德甲球會集 第9集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 16:28 WIB | 2025 非洲國家盃 - 摩洛哥 第11集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 16:30 WIB | PL: Aston Villa vs Man Utd
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 16:40 WIB | 2025馬術世界 第9集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 17:10 WIB | 意大利甲組足球聯賽 第153集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 17:10 WIB | PL Stories: Ep30: Wolves Afcon Ep30
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 25-12 17:10 WIB | K-League: Bucheon vs Suwon FC
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 17:10 WIB | 休止
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 17:30 WIB | 歐洲協會聯賽 第104集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 25-12 17:50 WIB | Premiership Rugby Harlequins v Bristol
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 25-12 17:52 WIB | Premiership Rugby: Harlequins V Bristol
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 25-12 18:40 WIB | 籃球廣播室 第2集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 18:58 WIB | 非洲國家盃2025 第12集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 19:10 WIB | Women's Super League : Everton Vs Arsenal
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 25-12 19:10 WIB | Women's Super League 2025/26: Everton vs Arsenal
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 25-12 19:10 WIB | Serie A: Cagliari vs Pisa
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 19:10 WIB | 德國甲組足球聯賽精華 第15集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 19:20 WIB | 歐洲協會聯賽 第102集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 20:10 WIB | スノーボード FIS W杯25/26【男女HP】カッパーマウンテン(12/19)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 25-12 20:40 WIB | Badminton Unlimited: Episode 11
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 25-12 21:00 WIB | Premiership Rugby Newcastle v Bath
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 25-12 21:02 WIB | Premiership Rugby: Newcastle V Bath
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 21:10 WIB | MUTV: Specials
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 25-12 21:10 WIB | BWF: Arctic Open: Rd16
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 25-12 21:10 WIB | Star Maker: The Jimmy Murphy Story
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 25-12 21:10 WIB | PL Best Of...: Premier League Icons
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 25-12 21:10 WIB | Tour de France 2025: Stage 5
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 21:10 WIB | 女子歐洲聯賽冠軍盃 第52集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 25-12 21:10 WIB | PL: Everton vs Arsenal
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 21:10 WIB | 2025/26 意大利甲組足球聯賽 第155集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 22:10 WIB | 2025板式網球超級聯賽 第680集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 25-12 22:10 WIB | Dutch: Feyenoord vs Zwolle,
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 25-12 22:40 WIB | ATP Doco Shorts (CC)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 25-12 22:50 WIB | URC Dragons v Connacht
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 25-12 22:52 WIB | URC: Dragons V Connacht
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 25-12 23:00 WIB | 歐洲聯賽冠軍盃 第115集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 25-12 23:00 WIB | 德國甲組足球聯賽 第131集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 25-12 23:10 WIB | Rolex Invitational Cup 2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 25-12 23:10 WIB | Documentary
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 23:10 WIB | インフォメーション
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79" group-title="LIVE NEXT",NEXT LIVE 25-12 23:10 WIB | The Ashes 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 25-12 23:40 WIB | 2025板式網球超級聯賽 第681集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 25-12 23:40 WIB | 【45分】ラグビーリーグワン2025-26 D1 第2節 埼玉×浦安
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 26-12 00:10 WIB | 史提芬居里
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 00:10 WIB | The Catch-up Show: Ep19
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 00:25 WIB | Dutch: Heerenveen vs PSV
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 00:25 WIB | 第77回全日本大学バスケットボール選手権 男子決勝 早稲田大学×白鴎大学
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 26-12 00:40 WIB | Nitto ATP Finals (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 26-12 00:40 WIB | NBA攻守時間
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 00:50 WIB | 歐霸盃 第100集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 00:50 WIB | 2025/26 德國乙組足球聯賽 第147集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 01:10 WIB | 2025板式網球超級聯賽 第682集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 01:10 WIB | PL Best Of...: Premier League French Connection
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 26-12 01:40 WIB | NBA動態 第3510集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NEXT",NEXT LIVE 26-12 01:40 WIB | URC
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 26-12 01:40 WIB | URC Sharks v Bulls
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 26-12 01:42 WIB | URC: Sharks V Bulls
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 26-12 02:10 WIB | HARDWOOD經典
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 02:20 WIB | EASL: Fubon Braves vs SK Knights
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 02:20 WIB | PL: Fulham vs Nottm Forest
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 02:25 WIB | [生]高校バスケ ウインターカップ2025(12/25 Bコート)男子2回戦
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 02:40 WIB | 2025板式網球超級聯賽 第683集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 02:40 WIB | Dutch: Fortuna Sittard vs Ajax
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 02:40 WIB | 歐洲聯賽冠軍盃 第116集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 02:40 WIB | 意甲全面睇 第16集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:10 WIB | ATP Tour 1000 (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194807542512_16" group-title="LIVE NEXT",NEXT LIVE 26-12 03:10 WIB | 請留意下場播映賽事
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:10 WIB | PL Stories: Ep30: Wolves Afcon Ep30
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 03:10 WIB | 意甲內部直擊 第18集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:20 WIB | MUTV: One Love
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:20 WIB | Supporting Each Other
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:30 WIB | URC Glasgow Warriors v Edinburgh
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:32 WIB | URC: Glasgow Warriors V Edinburgh
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:40 WIB | Man United vs Bournemouth
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:40 WIB | PL Stories: Ep08: Keep it in the Family Ep08
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 03:40 WIB | 2025 非洲國家盃 - 摩洛哥 第9集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:10 WIB | MUTV : Aston Villa Vs Man United
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:10 WIB | BWF: Arctic Open: QF
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 26-12 04:10 WIB | 籃球聯盟
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:10 WIB | MUTV 2025/26: Aston Villa vs Man United
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:10 WIB | Rewind: Ep10: Dion Dublin: My Premier League Years Ep10
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:20 WIB | UIM F1H2O GP: Sharjah: Qualifying
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 04:30 WIB | 歐霸盃 第102集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:30 WIB | PL: Bournemouth vs Burnley
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:40 WIB | PL Best Of...: Premier League African Icons
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:40 WIB | Serie A: Full Impact: Round 15
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 05:10 WIB | 法國甲組足球聯賽 第139集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 05:10 WIB | DFB: Dortmund vs Leverkusen
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 05:30 WIB | 2025 非洲國家盃 - 摩洛哥 第10集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 05:40 WIB | PL Stories: Ep47: Mo Salah Ep47
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 05:50 WIB | UIM F1H2O GP: Sharjah: Sprint Race
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 06:10 WIB | MUTV: Match Day Review : Aston Villa Vs Man United
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 06:10 WIB | Aston Villa vs Man United
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79" group-title="LIVE NEXT",NEXT LIVE 26-12 06:10 WIB | South Africa tour of India 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 06:20 WIB | 歐洲協會聯賽 第95集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 06:40 WIB | This Is Paris 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 06:40 WIB | Christmas Special Edition
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 06:40 WIB | PL: Newcastle vs Chelsea
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NEXT",NEXT LIVE 26-12 06:40 WIB | Gallagher Premiership
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 07:00 WIB | 意大利甲組足球聯賽 第151集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 07:20 WIB | UIM F1H2O GP: Sharjah: Main Race
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 07:20 WIB | 2025 非洲國家盃 - 摩洛哥 第11集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 07:40 WIB | PL Best Of...: Premier League Scandinavian Stars
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 26-12 07:40 WIB | URC Benetton v Zebre Parma
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 26-12 07:42 WIB | URC: Benetton V Zebre Parma
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 08:10 WIB | Carabao Cup: Man City vs Brentford
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 08:10 WIB | 歐洲聯賽冠軍盃精華 第16集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 08:40 WIB | Netbusters: Erling Haaland's 100
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 08:50 WIB | 德國乙組足球聯賽 第153集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 26-12 09:10 WIB | Next Gen ATP Finals (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 09:10 WIB | PL Masterclass: Ep05
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 09:10 WIB | 歐洲協會聯賽 第106集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 09:10 WIB | 2025 非洲國家盃 - 摩洛哥 第12集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 09:30 WIB | PL: Man City vs West Ham
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 26-12 09:30 WIB | URC Leinster v Ulster
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 26-12 09:32 WIB | URC: Leinster V Ulster
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 09:40 WIB | WDSC: El Salvador: Open Skate
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 10:10 WIB | Review
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 10:10 WIB | Dutch League: Mid Season Review
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 10:10 WIB | FIBA World Basketball 2025: Episode 36
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 10:10 WIB | サッカーニュース Foot!超高校サッカー通信(12/24)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 10:40 WIB | 高速地帶 第37集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 10:40 WIB | UCI Cyclo-Cross WC: Koksijde: Women Elite
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 10:55 WIB | [無料]【白銀の頂へ！】FISワールドカップ2025/26 ナビ
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 11:00 WIB | 歐洲聯賽冠軍盃雜誌 第15集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 11:00 WIB | 利物浦電視頻道 第20集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 11:10 WIB | 德國甲組足球聯賽 第135集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 11:10 WIB | DFB: Leipzig vs Magdeburg
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 11:10 WIB | [初]高円宮杯第37回全日本U-15サッカー選手権 準決勝-1
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 11:30 WIB | 歐洲聯賽冠軍盃 第110集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 11:40 WIB | PL Stories 2025/26: Wolves Afcon
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 12:10 WIB | UCI Cyclo-Cross WC: Koksijde: Men Elite
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 12:10 WIB | PL Review 2025/26: Week 17
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 12:40 WIB | Tue,MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 12:40 WIB | The Big Interview: Ep20
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 26-12 12:55 WIB | BWF: Arctic Open: SF 1
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 13:00 WIB | 德國甲組足球聯賽 第133集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 13:00 WIB | 2025/26 利物浦潮流雜誌 第20集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 13:10 WIB | Emirates FA Cup: Round 2 Review
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 13:10 WIB | PL: Aston Villa vs Man Utd
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 13:20 WIB | 歐洲聯賽冠軍盃 第108集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 13:25 WIB | [初]高円宮杯第37回全日本U-15サッカー選手権 準決勝-2
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 13:40 WIB | Wed,MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 13:50 WIB | Tour de France 2025: Stage 6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 14:00 WIB | 2025/26 意大利甲組足球聯賽 第152集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 14:10 WIB | PL Best Of...: the Premier League Hall of Fame
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 26-12 14:10 WIB | URC Stormers v Lions
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79" group-title="LIVE NEXT",NEXT LIVE 26-12 14:10 WIB | The Ashes 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 26-12 14:12 WIB | URC: Stormers V Lions
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 14:40 WIB | Inside Sailing 2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 14:40 WIB | December
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 14:40 WIB | Serie A: Full Impact: Round 14
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 14:50 WIB | 意大利甲組足球聯賽 第156集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 26-12 15:10 WIB | ATP Tour 250 (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 15:10 WIB | PL Stories: Ep26: Eden Hazard Ep26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 15:10 WIB | K-League: Jeju vs Suwon Samsung
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 15:10 WIB | 歐洲聯賽冠軍盃 第115集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 15:40 WIB | PL Stories: Ep27: Gary Neville Ep27
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 15:40 WIB | J SPORTS セレクション
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 15:50 WIB | 2025/26 法國甲組足球聯賽 第140集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 16:10 WIB | インタープロトシリーズ2025【ハイライト】第3戦 富士
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 16:10 WIB | PL: Leeds vs Crystal Palace
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 16:40 WIB | 2025 FIA世界越野汽車拉力錦標賽 第64集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 16:40 WIB | MOTOR GAMES #612
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 17:00 WIB | 歐洲協會聯賽 第108集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 17:10 WIB | K-League: Suwon FC vs Bucheon
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="" group-title="LIVE NEXT",NEXT LIVE 26-12 17:10 WIB | 休止
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 17:40 WIB | 2025 FIA世界越野汽車拉力錦標賽 第65集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 17:40 WIB | 2025 終極撞球賽 第51集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 18:20 WIB | PL: Wolves vs Brentford
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 26-12 18:25 WIB | BWF: Arctic Open: SF 2
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 18:40 WIB | 2025 FIA世界越野汽車拉力錦標賽 第66集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 18:50 WIB | 歐洲協會聯賽 第100集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 19:10 WIB | Women's Super League : Man City Vs Aston Villa
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 19:10 WIB | Women's Super League 2025/26: Man City vs Aston Villa
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 19:10 WIB | PL Best Of...: Premier League Dutch Masters
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 19:10 WIB | Serie A: Lazio vs Cremonese
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 19:40 WIB | 2025 FIA世界越野汽車拉力錦標賽 第67集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NEXT",NEXT LIVE 26-12 20:10 WIB | Premiership Rugby
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 26-12 20:10 WIB | Premiership Rugby Leicester v Gloucester
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 26-12 20:12 WIB | Premiership Rugby: Leicester V Gloucester
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 20:30 WIB | PL Stories: The Forgotten Class of 92
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 20:40 WIB | 2025 FIA世界越野汽車拉力錦標賽 第68集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 20:40 WIB | Total Combat 2025: Episode Number 37
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 20:40 WIB | 歐聯賽事精華 第49集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 20:50 WIB | 2025/26 意大利甲組足球聯賽 第156集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 21:00 WIB | PL: Brighton vs Sunderland
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 21:10 WIB | MUTV: Specials
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 21:10 WIB | La Philosophie de Cantona: The Rebel Speaks
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 21:10 WIB | EASL: Alvark vs LG Sakers
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 21:10 WIB | 女子歐洲聯賽冠軍盃 第46集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79" group-title="LIVE NEXT",NEXT LIVE 26-12 21:10 WIB | ICC Women's World Cup 2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 26-12 21:25 WIB | BWF: Arctic Open: Finals
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 26-12 21:40 WIB | 籃球廣播室 第2集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 26-12 22:00 WIB | Premiership Rugby Harlequins v Bristol
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 26-12 22:02 WIB | Premiership Rugby: Harlequins V Bristol
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 22:10 WIB | Bundesliga Special 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 22:10 WIB | Midseason Review I & II
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 22:10 WIB | 2025板式網球超級聯賽 第684集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 22:10 WIB | Classic Match: Mun Vs New
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 26-12 22:20 WIB | ATP Doco Shorts (CC)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 26-12 22:40 WIB | 德國甲組足球聯賽 第128集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 26-12 23:00 WIB | 歐洲聯賽冠軍盃 第118集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 23:10 WIB | Spirit of Yachting 2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 23:10 WIB | Rolex Middle Sea Race
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 23:10 WIB | Tour de France 2025: Stage 7
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 23:20 WIB | Trans World Sport 2025 - Episode 46
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 26-12 23:40 WIB | 2025板式網球超級聯賽 第685集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 27-12 00:10 WIB | NBA攻守時間
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:10 WIB | The Big Interview: Ep20
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NEXT",NEXT LIVE 27-12 00:20 WIB | 5 & 6 Nations Classics -1991
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:20 WIB | 5 & 6 Nations Classics 1991 - England v France
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:22 WIB | Classics: 1991 - England V France
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:25 WIB | Dutch: PSV vs Volendam
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 27-12 00:30 WIB | 2025/26 德國乙組足球聯賽 第153集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:40 WIB | Nitto ATP Finals (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:40 WIB | PL Stories: Ep30: Wolves Afcon Ep30
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 27-12 00:50 WIB | 歐霸盃 第101集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NEXT",NEXT LIVE 27-12 00:50 WIB | Premiership Rugby
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:50 WIB | Premiership Rugby Newcastle v Bath
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:52 WIB | Premiership Rugby: Newcastle V Bath
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 27-12 01:10 WIB | 2025板式網球超級聯賽 第686集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 01:10 WIB | The Catch-up Show: Ep19
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 27-12 02:10 WIB | ATP Tour Review Show (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 02:10 WIB | PL Best Of...: the Premier League Hall of Fame
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 02:10 WIB | DFB: Freiburg vs Darmstadt
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 27-12 02:20 WIB | 2025/26 法國甲組足球聯賽 第144集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 02:30 WIB | PL: Everton vs Arsenal
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 27-12 02:40 WIB | 2025板式網球超級聯賽 第687集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 27-12 02:40 WIB | 歐洲聯賽冠軍盃 第117集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NEXT",NEXT LIVE 27-12 02:40 WIB | URC
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 27-12 02:40 WIB | URC Ospreys v Munster
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 27-12 02:42 WIB | URC: Ospreys V Munster
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:10 WIB | ATP Tour 1000 (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:10 WIB | BWF India Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194807542512_16" group-title="LIVE NEXT",NEXT LIVE 27-12 03:10 WIB | 請留意下場播映賽事
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:10 WIB | Rewind: Ep06: Andy Cole: My Man Utd Years Ep06
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:20 WIB | MUTV: One Love
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:20 WIB | Trailblazers
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:40 WIB | Spirit of Yachting 2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:40 WIB | Rolex Middle Sea Race
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:40 WIB | Rewind: Ep10: Dion Dublin: My Premier League Years Ep10
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 04:10 WIB | TotalEnergies Africa Cup of Nations, Morocco : Cameroon Vs Gabon - Group Stage
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 27-12 04:10 WIB | BWF: French Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 27-12 04:10 WIB | 史提芬居里
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 04:10 WIB | TotalEnergies Africa Cup of Nations, Morocco 2025: Cameroon vs Gabon - Group Sta
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 27-12 04:10 WIB | 2025 終極撞球賽 第51集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 27-12 04:30 WIB | 歐霸盃 第96集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NEXT",NEXT LIVE 27-12 04:30 WIB | Gallagher Premiership
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 27-12 04:40 WIB | 教練講場 第6集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 04:40 WIB | Generation XG 2025/26: Ep16
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 27-12 04:50 WIB | WDSC: El Salvador: Open Skate
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:10 WIB | BWF: World Championships: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 27-12 05:10 WIB | NBA動態 第3510集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 27-12 05:10 WIB | 高速地帶 第37集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:10 WIB | Netbusters: Erling Haaland's 100
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:10 WIB | Serie A: Full Impact: Round 15
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:20 WIB | Tour de France 2025: Stage 8
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:30 WIB | URC Stormers v Lions
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:32 WIB | URC: Stormers V Lions
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NEXT",NEXT LIVE 27-12 05:40 WIB | 籃球聯盟
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 27-12 05:40 WIB | 法國甲組足球聯賽 第137集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:40 WIB | DFB: Hamburger vs Holstein
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:40 WIB | PL: Fulham vs Nottm Forest
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 06:00 WIB | UCL Classic Matches: PSV Vs Milan
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 06:10 WIB | PSG TV : Vendee Fontenay Foot Vs PSG - Coupe De France
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 27-12 06:10 WIB | BWF Australian Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 06:10 WIB | PSG TV 2025/26: Vendee Fontenay Foot vs PSG - Coupe de France
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 27-12 06:20 WIB | 歐洲協會聯賽 第93集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 06:40 WIB | PL Stories: Ep15: Edwin Van Der Sar Ep15
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 27-12 07:10 WIB | Badminton Weekly: World Tour Review
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 07:10 WIB | PL Moments: Ep08: Andy Cole Ep08
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 27-12 07:20 WIB | URC Glasgow Warriors v Edinburgh
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 27-12 07:20 WIB | 2025/26 意大利甲組足球聯賽 第155集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 27-12 07:22 WIB | URC: Glasgow Warriors V Edinburgh
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 27-12 07:30 WIB | 意大利甲組足球聯賽 第156集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 27-12 07:40 WIB | Badminton Unlimited: Episode 11
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 07:50 WIB | PL: Bournemouth vs Burnley
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 27-12 08:10 WIB | BWF Japan Masters: Rd16
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 08:10 WIB | Tue,MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 27-12 08:10 WIB | 歐洲聯賽冠軍盃精華 第17集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 08:40 WIB | Kisah Disebalik Bola: Ep5: Suara Kemenangan
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 08:50 WIB | Kisah Disebalik Bola: Ep6: Penyambung Semangat
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 09:00 WIB | Dutch: NEC vs Ajax
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 27-12 09:05 WIB | ATP Classic Shorts (CC)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 09:10 WIB | Wed,MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 09:10 WIB | Netbusters: Ep17
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 27-12 09:10 WIB | 女子歐洲聯賽冠軍盃精華 第6集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 27-12 09:10 WIB | 2025/26 意大利甲組足球聯賽 第156集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NEXT",NEXT LIVE 27-12 09:20 WIB | Next Gen ATP Finals (2025)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 27-12 09:20 WIB | 德國乙組足球聯賽 第149集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 09:40 WIB | Fantasy Show
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 27-12 09:40 WIB | 歐洲協會聯賽 第104集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 10:10 WIB | Bundesliga Special 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 10:10 WIB | Midseason Review I & II
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 27-12 10:10 WIB | Own The Moment: Ep1 - Sekys
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 27-12 10:40 WIB | Longines FEI Jumping WC (WEL) - Leg 6 - London HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:00 WIB | The Big Inteview 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:00 WIB | Netbusters 2025/26: Ep17
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 27-12 11:00 WIB | 突襲加利西亞 第1集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:10 WIB | Man United vs Bournemouth
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 27-12 11:10 WIB | 德國甲組足球聯賽 第132集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:10 WIB | Welcome to the Weekend
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:20 WIB | URC Dragons v Connacht
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:22 WIB | URC: Dragons V Connacht
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 27-12 11:28 WIB | 2025 非洲國家盃 - 摩洛哥 第13集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:30 WIB | (L) EFL: Birmingham vs Derby
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 27-12 11:30 WIB | 歐洲聯賽冠軍盃 第106集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:30 WIB | PL Stories: The Forgotten Class of 92
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:40 WIB | MUTV : Aston Villa Vs Man United
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:40 WIB | MUTV 2025/26: Aston Villa vs Man United
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 27-12 11:40 WIB | (L) UCI Cyclo-Cross WC: Gavere: Women Elite
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 12:00 WIB | PL: Man City vs West Ham
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 12:10 WIB | Classic Match: Mun Vs New
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79" group-title="LIVE NEXT",NEXT LIVE 27-12 12:40 WIB | ICC Women's World Cup 2025
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 27-12 13:00 WIB | 德國甲組足球聯賽 第127集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 27-12 13:10 WIB | (L) UCI Cyclo-Cross WC: Gavere: Men Elite
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NEXT",NEXT LIVE 27-12 13:20 WIB | 歐洲聯賽冠軍盃 第109集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 13:40 WIB | MUTV: Match Day Review : Aston Villa Vs Man United
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 13:40 WIB | Aston Villa vs Man United
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 13:40 WIB | Kisah Disebalik Bola: Ep7: Terus Perjuangan
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 27-12 13:40 WIB | 德甲球會集 第17集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 13:50 WIB | Kisah Disebalik Bola: Ep8: Teman Sejiwa
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NEXT",NEXT LIVE 27-12 13:58 WIB | 2025 非洲國家盃 - 摩洛哥 第14集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 14:00 WIB | (L) EFL: Middlesbrough vs Blackburn
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NEXT",NEXT LIVE 27-12 14:05 WIB | LIVE URC LIVE Cardiff v Dragons (Live)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NEXT",NEXT LIVE 27-12 14:05 WIB | (L) URC: Cardiff V Dragons
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 14:10 WIB | PL: Tottenham vs Liverpool
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79" group-title="LIVE NEXT",NEXT LIVE 27-12 14:10 WIB | The Ashes 2025/26
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 27-12 14:40 WIB | Fanzone
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190731767216_47" group-title="LIVE NEXT",NEXT LIVE 27-12 14:50 WIB | 意大利甲組足球聯賽 第155集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 27-12 14:50 WIB | EASL: Fubon Braves vs SK Knights
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | UCL Classic Matches: Anderlecht Vs PSG
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -910,69 +6,224 @@ https://bwifi.my.id/hls/video.m3u8
 #KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NOW",LIVE NOW | ATP Tour Review Show (2025)
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d756d566ca94e6499518ffb1474d5d0:dbe4ad6803e74739b8f954d23cc58e7b
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NOW",LIVE NOW | BWF World Tour: SF 1
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=0bbb23a5ad81427fa6817864b2383402:81e055a8d6ddf6392ae9033f0f037b98
-https://load.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=badmintonhd|user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NOW",LIVE NOW | 籃球聯盟[直播]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
-https://smart.946985.filegear-sg.me/smart.php?id=Nba
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194807542512_16" group-title="LIVE NOW",LIVE NOW | 請留意下場播映賽事
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142758
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195059532280_52" group-title="LIVE NOW",LIVE NOW | 請留意下場播映賽事
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142759
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="LIVE NOW",LIVE NOW | 請留意下場播映賽事
-http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NOW",LIVE NOW | Rewind: Ep10: Dion Dublin: My Premier League Years Ep10
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | TotalEnergies Africa Cup of Nations, Morocco : Senegal Vs Botswana - Group Stage
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | UCL Classic Matches: Barcelona Vs Lyon
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | UCL : Athletic Bilbao Vs PSG - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | UCL : Leverkusen Vs Newcastle - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | UCL : Real Madrid Vs Man City - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | PSG TV : Vendee Fontenay Foot Vs PSG - Coupe De France
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | UECL : AEK Athens Vs Craiova - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | UEFA Women's Champions League : Twente Vs Real Madrid - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | Women's Super League : Everton Vs Arsenal
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NOW",LIVE NOW | UECL : Crystal Palace Vs KuPS - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NOW",LIVE NOW | Badminton Unlimited: Episode 11
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW | TotalEnergies Africa Cup of Nations, Morocco 2025: Senegal vs Botswana - Group S
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW | UEFA Champions League 2025/26: Athletic Bilbao vs PSG - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW | UEFA Champions League 2025/26: Leverkusen vs Newcastle - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW | UEFA Champions League 2025/26: Real Madrid vs Man City - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW | PSG TV 2025/26: Vendee Fontenay Foot vs PSG - Coupe de France
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW | UEFA Conference League 2025/26: AEK Athens vs Craiova - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW | UEFA Women's Champions League 2025/26: Twente vs Real Madrid - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW | Women's Super League 2025/26: Everton vs Arsenal
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW | UEFA Conference League 2025/26: Crystal Palace vs KuPS - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NOW",LIVE NOW | Match Hls 25/26: MW17: Fulham Vs Nottingham
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 http://my.bianet.es.vip.hk:80///p//y/kontol26/709260
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NOW",LIVE NOW | Match Hls 25/26: MW17: Brighton Vs Sunderland
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NOW",LIVE NOW | Match Hls 25/26: MW17: Aston Villa Vs Man Utd
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NOW",LIVE NOW | Classic Match: Mun Vs New
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | FA Cup: Brackley vs Notts County
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/AstFut.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NOW",LIVE NOW | Tour de France 2025: Stage 3
-https://raw.githubusercontent.com/Cutsiffa/pl/refs/heads/main/Astpl4.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NOW",LIVE NOW | 歐霸盃 第98集
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
-#EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW | 第77回全日本大学バスケットボール選手権男子3位決定戦 日本経済大学×東海大学
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
-https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | PL: Man City vs West Ham
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | Carabao Cup: Arsenal vs Crystal Palace
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | EFL: Derby vs Leicester
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | EFL: West Brom vs Sheffield
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | Carabao Cup: Cardiff vs Chelsea
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | K-League: Suwon Samsung vs Jeju
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | K-League: Bucheon vs Suwon FC
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | Serie A: Cagliari vs Pisa
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | Dutch: Feyenoord vs Zwolle,
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW | Dutch: Heerenveen vs PSV
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NOW",LIVE NOW | EASL: Golden Kings vs Black Bears
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NOW",LIVE NOW | (L) EASL: Fubon Braves vs SK Knights
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NOW",LIVE NOW | UFC 300: Pereira vs Hill
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NOW",LIVE NOW | UFC 317: Topuria vs Oliveira
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | PL: Tottenham vs Liverpool
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=bb2dc3cfa3024039ae59b55e6b0b5de5:03d25d6ceb16fc4e007697e9d2124fac
 #https://get.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=epl1fhd
 https://raw.githubusercontent.com/hnnyo/anyar/refs/heads/main/pl1.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129203139634390_69" group-title="LIVE NOW",LIVE NOW | URC
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=59454adb530b4e0784eae62735f9d850:61100d0b8c4dd13e4eb8b4851ba192cc
-https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_premiertennishd.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042432093492_56.png" group-title="LIVE NOW",LIVE NOW | URC Dragons v Connacht
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=59454adb530b4e0784eae62735f9d850:61100d0b8c4dd13e4eb8b4851ba192cc
-https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_premiertennishd.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609095802192440_82.png" group-title="LIVE NOW",LIVE NOW | URC: Dragons V Connacht
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=59454adb530b4e0784eae62735f9d850:61100d0b8c4dd13e4eb8b4851ba192cc
-https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_premiertennishd.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NOW",LIVE NOW | 2025/26 德國乙組足球聯賽 第145集
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | Match HL 2025/26: WK17: MCI vs WHU
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | PL: Wolves vs Brentford
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | PL: Brighton vs Sunderland
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | PL: Leeds vs Crystal Palace
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | PL: Bournemouth vs Burnley
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | PL: Aston Villa vs Man Utd
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | PL: Everton vs Arsenal
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW | PL: Tottenham vs Liverpool
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NOW",LIVE EVENT
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3ae6a430c1b8420ea280e317143d8d3a:142473ee925db0db0083c74a178c8298
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/3b0660e05eed4d769521eb0275aab3ab/index.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79" group-title="LIVE NOW",LIVE NOW | The Ashes 2025/26
-http://tv.cloudcdn.me/live.ts?channelId=26034&uid=3453&deviceMac=00:1A:79:01:04:AC
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 00:20 WIB | UEFA Women's Champions League : Roma Vs St Polten - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 00:20 WIB | UEFA Women's Champions League 2025/26: Roma vs St Polten - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 01:10 WIB | EASL: Fubon Braves vs SK Knights
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 01:10 WIB | PL: Fulham vs Nottm Forest
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 01:30 WIB | Dutch: Fortuna Sittard vs Ajax
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 02:30 WIB | Man United vs Bournemouth
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:00 WIB | MUTV : Aston Villa Vs Man United
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:00 WIB | MUTV 2025/26: Aston Villa vs Man United
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 03:20 WIB | PL: Bournemouth vs Burnley
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:00 WIB | DFB: Dortmund vs Leverkusen
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 04:40 WIB | UIM F1H2O GP: Sharjah: Sprint Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 05:00 WIB | Aston Villa vs Man United
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 05:30 WIB | PL: Newcastle vs Chelsea
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 06:00 WIB | UCL : Benfica Vs Napoli - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 06:00 WIB | UEFA Champions League 2025/26: Benfica vs Napoli - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 06:10 WIB | UIM F1H2O GP: Sharjah: Main Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 07:00 WIB | Carabao Cup: Man City vs Brentford
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 07:50 WIB | UCL : Juventus Vs Pafos - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 07:50 WIB | UEFA Champions League 2025/26: Juventus vs Pafos - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 08:20 WIB | PL: Man City vs West Ham
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 09:40 WIB | UCL : Club Brugge Vs Arsenal - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 09:40 WIB | UEFA Champions League 2025/26: Club Brugge vs Arsenal - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 10:00 WIB | DFB: Leipzig vs Magdeburg
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 12:00 WIB | PL: Aston Villa vs Man Utd
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 14:00 WIB | UECL : Larnaca Vs Shkendija - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 14:00 WIB | UEFA Conference League 2025/26: Larnaca vs Shkendija - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 14:00 WIB | K-League: Jeju vs Suwon Samsung
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 15:00 WIB | PL: Leeds vs Crystal Palace
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 16:00 WIB | UEFA Women's Champions League : Juventus Vs Man United - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 16:00 WIB | UEFA Women's Champions League 2025/26: Juventus vs Man United - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 16:00 WIB | K-League: Suwon FC vs Bucheon
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 17:10 WIB | PL: Wolves vs Brentford
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 18:00 WIB | Women's Super League : Man City Vs Aston Villa
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 18:00 WIB | Women's Super League 2025/26: Man City vs Aston Villa
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 18:00 WIB | Serie A: Lazio vs Cremonese
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 26-12 19:50 WIB | PL: Brighton vs Sunderland
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018015108639260_15.png" group-title="LIVE NEXT",NEXT LIVE 26-12 20:00 WIB | EASL: Alvark vs LG Sakers
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NEXT",NEXT LIVE 26-12 21:00 WIB | Classic Match: Mun Vs New
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 22:00 WIB | Rolex Middle Sea Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 26-12 22:30 WIB | UECL : Shakhtar Vs Rijeka - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 26-12 22:30 WIB | UEFA Conference League 2025/26: Shakhtar vs Rijeka - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 26-12 23:15 WIB | Dutch: PSV vs Volendam
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:20 WIB | UEFA Women's Champions League : Bayern Vs Valerenga - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 00:20 WIB | UEFA Women's Champions League 2025/26: Bayern vs Valerenga - MD6
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 01:00 WIB | DFB: Freiburg vs Darmstadt
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 01:20 WIB | PL: Everton vs Arsenal
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:00 WIB | TotalEnergies Africa Cup of Nations, Morocco : Cameroon Vs Gabon - Group Stage
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 03:00 WIB | TotalEnergies Africa Cup of Nations, Morocco 2025: Cameroon vs Gabon - Group Sta
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 04:30 WIB | DFB: Hamburger vs Holstein
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 04:50 WIB | UCL Classic Matches: PSV Vs Milan
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/09/20240609084036958516_28.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:00 WIB | PSG TV : Vendee Fontenay Foot Vs PSG - Coupe De France
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NEXT",NEXT LIVE 27-12 05:00 WIB | PSG TV 2025/26: Vendee Fontenay Foot vs PSG - Coupe de France
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014354440490_31.png" group-title="LIVE NEXT",NEXT LIVE 27-12 06:30 WIB | Badminton Unlimited: Episode 11
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 07:50 WIB | Dutch: NEC vs Ajax
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 10:20 WIB | (L) EFL: Birmingham vs Derby
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NEXT",NEXT LIVE 27-12 12:50 WIB | (L) EFL: Middlesbrough vs Blackburn
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NEXT",NEXT LIVE 27-12 13:00 WIB | PL: Tottenham vs Liverpool
+https://bwifi.my.id/hls/video.m3u8
