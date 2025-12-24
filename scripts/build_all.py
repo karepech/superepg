@@ -11,30 +11,63 @@ INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
 
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
-NEXT_LIVE_URL = "https://bwifi.my.id/hls/video.m3u8"
+NEXT_LIVE_URL = "https://bwifi.my.id/hls/playlist.m3u"
 
 WIB = timezone(timedelta(hours=7))
 NOW = datetime.now(WIB)
 
 PRELIVE = timedelta(minutes=5)
 
+REPLAY_WORDS = [
+    "replay", "rerun", "highlight", "review",
+    "classic", "full match", "recap"
+]
+
 # ================= UTIL =================
 def norm(txt: str) -> str:
     return re.sub(r"[^a-z0-9]", "", txt.lower())
 
 def parse_time(t: str) -> datetime:
-    base = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
+    dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
     if len(t) >= 19:
         sign = 1 if t[14] == "+" else -1
         hh = int(t[15:17])
         mm = int(t[17:19])
-        base = base.replace(tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm)))
+        dt = dt.replace(tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm)))
     else:
-        base = base.replace(tzinfo=timezone.utc)
-    return base.astimezone(WIB)
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(WIB)
 
-# ================= FILTER =================
-REPLAY_WORDS = ["replay", "rerun", "highlight", "review", "classic", "full match"]
+def extract_logo(extinf: str) -> str:
+    m = re.search(r'tvg-logo="([^"]+)"', extinf)
+    return m.group(1) if m else ""
+
+def extract_stream_url(block):
+    for l in block:
+        if l.startswith("http"):
+            return l.strip()
+    return ""
+
+def is_stream_alive(url: str) -> bool:
+    if not url:
+        return False
+    if url.endswith(".mpd") or "clearkey" in url.lower():
+        return True
+    try:
+        r = requests.head(
+            url,
+            timeout=4,
+            allow_redirects=True,
+            headers={"User-Agent": "Mozilla/5.0"}
+        )
+        return r.status_code < 400
+    except:
+        return False
+
+# ================= FILTER EVENT =================
+def is_bad_replay(title):
+    t = title.lower()
+    return any(w in t for w in REPLAY_WORDS)
 
 def is_badminton_volley(title, cat):
     t = f"{title} {cat}".lower()
@@ -63,43 +96,28 @@ def is_afc(title, cat):
         "afc cup", "asian champions"
     ])
 
-def valid_live_time(title, cat, start):
-    h = start.hour
+def valid_event(title, cat):
     t = f"{title} {cat}".lower()
 
-    # Badminton & Voli (ikut EPG)
     if is_badminton_volley(title, cat):
         return True
-
-    # MotoGP
     if is_motogp(title, cat):
-        return 12 <= h <= 22
-
-    # Liga Indonesia
+        return True
     if is_liga_indo(title, cat):
-        return 15 <= h <= 21
-
-    # AFC / Asia (biasanya malam)
+        return True
     if is_afc(title, cat):
-        return 18 <= h <= 23
-
-    # Football internasional (Eropa)
+        return True
     if " vs " in f" {t} ":
-        return 0 <= h <= 5
+        return True
 
     return False
 
 def calc_live_end(start, stop, title, cat):
-    # Badminton & Voli ikut EPG
     if is_badminton_volley(title, cat):
         return stop if stop else start + timedelta(hours=3)
-
-    # MotoGP
     if is_motogp(title, cat):
         cap = start + timedelta(hours=4)
         return min(stop, cap) if stop else cap
-
-    # Football default
     cap = start + timedelta(hours=2, minutes=30)
     return min(stop, cap) if stop else cap
 
@@ -111,26 +129,21 @@ programmes = []
 
 for ch in root.findall("channel"):
     cid = ch.get("id")
-    name = ch.findtext("display-name", "").strip()
-    logo = ch.find("icon").get("src") if ch.find("icon") is not None else ""
+    name = ch.findtext("display-name", "")
     if name:
-        epg_channels[cid] = {"key": norm(name), "logo": logo}
+        epg_channels[cid] = norm(name)
 
 for p in root.findall("programme"):
     title = p.findtext("title", "").strip()
     cat = p.findtext("category", "").strip()
-    if not title:
-        continue
 
-    if any(w in title.lower() for w in REPLAY_WORDS):
+    if not title or is_bad_replay(title):
+        continue
+    if not valid_event(title, cat):
         continue
 
     start = parse_time(p.get("start"))
     stop = parse_time(p.get("stop")) if p.get("stop") else None
-
-    if not valid_live_time(title, cat, start):
-        continue
-
     live_end = calc_live_end(start, stop, title, cat)
 
     programmes.append({
@@ -169,27 +182,28 @@ for b in blocks:
 out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
 
 for p in programmes:
-    cid = p["cid"]
-    if cid not in epg_channels:
-        continue
-
-    key = epg_channels[cid]["key"]
-    if key not in m3u_channels:
+    key = epg_channels.get(p["cid"])
+    if not key or key not in m3u_channels:
         continue
 
     live_start = p["start"] - PRELIVE
 
     for block in m3u_channels[key]:
+        logo = extract_logo(block[0])
+        stream_url = extract_stream_url(block)
+
         if live_start <= NOW <= p["live_end"]:
+            if not is_stream_alive(stream_url):
+                continue
             label = f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | {p["title"]}'
             out.extend([
-                f'#EXTINF:-1 group-title="LIVE NOW",{label}\n'
+                f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{label}\n'
             ] + block[1:])
 
         elif NOW < live_start:
             label = f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | {p["title"]}'
             out.extend([
-                f'#EXTINF:-1 group-title="NEXT LIVE",{label}\n',
+                f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{label}\n',
                 NEXT_LIVE_URL + "\n"
             ])
 
@@ -197,4 +211,4 @@ for p in programmes:
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ FINAL: LIVE NOW asli, NEXT LIVE pakai URL sendiri, AFC Asia aktif")
+print("✅ AUTO HIDE LIVE EVENT — OK")
