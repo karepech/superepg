@@ -1,52 +1,13 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="LIVE NOW",LIVE NOW 23:10 WIB | BWF: US Open: HL
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=0bbb23a5ad81427fa6817864b2383402:81e055a8d6ddf6392ae9033f0f037b98
-https://load.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=badmintonhd|user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvXKVyZxI7QgeCL0DSu3Wgt9pC4iJgt0Zwz1p2mgOvrHuAi7pvvRlkSiUTcMnuq3n3kw__NZF6ciYGVdz4APy_BAenh8ijGgpJlkBIfijnej5joCdSeDhmB_k8jY5JQX2TyRPZTx9pWnZR4c-QW7jzDY8oRA6ULJ5evMaPd4tbNp1ROMq_vVG4k-A9bTsS/s700/ASTRO%20PREMIER%20LEAGUE%202.png" group-title="LIVE NOW",LIVE NOW 22:10 WIB | Match Hls 25/26: MW17: Aston Villa Vs Man Utd
-#EXTHTTP:{"User-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4ecad9adae8f44f0b1c8bf5c492da613:43ac85382893194802f0d34dbf71059e
-https://load.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=epl2hd|user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Ev19Haa.jpg" group-title="LIVE NOW",LIVE NOW 22:10 WIB | Match Hls 25/26: MW17: Aston Villa Vs Man Utd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-http://my.bianet.es.vip.hk:80///p//y/kontol26/709260
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mzfHYC5TjMHkYTcLs7cb-WqaCXjF1ay-TcjJm_xwCKHAn-_hetiuETyJnQ3yAnj7ufKMCGY8xPGRW_dYD-4S4q9bEao-6Ra7jsYxpYhuXrHhtbFKnSpkaytS4__NxY_SnjKPcZxbdEjjrA-BJgIHQ8K7sAzgvMoKlr7c-QzIYRuFqnN4q5_gYlzacBjV/s700/ASTRO%20FOOTBALL.png" group-title="LIVE NOW",LIVE NOW 22:10 WIB | DFB: Union Berlin vs Bayern Munich
 #KODIPROP:inputstream.adaptive.license_type=m3u8
 #KODIPROP:inputstream.adaptive.license_key=79f4028730acca9ab8b00f26158ddb10:91febe843c08c7cc523efd827292e40e
 https://dl.dropboxusercontent.com/scl/fi/fvmlubrpsz62feuvcutxu/asspfoot.m3u8?rlkey=ewph2mk93bpw44va9k9b9e6p9&dl=0
 #EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="LIVE NOW",LIVE NOW 22:10 WIB | DFB: Union Berlin vs Bayern Munich
 https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/main/v1/AstFut.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/aOkc7gc.jpg" group-title="LIVE NOW",LIVE NOW 20:00 WIB | MOTOR GAMES #612
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
-https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="LIVE NOW",LIVE NOW 21:10 WIB | PL: Newcastle vs Chelsea
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=bb2dc3cfa3024039ae59b55e6b0b5de5:03d25d6ceb16fc4e007697e9d2124fac
-#https://get.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=epl1fhd
-https://raw.githubusercontent.com/hnnyo/anyar/refs/heads/main/pl1.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",24 December 2025 23:40 WIB | UECL : AZ Alkmaar Vs Jagiellonia Bialystok - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",24 December 2025 23:40 WIB | UEFA Conference League 2025/26: AZ Alkmaar vs Jagiellonia Bialystok - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",25 December 2025 00:10 WIB | BWF: Malaysia Masters: Finals: HL
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",25 December 2025 01:10 WIB | BWF World Tour: SF 1
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",25 December 2025 06:10 WIB | BWF: Indonesia Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",25 December 2025 07:10 WIB | BWF: Taipei Open: HL
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",25 December 2025 08:10 WIB | BWF World Tour: SF 2
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",25 December 2025 13:10 WIB | BWF: Macau Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",25 December 2025 14:10 WIB | BWF Sudirman Cup: Final: HL
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",25 December 2025 15:10 WIB | BWF World Tour 2025: Pre-Show
 https://bwifi.my.id/hls/video.m3u8
@@ -56,17 +17,9 @@ https://bwifi.my.id/hls/video.m3u8
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",25 December 2025 21:10 WIB | BWF: Arctic Open: Rd16
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvXKVyZxI7QgeCL0DSu3Wgt9pC4iJgt0Zwz1p2mgOvrHuAi7pvvRlkSiUTcMnuq3n3kw__NZF6ciYGVdz4APy_BAenh8ijGgpJlkBIfijnej5joCdSeDhmB_k8jY5JQX2TyRPZTx9pWnZR4c-QW7jzDY8oRA6ULJ5evMaPd4tbNp1ROMq_vVG4k-A9bTsS/s700/ASTRO%20PREMIER%20LEAGUE%202.png" group-title="NEXT LIVE",25 December 2025 01:40 WIB | Match Hls 25/26: MW17: Fulham Vs Nottingham
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvXKVyZxI7QgeCL0DSu3Wgt9pC4iJgt0Zwz1p2mgOvrHuAi7pvvRlkSiUTcMnuq3n3kw__NZF6ciYGVdz4APy_BAenh8ijGgpJlkBIfijnej5joCdSeDhmB_k8jY5JQX2TyRPZTx9pWnZR4c-QW7jzDY8oRA6ULJ5evMaPd4tbNp1ROMq_vVG4k-A9bTsS/s700/ASTRO%20PREMIER%20LEAGUE%202.png" group-title="NEXT LIVE",25 December 2025 03:10 WIB | Match Hls 25/26: MW17: Brighton Vs Sunderland
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvXKVyZxI7QgeCL0DSu3Wgt9pC4iJgt0Zwz1p2mgOvrHuAi7pvvRlkSiUTcMnuq3n3kw__NZF6ciYGVdz4APy_BAenh8ijGgpJlkBIfijnej5joCdSeDhmB_k8jY5JQX2TyRPZTx9pWnZR4c-QW7jzDY8oRA6ULJ5evMaPd4tbNp1ROMq_vVG4k-A9bTsS/s700/ASTRO%20PREMIER%20LEAGUE%202.png" group-title="NEXT LIVE",25 December 2025 07:40 WIB | Match Hls 25/26: MW17: Aston Villa Vs Man Utd
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="NEXT LIVE",25 December 2025 00:10 WIB | PL: Man City vs West Ham
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="NEXT LIVE",25 December 2025 02:20 WIB | PL: Tottenham vs Liverpool
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="NEXT LIVE",25 December 2025 05:50 WIB | Match HL 2025/26: WK17: MCI vs WHU
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="NEXT LIVE",25 December 2025 06:20 WIB | PL: Wolves vs Brentford
 https://bwifi.my.id/hls/video.m3u8
@@ -79,8 +32,6 @@ https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="NEXT LIVE",25 December 2025 16:30 WIB | PL: Aston Villa vs Man Utd
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="NEXT LIVE",25 December 2025 21:10 WIB | PL: Everton vs Arsenal
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="NEXT LIVE",25 December 2025 23:20 WIB | PL: Tottenham vs Liverpool
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mzfHYC5TjMHkYTcLs7cb-WqaCXjF1ay-TcjJm_xwCKHAn-_hetiuETyJnQ3yAnj7ufKMCGY8xPGRW_dYD-4S4q9bEao-6Ra7jsYxpYhuXrHhtbFKnSpkaytS4__NxY_SnjKPcZxbdEjjrA-BJgIHQ8K7sAzgvMoKlr7c-QzIYRuFqnN4q5_gYlzacBjV/s700/ASTRO%20FOOTBALL.png" group-title="NEXT LIVE",25 December 2025 01:10 WIB | FA Cup: Brackley vs Notts County
 https://bwifi.my.id/hls/video.m3u8
@@ -100,30 +51,6 @@ https://bwifi.my.id/hls/video.m3u8
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mzfHYC5TjMHkYTcLs7cb-WqaCXjF1ay-TcjJm_xwCKHAn-_hetiuETyJnQ3yAnj7ufKMCGY8xPGRW_dYD-4S4q9bEao-6Ra7jsYxpYhuXrHhtbFKnSpkaytS4__NxY_SnjKPcZxbdEjjrA-BJgIHQ8K7sAzgvMoKlr7c-QzIYRuFqnN4q5_gYlzacBjV/s700/ASTRO%20FOOTBALL.png" group-title="NEXT LIVE",25 December 2025 22:10 WIB | Dutch: Feyenoord vs Zwolle,
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Ev19Haa.jpg" group-title="NEXT LIVE",25 December 2025 01:40 WIB | Match Hls 25/26: MW17: Fulham Vs Nottingham
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Ev19Haa.jpg" group-title="NEXT LIVE",25 December 2025 03:10 WIB | Match Hls 25/26: MW17: Brighton Vs Sunderland
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Ev19Haa.jpg" group-title="NEXT LIVE",25 December 2025 07:40 WIB | Match Hls 25/26: MW17: Aston Villa Vs Man Utd
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",25 December 2025 01:10 WIB | FA Cup: Brackley vs Notts County
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",25 December 2025 04:00 WIB | Carabao Cup: Arsenal vs Crystal Palace
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",25 December 2025 07:10 WIB | EFL: Derby vs Leicester
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",25 December 2025 09:10 WIB | EFL: West Brom vs Sheffield
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",25 December 2025 12:10 WIB | Carabao Cup: Cardiff vs Chelsea
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",25 December 2025 15:10 WIB | K-League: Suwon Samsung vs Jeju
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",25 December 2025 17:10 WIB | K-League: Bucheon vs Suwon FC
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",25 December 2025 19:10 WIB | Serie A: Cagliari vs Pisa
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",25 December 2025 22:10 WIB | Dutch: Feyenoord vs Zwolle,
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/h78kzeH.jpg" group-title="NEXT LIVE",25 December 2025 08:40 WIB | EASL: Golden Kings vs Black Bears
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/h78kzeH.jpg" group-title="NEXT LIVE",25 December 2025 10:40 WIB | (L) EASL: Fubon Braves vs SK Knights
@@ -140,37 +67,13 @@ https://bwifi.my.id/hls/video.m3u8
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 06:00 WIB | Barcelona vs Lyon (2001/02)
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 07:10 WIB | UCL : Athletic Bilbao Vs PSG - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 07:10 WIB | UEFA Champions League 2025/26: Athletic Bilbao vs PSG - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 09:00 WIB | UCL : Leverkusen Vs Newcastle - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 09:00 WIB | UEFA Champions League 2025/26: Leverkusen vs Newcastle - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 10:50 WIB | UCL : Real Madrid Vs Man City - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 10:50 WIB | UEFA Champions League 2025/26: Real Madrid vs Man City - MD6
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 12:40 WIB | PSG TV 2025/26: Vendee Fontenay Foot vs PSG - Coupe de France
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 12:40 WIB | PSG TV : Vendee Fontenay Foot Vs PSG - Coupe De France
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 15:10 WIB | UECL : AEK Athens Vs Craiova - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 15:10 WIB | UEFA Conference League 2025/26: AEK Athens vs Craiova - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 17:10 WIB | UEFA Women's Champions League 2025/26: Twente vs Real Madrid - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 17:10 WIB | UEFA Women's Champions League : Twente Vs Real Madrid - MD6
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 19:10 WIB | Women's Super League 2025/26: Everton vs Arsenal
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 19:10 WIB | Women's Super League : Everton Vs Arsenal
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 23:40 WIB | UECL : Crystal Palace Vs KuPS - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",25 December 2025 23:40 WIB | UEFA Conference League 2025/26: Crystal Palace vs KuPS - MD6
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",26 December 2025 04:10 WIB | BWF: Arctic Open: QF
 https://bwifi.my.id/hls/video.m3u8
@@ -196,8 +99,6 @@ https://bwifi.my.id/hls/video.m3u8
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="NEXT LIVE",26 December 2025 21:00 WIB | PL: Brighton vs Sunderland
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitaS3Krn7L-SqLPwohXUnvROpEWHg9XdJrAPd6MjP_5kbrJpklv8bToMN1u1nNPonznYYHt5tSDPhQQSRpZRd_qGImBOK0XW_w0HDDlr5yhq8lEb8YooSm58gLoQ8f4O5mz4abDdiV7_5iiobSHlTLhumC4uPqkQqZkiOTX1zZsk64l_xSFxLVMGf-WS0t/s700/ASTRO%20PREMIER%20LEAGUE.png" group-title="NEXT LIVE",26 December 2025 23:10 WIB | PL: Aston Villa vs Man Utd
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mzfHYC5TjMHkYTcLs7cb-WqaCXjF1ay-TcjJm_xwCKHAn-_hetiuETyJnQ3yAnj7ufKMCGY8xPGRW_dYD-4S4q9bEao-6Ra7jsYxpYhuXrHhtbFKnSpkaytS4__NxY_SnjKPcZxbdEjjrA-BJgIHQ8K7sAzgvMoKlr7c-QzIYRuFqnN4q5_gYlzacBjV/s700/ASTRO%20FOOTBALL.png" group-title="NEXT LIVE",26 December 2025 00:25 WIB | Dutch: Heerenveen vs PSV
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mzfHYC5TjMHkYTcLs7cb-WqaCXjF1ay-TcjJm_xwCKHAn-_hetiuETyJnQ3yAnj7ufKMCGY8xPGRW_dYD-4S4q9bEao-6Ra7jsYxpYhuXrHhtbFKnSpkaytS4__NxY_SnjKPcZxbdEjjrA-BJgIHQ8K7sAzgvMoKlr7c-QzIYRuFqnN4q5_gYlzacBjV/s700/ASTRO%20FOOTBALL.png" group-title="NEXT LIVE",26 December 2025 02:40 WIB | Dutch: Fortuna Sittard vs Ajax
@@ -214,35 +115,9 @@ https://bwifi.my.id/hls/video.m3u8
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mzfHYC5TjMHkYTcLs7cb-WqaCXjF1ay-TcjJm_xwCKHAn-_hetiuETyJnQ3yAnj7ufKMCGY8xPGRW_dYD-4S4q9bEao-6Ra7jsYxpYhuXrHhtbFKnSpkaytS4__NxY_SnjKPcZxbdEjjrA-BJgIHQ8K7sAzgvMoKlr7c-QzIYRuFqnN4q5_gYlzacBjV/s700/ASTRO%20FOOTBALL.png" group-title="NEXT LIVE",26 December 2025 19:10 WIB | Serie A: Lazio vs Cremonese
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mzfHYC5TjMHkYTcLs7cb-WqaCXjF1ay-TcjJm_xwCKHAn-_hetiuETyJnQ3yAnj7ufKMCGY8xPGRW_dYD-4S4q9bEao-6Ra7jsYxpYhuXrHhtbFKnSpkaytS4__NxY_SnjKPcZxbdEjjrA-BJgIHQ8K7sAzgvMoKlr7c-QzIYRuFqnN4q5_gYlzacBjV/s700/ASTRO%20FOOTBALL.png" group-title="NEXT LIVE",26 December 2025 21:10 WIB | DFB: Dortmund vs Leverkusen
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",26 December 2025 00:25 WIB | Dutch: Heerenveen vs PSV
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",26 December 2025 02:40 WIB | Dutch: Fortuna Sittard vs Ajax
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",26 December 2025 05:10 WIB | DFB: Dortmund vs Leverkusen
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",26 December 2025 08:10 WIB | Carabao Cup: Man City vs Brentford
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",26 December 2025 11:10 WIB | DFB: Leipzig vs Magdeburg
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",26 December 2025 15:10 WIB | K-League: Jeju vs Suwon Samsung
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",26 December 2025 17:10 WIB | K-League: Suwon FC vs Bucheon
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",26 December 2025 19:10 WIB | Serie A: Lazio vs Cremonese
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",26 December 2025 21:10 WIB | DFB: Dortmund vs Leverkusen
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/aOkc7gc.jpg" group-title="NEXT LIVE",26 December 2025 16:40 WIB | MOTOR GAMES #612
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/h78kzeH.jpg" group-title="NEXT LIVE",26 December 2025 02:20 WIB | EASL: Fubon Braves vs SK Knights
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/h78kzeH.jpg" group-title="NEXT LIVE",26 December 2025 21:10 WIB | EASL: Alvark vs LG Sakers
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 01:30 WIB | UEFA Women's Champions League 2025/26: Roma vs St Polten - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 01:30 WIB | UEFA Women's Champions League : Roma Vs St Polten - MD6
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 03:40 WIB | Man United vs Bournemouth
 https://bwifi.my.id/hls/video.m3u8
@@ -252,41 +127,9 @@ https://bwifi.my.id/hls/video.m3u8
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 06:10 WIB | Aston Villa vs Man United
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 07:10 WIB | UCL : Benfica Vs Napoli - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 07:10 WIB | UEFA Champions League 2025/26: Benfica vs Napoli - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 09:00 WIB | UCL : Juventus Vs Pafos - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 09:00 WIB | UEFA Champions League 2025/26: Juventus vs Pafos - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 10:50 WIB | UCL : Club Brugge Vs Arsenal - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 10:50 WIB | UEFA Champions League 2025/26: Club Brugge vs Arsenal - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 15:10 WIB | UECL : Larnaca Vs Shkendija - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 15:10 WIB | UEFA Conference League 2025/26: Larnaca vs Shkendija - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 17:10 WIB | UEFA Women's Champions League 2025/26: Juventus vs Man United - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 17:10 WIB | UEFA Women's Champions League : Juventus Vs Man United - MD6
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 19:10 WIB | Women's Super League 2025/26: Man City vs Aston Villa
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 19:10 WIB | Women's Super League : Man City Vs Aston Villa
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 23:40 WIB | UECL : Shakhtar Vs Rijeka - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",26 December 2025 23:40 WIB | UEFA Conference League 2025/26: Shakhtar vs Rijeka - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",27 December 2025 03:10 WIB | BWF India Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",27 December 2025 04:10 WIB | BWF: French Open: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",27 December 2025 05:10 WIB | BWF: World Championships: HL
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",27 December 2025 06:10 WIB | BWF Australian Open: HL
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdU9OYH93jgUwrlRQlY63-r0UHMEhDmJz6WlOfeZIXrzP4Hh85Kbg62wA3WE21ifLqZ1px1NiwvO5aNk549_wCOlxL6QhxjzYPn5nMHodLvwLzD8b2Mszzl7rnMCOfwlkp7XNWw-TTk9XY9wF7MS5bf2XYtAIJMMM0Osipyxdcd3o99RwKkZWeEz8yRCPj/s700/ASTRO%20BADMINTON.png" group-title="NEXT LIVE",27 December 2025 07:40 WIB | Badminton Unlimited: Episode 11
 https://bwifi.my.id/hls/video.m3u8
@@ -314,23 +157,7 @@ https://bwifi.my.id/hls/video.m3u8
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mzfHYC5TjMHkYTcLs7cb-WqaCXjF1ay-TcjJm_xwCKHAn-_hetiuETyJnQ3yAnj7ufKMCGY8xPGRW_dYD-4S4q9bEao-6Ra7jsYxpYhuXrHhtbFKnSpkaytS4__NxY_SnjKPcZxbdEjjrA-BJgIHQ8K7sAzgvMoKlr7c-QzIYRuFqnN4q5_gYlzacBjV/s700/ASTRO%20FOOTBALL.png" group-title="NEXT LIVE",27 December 2025 14:00 WIB | (L) EFL: Middlesbrough vs Blackburn
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",27 December 2025 00:25 WIB | Dutch: PSV vs Volendam
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",27 December 2025 02:10 WIB | DFB: Freiburg vs Darmstadt
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",27 December 2025 05:40 WIB | DFB: Hamburger vs Holstein
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",27 December 2025 09:00 WIB | Dutch: NEC vs Ajax
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",27 December 2025 11:30 WIB | (L) EFL: Birmingham vs Derby
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GpZxtSR.jpg" group-title="NEXT LIVE",27 December 2025 14:00 WIB | (L) EFL: Middlesbrough vs Blackburn
-https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/h78kzeH.jpg" group-title="NEXT LIVE",27 December 2025 14:50 WIB | EASL: Fubon Braves vs SK Knights
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",27 December 2025 01:30 WIB | UEFA Women's Champions League 2025/26: Bayern vs Valerenga - MD6
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",27 December 2025 01:30 WIB | UEFA Women's Champions League : Bayern Vs Valerenga - MD6
 https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pTpDZeu.jpg" group-title="NEXT LIVE",27 December 2025 04:10 WIB | TotalEnergies Africa Cup of Nations, Morocco 2025: Cameroon vs Gabon - Group Sta
 https://bwifi.my.id/hls/video.m3u8
