@@ -5,7 +5,7 @@ from pathlib import Path
 import requests
 from collections import defaultdict
 
-# ================= KONFIG =================
+# ================= CONFIG =================
 BASE = Path(__file__).resolve().parent.parent
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
@@ -13,20 +13,26 @@ OUTPUT_M3U = BASE / "live_all.m3u"
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 NEXT_LIVE_URL = "https://bwifi.my.id/hls/video.m3u8"
 
+DEBUG = True   # ⬅️ MATIKAN jika sudah puas (False)
+
 WIB = timezone(timedelta(hours=7))
 NOW = datetime.now(WIB)
+CURRENT_YEAR = NOW.year
 
 PRELIVE = timedelta(minutes=5)
 MAX_DAYS = 3
 
-# ================= REPLAY FILTER =================
 BAD_WORDS = [
-    "replay", "rerun", "highlight", "highlights",
-    "recap", "review", "classic",
-    " hl", " hls"
+    "replay","rerun","highlight","highlights",
+    "recap","review","classic",
+    " hl"," hls"
 ]
 
 # ================= UTIL =================
+def log(msg):
+    if DEBUG:
+        print(msg)
+
 def norm(t):
     return re.sub(r"[^a-z0-9]", "", t.lower())
 
@@ -62,57 +68,81 @@ def is_stream_alive(url):
     except:
         return False
 
-# ================= EVENT FILTER =================
-def is_bad_event(title):
+# ================= FILTER =================
+def bad_event(title):
     t = " " + title.lower() + " "
     if any(w in t for w in BAD_WORDS):
-        return True
-    # MD boleh jika ada LIVE
+        return "REPLAY"
     if " md" in t and "live" not in t:
+        return "MD_NO_LIVE"
+    return None
+
+def invalid_year(title):
+    t = title.lower()
+    if re.search(r"20\d{2}\s*/\s*20\d{2}", t):
         return True
+    years = re.findall(r"(20\d{2})", t)
+    for y in years:
+        y = int(y)
+        if y < CURRENT_YEAR or y > CURRENT_YEAR + 1:
+            return True
+        if "live" not in t:
+            return True
     return False
 
-def is_valid_event(title, cat):
+def valid_event(title, cat):
     t = f"{title} {cat}".lower()
     if any(k in t for k in ["badminton","bwf","voli","volley","vnl"]):
         return True
     if any(k in t for k in ["motogp","moto2","moto3","grand prix"]):
         return True
-    if any(k in t for k in ["afc champions","afc cup","liga 1","liga indonesia","bri liga"]):
-        return True
     if " vs " in f" {t} ":
         return True
     return False
 
-def live_end_time(start, stop, title):
+def live_end(start, stop, title):
     t = title.lower()
     if any(k in t for k in ["badminton","bwf","voli","volley","vnl"]):
         return stop if stop else start + timedelta(hours=3)
     if "moto" in t:
         cap = start + timedelta(hours=4)
         return min(stop, cap) if stop else cap
-    cap = start + timedelta(hours=2, minutes=30)
-    return min(stop, cap) if stop else cap
+    return start + timedelta(hours=2, minutes=30)
 
 # ================= LOAD EPG =================
 root = ET.fromstring(requests.get(EPG_URL, timeout=60).content)
 
-epg_channel_map = {}
+epg_map = {}
 for ch in root.findall("channel"):
     cid = ch.get("id")
     name = ch.findtext("display-name","")
     if name:
-        epg_channel_map[cid] = norm(name)
+        epg_map[cid] = norm(name)
 
 events = []
 for p in root.findall("programme"):
     title = p.findtext("title","").strip()
     cat = p.findtext("category","").strip()
-    if not title or is_bad_event(title) or not is_valid_event(title, cat):
+
+    if not title:
+        continue
+
+    reason = bad_event(title)
+    if reason:
+        log(f"[SKIP][{reason}] {title}")
+        continue
+
+    if invalid_year(title):
+        log(f"[SKIP][YEAR] {title}")
+        continue
+
+    if not valid_event(title, cat):
+        log(f"[SKIP][NOT_VALID_EVENT] {title}")
         continue
 
     start = parse_time(p.get("start"))
     if start.date() > (NOW + timedelta(days=MAX_DAYS)).date():
+        log(f"[SKIP][H+3] {title}")
         continue
 
     stop = parse_time(p.get("stop")) if p.get("stop") else None
@@ -121,7 +151,7 @@ for p in root.findall("programme"):
         "cid": p.get("channel"),
         "title": title,
         "start": start,
-        "end": live_end_time(start, stop, title)
+        "end": live_end(start, stop, title)
     })
 
 # ================= LOAD M3U =================
@@ -142,33 +172,38 @@ while i < len(lines):
         blocks.append(b)
     i += 1
 
-m3u_map = defaultdict(list)
+m3u = defaultdict(list)
 for b in blocks:
     m = re.search(r",(.+)$", b[0])
     if m:
-        m3u_map[norm(m.group(1))].append(b)
+        m3u[norm(m.group(1))].append(b)
 
-# ================= BUILD OUTPUT =================
+# ================= BUILD =================
 out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
 next_seen = set()
 next_events = defaultdict(list)
 
 for e in events:
-    key = epg_channel_map.get(e["cid"])
-    if not key or key not in m3u_map:
+    key = epg_map.get(e["cid"])
+    if not key or key not in m3u:
+        log(f"[SKIP][NO_M3U] {e['title']}")
         continue
 
     live_start = e["start"] - PRELIVE
 
-    for blk in m3u_map[key]:
+    for blk in m3u[key]:
         logo = extract_logo(blk[0])
         stream = extract_stream(blk)
 
         if live_start <= NOW <= e["end"]:
             if not is_stream_alive(stream):
+                log(f"[SKIP][STREAM_DEAD] {e['title']}")
                 continue
-            label = f'LIVE NOW {e["start"].strftime("%H:%M")} WIB | {e["title"]}'
-            out.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{label}\n')
+            log(f"[OK][LIVE] {e['start'].strftime('%H:%M')} | {e['title']}")
+            out.append(
+                f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",'
+                f'LIVE NOW {e["start"].strftime("%H:%M")} WIB | {e["title"]}\n'
+            )
             out.extend(blk[1:])
 
         elif NOW < e["start"]:
@@ -176,12 +211,12 @@ for e in events:
             if uid in next_seen:
                 continue
             next_seen.add(uid)
+            log(f"[OK][NEXT] {e['start'].strftime('%d-%m %H:%M')} | {e['title']}")
             next_events[e["start"].date()].append(
                 f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",'
                 f'{e["start"].strftime("%d %B %Y %H:%M")} WIB | {e["title"]}\n'
             )
 
-# NEXT LIVE URUT PER TANGGAL
 for d in sorted(next_events):
     for item in sorted(next_events[d]):
         out.append(item)
@@ -190,4 +225,4 @@ for d in sorted(next_events):
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ FINAL OK: LIVE multi-channel, NEXT single per match, lokal sync")
+print("✅ BUILD SELESAI (DEBUG MODE)")
