@@ -18,9 +18,26 @@ NOW = datetime.now(TZ)
 PRELIVE = timedelta(minutes=5)     # 5 menit sebelum kickoff
 POSTLIVE = timedelta(minutes=30)   # 30 menit setelah selesai
 
+# ================= FILTER =================
+REPLAY_KEYWORDS = [
+    "replay", "re-live", "rerun", "repeat",
+    "highlight", "highlights", "recap",
+    "full match", "delayed"
+]
+
+MATCH_SIGNS = [" vs ", " v ", " @ ", " - "]
+
 # ================= HELPER =================
 def norm(txt: str) -> str:
     return re.sub(r"[^a-z0-9]", "", txt.lower())
+
+def is_replay(title: str) -> bool:
+    t = title.lower()
+    return any(k in t for k in REPLAY_KEYWORDS)
+
+def looks_like_match(title: str) -> bool:
+    t = title.lower()
+    return any(s in t for s in MATCH_SIGNS)
 
 def parse_time(t: str) -> datetime:
     dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
@@ -58,6 +75,12 @@ for ch in root.findall("channel"):
 for p in root.findall("programme"):
     title = p.findtext("title", "").strip()
     if not title:
+        continue
+
+    # ❌ buang siaran ulang & non-pertandingan
+    if is_replay(title):
+        continue
+    if not looks_like_match(title):
         continue
 
     programmes.append({
@@ -114,7 +137,7 @@ for p in sorted(programmes, key=lambda x: x["start"]):
     for block in m3u_channels[key]:
         logo = epg["logo"]
 
-        # 🔴 LIVE NOW (5 menit sebelum kickoff sampai stop+30m)
+        # 🔴 LIVE NOW (LIVE ASLI)
         if (p["start"] - PRELIVE) <= NOW < (p["stop"] + POSTLIVE):
             title = (
                 f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | '
@@ -125,7 +148,7 @@ for p in sorted(programmes, key=lambda x: x["start"]):
                 + block[1:]
             )
 
-        # ⏭ NEXT LIVE (masih lama)
+        # ⏭ NEXT LIVE
         elif NOW < (p["start"] - PRELIVE):
             title = (
                 f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | '
@@ -148,4 +171,4 @@ for blk in next_live:
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ FINAL: NEXT → LIVE otomatis 5 menit sebelum kickoff")
+print("✅ FINAL: HANYA LIVE PERTANDINGAN ASLI (NO REPLAY)")
