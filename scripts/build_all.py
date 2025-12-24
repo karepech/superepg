@@ -2,18 +2,18 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+import requests
 
 # ================= KONFIG =================
 BASE = Path(__file__).resolve().parent.parent
 
-EPG_XML = BASE / "epg/epg_wib_sports.xml"
-INPUT_M3U = BASE / "m3u/live_epg_sports.m3u"
-OUTPUT_M3U = BASE / "output/live_all.m3u"
+INPUT_M3U = BASE / "live_epg_sports.m3u"
+OUTPUT_M3U = BASE / "live_all.m3u"
+
+EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 
 TZ = timezone(timedelta(hours=7))  # WIB
 NOW = datetime.now(TZ)
-
-OUTPUT_M3U.parent.mkdir(exist_ok=True)
 
 # ================= HELPER =================
 def norm(text):
@@ -24,9 +24,11 @@ def parse_time(t):
         .replace(tzinfo=timezone.utc) \
         .astimezone(TZ)
 
-# ================= LOAD EPG =================
-tree = ET.parse(EPG_XML)
-root = tree.getroot()
+# ================= LOAD EPG (REMOTE) =================
+print("📥 Download EPG...")
+resp = requests.get(EPG_URL, timeout=120)
+resp.raise_for_status()
+root = ET.fromstring(resp.content)
 
 epg_by_id = {}
 epg_by_key = {}
@@ -70,12 +72,11 @@ while i < len(lines):
         blocks.append(block)
     i += 1
 
-# ================= MAP CHANNEL ↔ EPG =================
+# ================= MAP CHANNEL =================
 channel_blocks = {}
 
 for block in blocks:
-    extinf = block[0]
-    m = re.search(r",(.+)$", extinf)
+    m = re.search(r",(.+)$", block[0])
     if not m:
         continue
 
@@ -97,13 +98,13 @@ for block in blocks:
         channel_blocks[cid] = block
 
 # ================= BUILD OUTPUT =================
-out = [f'#EXTM3U url-tvg="epg/epg_wib_sports.xml"\n']
+out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
 
-# 1️⃣ CHANNEL NORMAL
+# CHANNEL NORMAL
 for block in channel_blocks.values():
     out.extend(block)
 
-# 2️⃣ LIVE EVENTS
+# LIVE EVENTS
 for start, stop, title, cat, cid in sorted(programmes):
     if cid not in channel_blocks:
         continue
@@ -130,4 +131,4 @@ for start, stop, title, cat, cid in sorted(programmes):
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ SUCCESS: M3U + EPG + LIVE EVENT (AMAN TOKEN & DRM)")
+print("✅ SUCCESS: M3U sinkron EPG + LIVE EVENT aktif")
