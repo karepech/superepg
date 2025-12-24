@@ -13,9 +13,7 @@ BASE = Path(__file__).resolve().parent.parent
 
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
-
-MAPPING_DIR = BASE / "mapping"
-LOGO_MAP_FILE = MAPPING_DIR / "logo_channel_map.json"
+LOGO_MAP_FILE = BASE / "mapping" / "logo_channel_map.json"
 
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 
@@ -25,69 +23,16 @@ NOW = datetime.now(TZ)
 # =====================================================
 # HELPER
 # =====================================================
-def parse_time(t: str) -> datetime:
+def parse_time(t):
     dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
     if len(t) > 14:
-        try:
-            sign = 1 if t[14] == "+" else -1
-            hh = int(t[15:17])
-            mm = int(t[17:19])
-            dt = dt.replace(tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm)))
-        except:
-            dt = dt.replace(tzinfo=timezone.utc)
+        sign = 1 if t[14] == "+" else -1
+        hh = int(t[15:17])
+        mm = int(t[17:19])
+        dt = dt.replace(tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm)))
     else:
         dt = dt.replace(tzinfo=timezone.utc)
     return dt.astimezone(TZ)
-
-# =====================================================
-# PARSE M3U (BLOK UTUH)
-# =====================================================
-with open(INPUT_M3U, encoding="utf-8", errors="ignore") as f:
-    lines = f.readlines()
-
-blocks = []
-i = 0
-while i < len(lines):
-    if lines[i].startswith("#EXTINF"):
-        block = [lines[i]]
-        i += 1
-        while i < len(lines):
-            block.append(lines[i])
-            if lines[i].startswith("http"):
-                break
-            i += 1
-        blocks.append(block)
-    i += 1
-
-# =====================================================
-# AUTO BUILD LOGO MAPPING (JIKA BELUM ADA)
-# =====================================================
-MAPPING_DIR.mkdir(exist_ok=True)
-
-if not LOGO_MAP_FILE.exists():
-    print("⚠️ logo_channel_map.json tidak ditemukan, membuat otomatis...")
-    logo_map = defaultdict(list)
-
-    for block in blocks:
-        ext = block[0]
-        m_logo = re.search(r'tvg-logo="([^"]+)"', ext)
-        name = ext.split(",")[-1].strip()
-        if m_logo:
-            logo = m_logo.group(1)
-            logo_map[logo].append(name)
-
-    final_map = {}
-    for idx, (logo, names) in enumerate(logo_map.items(), 1):
-        chid = f"ch_{idx:04d}"
-        final_map[chid] = {
-            "logo": logo,
-            "aliases": list(sorted(set(names)))
-        }
-
-    with open(LOGO_MAP_FILE, "w", encoding="utf-8") as f:
-        json.dump(final_map, f, indent=2, ensure_ascii=False)
-
-    print(f"✅ Mapping dibuat otomatis: {len(final_map)} channel")
 
 # =====================================================
 # LOAD LOGO MAPPING
@@ -98,21 +43,36 @@ with open(LOGO_MAP_FILE, encoding="utf-8") as f:
 LOGO_TO_CHID = {v["logo"]: k for k, v in logo_map.items()}
 
 # =====================================================
+# PARSE M3U → SIMPAN BLOK PER LOGO (URL UTUH)
+# =====================================================
+with open(INPUT_M3U, encoding="utf-8", errors="ignore") as f:
+    lines = f.readlines()
+
+logo_blocks = defaultdict(list)
+
+i = 0
+while i < len(lines):
+    if lines[i].startswith("#EXTINF"):
+        ext = lines[i]
+        block = [ext]
+        i += 1
+        while i < len(lines):
+            block.append(lines[i])
+            if lines[i].startswith("http"):
+                break
+            i += 1
+
+        m = re.search(r'tvg-logo="([^"]+)"', ext)
+        if m:
+            logo_blocks[m.group(1)].append(block)
+    i += 1
+
+# =====================================================
 # LOAD EPG
 # =====================================================
-print("📥 Load EPG")
 root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
 
-epg_channels = {}
 programmes = []
-
-for ch in root.findall("channel"):
-    cid = ch.get("id")
-    name = ch.findtext("display-name", "").strip()
-    logo = ch.find("icon").get("src") if ch.find("icon") is not None else ""
-    if name:
-        epg_channels[cid] = {"name": name, "logo": logo}
-
 for p in root.findall("programme"):
     programmes.append({
         "start": parse_time(p.get("start")),
@@ -123,59 +83,35 @@ for p in root.findall("programme"):
     })
 
 # =====================================================
-# KELOMPOKKAN CHANNEL BERDASARKAN LOGO
-# =====================================================
-channels_by_logo = defaultdict(list)
-
-for block in blocks:
-    ext = block[0]
-    m_logo = re.search(r'tvg-logo="([^"]+)"', ext)
-    if not m_logo:
-        continue
-    logo = m_logo.group(1)
-    if logo in LOGO_TO_CHID:
-        channels_by_logo[LOGO_TO_CHID[logo]].append(block)
-
-# =====================================================
-# BUILD LIVE EVENT
+# BUILD LIVE ONLY
 # =====================================================
 out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
+used_events = set()
 
-live_now = []
-next_live = []
+def add_event(p, label):
+    for logo, blocks in logo_blocks.items():
+        if logo in LOGO_TO_CHID and blocks:
+            blk = blocks[0]  # ambil SATU URL saja
+            key = (label, p["title"], p["start"])
+            if key in used_events:
+                return
+            used_events.add(key)
+
+            title = (
+                f'{label} {p["start"].strftime("%H:%M")} WIB | '
+                f'{p["cat"]} | {p["title"]}'
+            )
+            out.append(
+                f'#EXTINF:-1 group-title="{label}",{title}\n'
+            )
+            out.extend(blk[1:])
+            return
 
 for p in sorted(programmes, key=lambda x: x["start"]):
-    if p["cid"] not in epg_channels:
-        continue
-
-    epg_logo = epg_channels[p["cid"]]["logo"]
-
-    for blocks_list in channels_by_logo.values():
-        for blk in blocks_list:
-            if p["start"] <= NOW < p["stop"]:
-                title = f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | {p["cat"]} | {p["title"]}'
-                live_now.append(
-                    [f'#EXTINF:-1 tvg-logo="{epg_logo}" group-title="LIVE NOW",{title}\n']
-                    + blk[1:]
-                )
-            elif p["start"] > NOW:
-                title = f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | {p["cat"]} | {p["title"]}'
-                next_live.append(
-                    [f'#EXTINF:-1 tvg-logo="{epg_logo}" group-title="NEXT LIVE",{title}\n']
-                    + blk[1:]
-                )
-
-# 🔴 LIVE NOW PALING ATAS
-for blk in live_now:
-    out.extend(blk)
-
-# ⏭️ NEXT LIVE
-for blk in next_live:
-    out.extend(blk)
-
-# 📺 CHANNEL NORMAL (TIDAK DIUBAH)
-for blk in blocks:
-    out.extend(blk)
+    if p["start"] <= NOW < p["stop"]:
+        add_event(p, "LIVE NOW")
+    elif p["start"] > NOW:
+        add_event(p, "NEXT LIVE")
 
 # =====================================================
 # SAVE
@@ -183,4 +119,4 @@ for blk in blocks:
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ SUCCESS: LIVE EVENT JALAN, MAPPING AUTO, TIDAK ERROR")
+print("✅ LIVE NOW & NEXT LIVE ONLY — FILE RINGAN & AMAN")
