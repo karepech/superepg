@@ -1,45 +1,70 @@
+import re
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import requests
 
-# =====================================================
-# KONFIG
-# =====================================================
+# ================= KONFIG =================
 BASE = Path(__file__).resolve().parent.parent
 
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
 
-# EPG SPORTS SAJA (PUNYA KAMU)
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 
 TZ = timezone(timedelta(hours=7))  # WIB
 NOW = datetime.now(TZ)
 
-# =====================================================
-# HELPER PARSE TIME (WIB FIX)
-# =====================================================
-def parse_time(t):
+# ================= HELPER =================
+def norm(txt: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", txt.lower())
+
+def parse_time(t: str) -> datetime:
     dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
     if len(t) > 14:
-        sign = 1 if t[14] == "+" else -1
-        hh = int(t[15:17])
-        mm = int(t[17:19])
-        dt = dt.replace(
-            tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm))
-        )
+        try:
+            sign = 1 if t[14] == "+" else -1
+            hh = int(t[15:17])
+            mm = int(t[17:19])
+            dt = dt.replace(tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm)))
+        except:
+            dt = dt.replace(tzinfo=timezone.utc)
     else:
         dt = dt.replace(tzinfo=timezone.utc)
     return dt.astimezone(TZ)
 
-# =====================================================
-# PARSE M3U → SIMPAN BLOK CHANNEL UTUH
-# =====================================================
+# ================= LOAD EPG =================
+print("📥 Download EPG")
+root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
+
+epg_channels = {}
+programmes = []
+
+for ch in root.findall("channel"):
+    cid = ch.get("id")
+    name = ch.findtext("display-name", "")
+    logo = ch.find("icon").get("src") if ch.find("icon") is not None else ""
+    if name:
+        epg_channels[cid] = {
+            "name": name.strip(),
+            "key": norm(name),
+            "logo": logo
+        }
+
+for p in root.findall("programme"):
+    programmes.append({
+        "start": parse_time(p.get("start")),
+        "stop": parse_time(p.get("stop")),
+        "title": p.findtext("title", "").strip(),
+        "cat": p.findtext("category", "SPORT").strip(),
+        "cid": p.get("channel")
+    })
+
+# ================= PARSE M3U (BLOCK UTUH) =================
 with open(INPUT_M3U, encoding="utf-8", errors="ignore") as f:
     lines = f.readlines()
 
-channels = []
+blocks = []
 i = 0
 while i < len(lines):
     if lines[i].startswith("#EXTINF"):
@@ -50,55 +75,76 @@ while i < len(lines):
             if lines[i].startswith("http"):
                 break
             i += 1
-        channels.append(block)
+        blocks.append(block)
     i += 1
 
-# =====================================================
-# LOAD & PARSE EPG SPORTS
-# =====================================================
-root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
+# key: normalized channel name → block
+m3u_channels = {}
+for block in blocks:
+    m = re.search(r",(.+)$", block[0])
+    if not m:
+        continue
+    name = m.group(1).strip()
+    m3u_channels[norm(name)] = block
+
+# ================= SINKRON CHANNEL NORMAL =================
+for cid, epg in epg_channels.items():
+    key = epg["key"]
+    if key in m3u_channels:
+        blk = m3u_channels[key]
+        blk[0] = (
+            f'#EXTINF:-1 tvg-id="{cid}" '
+            f'tvg-name="{epg["name"]}" '
+            f'tvg-logo="{epg["logo"]}" '
+            f'group-title="SPORTS",{epg["name"]}\n'
+        )
+
+# ================= BUILD OUTPUT =================
+out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
 
 live_now = []
 next_live = []
 
-for p in root.findall("programme"):
-    title = p.findtext("title", "").strip()
-    if not title:
+for p in sorted(programmes, key=lambda x: x["start"]):
+    cid = p["cid"]
+    if cid not in epg_channels:
         continue
 
-    start = parse_time(p.get("start"))
-    stop = parse_time(p.get("stop"))
+    epg = epg_channels[cid]
+    key = epg["key"]
 
-    category = p.findtext("category", "SPORT").strip()
+    if key not in m3u_channels:
+        continue
 
-    if start <= NOW < stop:
-        live_now.append((start, title, category))
-    elif start > NOW:
-        next_live.append((start, title, category))
+    block = m3u_channels[key]
+    logo = epg["logo"]
 
-# =====================================================
-# BUILD PLAYLIST (LIVE ONLY)
-# =====================================================
-out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
+    if p["start"] <= NOW < p["stop"]:
+        title = f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | {p["cat"]} | {p["title"]}'
+        live_now.append(
+            [f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{title}\n'] + block[1:]
+        )
 
-# 🔴 LIVE NOW (PALING ATAS)
-for start, title, cat in sorted(live_now, key=lambda x: x[0]):
-    label = f'LIVE NOW {start.strftime("%H:%M")} WIB | {cat} | {title}'
-    for ch in channels:
-        out.append(f'#EXTINF:-1 group-title="LIVE NOW",{label}\n')
-        out.extend(ch[1:])
+    elif p["start"] > NOW:
+        title = f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | {p["cat"]} | {p["title"]}'
+        next_live.append(
+            [f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{title}\n'] + block[1:]
+        )
 
-# ⏭ NEXT LIVE
-for start, title, cat in sorted(next_live, key=lambda x: x[0]):
-    label = f'NEXT LIVE {start.strftime("%d-%m %H:%M")} WIB | {cat} | {title}'
-    for ch in channels:
-        out.append(f'#EXTINF:-1 group-title="NEXT LIVE",{label}\n')
-        out.extend(ch[1:])
+# 🔴 LIVE NOW PALING ATAS
+for blk in live_now:
+    out.extend(blk)
 
-# =====================================================
-# SAVE
-# =====================================================
+# ⏭️ NEXT LIVE
+for blk in next_live:
+    out.extend(blk)
+
+# 📺 CHANNEL NORMAL
+for blk in m3u_channels.values():
+    out.extend(blk)
+
+# ================= SAVE =================
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ LIVE NOW & NEXT LIVE (EPG SPORTS SAJA) BERHASIL")
+print("✅ SUCCESS: Multi-channel events, LIVE NOW on top, NEXT LIVE below")
