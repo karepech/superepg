@@ -24,7 +24,7 @@ def parse_time(t):
         .replace(tzinfo=timezone.utc) \
         .astimezone(TZ)
 
-# ================= LOAD EPG (REMOTE) =================
+# ================= LOAD EPG =================
 print("📥 Download EPG...")
 resp = requests.get(EPG_URL, timeout=120)
 resp.raise_for_status()
@@ -100,35 +100,34 @@ for block in blocks:
 # ================= BUILD OUTPUT =================
 out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
 
-# CHANNEL NORMAL
+# 1️⃣ CHANNEL NORMAL
 for block in channel_blocks.values():
     out.extend(block)
 
-# LIVE EVENTS
+# 2️⃣ LIVE EVENTS (SALIN BLOK UTUH)
 for start, stop, title, cat, cid in sorted(programmes):
     if cid not in channel_blocks:
         continue
 
-    block = channel_blocks[cid]
-    url_line = block[-1]
+    src_block = channel_blocks[cid]
     logo = epg_by_id[cid]["logo"]
 
     if start <= NOW < stop:
-        name = f"LIVE NOW {start.strftime('%H:%M')} WIB | {cat} | {title}"
+        event_name = f"LIVE NOW {start.strftime('%H:%M')} WIB | {cat} | {title}"
         out.append(
-            f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{name}\n'
+            f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{event_name}\n'
         )
-        out.append(url_line)
+        out.extend(src_block[1:])  # 🔥 SALIN SEMUA BARIS DRM + URL
 
     elif start > NOW:
-        name = f"NEXT LIVE {start.strftime('%d-%m %H:%M')} WIB | {cat} | {title}"
+        event_name = f"NEXT LIVE {start.strftime('%d-%m %H:%M')} WIB | {cat} | {title}"
         out.append(
-            f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{name}\n'
+            f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{event_name}\n'
         )
-        out.append(url_line)
+        out.extend(src_block[1:])  # 🔥 SALIN SEMUA BARIS DRM + URL
 
 # ================= SAVE =================
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ SUCCESS: M3U sinkron EPG + LIVE EVENT aktif")
+print("✅ SUCCESS: LIVE EVENT FULL DRM AMAN, TIDAK ERROR")
