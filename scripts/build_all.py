@@ -3,6 +3,7 @@ import json
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from collections import defaultdict
 import requests
 
 # =====================================================
@@ -13,7 +14,9 @@ BASE = Path(__file__).resolve().parent.parent
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
 
-LOGO_MAP_FILE = BASE / "mapping" / "logo_channel_map.json"
+MAPPING_DIR = BASE / "mapping"
+LOGO_MAP_FILE = MAPPING_DIR / "logo_channel_map.json"
+
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 
 TZ = timezone(timedelta(hours=7))  # WIB
@@ -30,48 +33,11 @@ def parse_time(t: str) -> datetime:
             hh = int(t[15:17])
             mm = int(t[17:19])
             dt = dt.replace(tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm)))
-        except Exception:
+        except:
             dt = dt.replace(tzinfo=timezone.utc)
     else:
         dt = dt.replace(tzinfo=timezone.utc)
     return dt.astimezone(TZ)
-
-# =====================================================
-# LOAD LOGO MAPPING
-# =====================================================
-with open(LOGO_MAP_FILE, encoding="utf-8") as f:
-    logo_map = json.load(f)
-
-# logo_url -> channel_id
-LOGO_TO_CHID = {v["logo"]: k for k, v in logo_map.items()}
-
-# =====================================================
-# LOAD EPG
-# =====================================================
-print("📥 Load EPG")
-root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
-
-epg_channels = {}
-programmes = []
-
-for ch in root.findall("channel"):
-    cid = ch.get("id")
-    name = ch.findtext("display-name", "").strip()
-    logo = ch.find("icon").get("src") if ch.find("icon") is not None else ""
-    if name:
-        epg_channels[cid] = {
-            "name": name,
-            "logo": logo
-        }
-
-for p in root.findall("programme"):
-    programmes.append({
-        "start": parse_time(p.get("start")),
-        "stop": parse_time(p.get("stop")),
-        "title": p.findtext("title", "").strip(),
-        "cat": p.findtext("category", "SPORT").strip(),
-        "cid": p.get("channel")
-    })
 
 # =====================================================
 # PARSE M3U (BLOK UTUH)
@@ -94,22 +60,81 @@ while i < len(lines):
     i += 1
 
 # =====================================================
+# AUTO BUILD LOGO MAPPING (JIKA BELUM ADA)
+# =====================================================
+MAPPING_DIR.mkdir(exist_ok=True)
+
+if not LOGO_MAP_FILE.exists():
+    print("⚠️ logo_channel_map.json tidak ditemukan, membuat otomatis...")
+    logo_map = defaultdict(list)
+
+    for block in blocks:
+        ext = block[0]
+        m_logo = re.search(r'tvg-logo="([^"]+)"', ext)
+        name = ext.split(",")[-1].strip()
+        if m_logo:
+            logo = m_logo.group(1)
+            logo_map[logo].append(name)
+
+    final_map = {}
+    for idx, (logo, names) in enumerate(logo_map.items(), 1):
+        chid = f"ch_{idx:04d}"
+        final_map[chid] = {
+            "logo": logo,
+            "aliases": list(sorted(set(names)))
+        }
+
+    with open(LOGO_MAP_FILE, "w", encoding="utf-8") as f:
+        json.dump(final_map, f, indent=2, ensure_ascii=False)
+
+    print(f"✅ Mapping dibuat otomatis: {len(final_map)} channel")
+
+# =====================================================
+# LOAD LOGO MAPPING
+# =====================================================
+with open(LOGO_MAP_FILE, encoding="utf-8") as f:
+    logo_map = json.load(f)
+
+LOGO_TO_CHID = {v["logo"]: k for k, v in logo_map.items()}
+
+# =====================================================
+# LOAD EPG
+# =====================================================
+print("📥 Load EPG")
+root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
+
+epg_channels = {}
+programmes = []
+
+for ch in root.findall("channel"):
+    cid = ch.get("id")
+    name = ch.findtext("display-name", "").strip()
+    logo = ch.find("icon").get("src") if ch.find("icon") is not None else ""
+    if name:
+        epg_channels[cid] = {"name": name, "logo": logo}
+
+for p in root.findall("programme"):
+    programmes.append({
+        "start": parse_time(p.get("start")),
+        "stop": parse_time(p.get("stop")),
+        "title": p.findtext("title", "").strip(),
+        "cat": p.findtext("category", "SPORT").strip(),
+        "cid": p.get("channel")
+    })
+
+# =====================================================
 # KELOMPOKKAN CHANNEL BERDASARKAN LOGO
 # =====================================================
-channels_by_logo = {}  # chid -> list of blocks
+channels_by_logo = defaultdict(list)
 
 for block in blocks:
     ext = block[0]
     m_logo = re.search(r'tvg-logo="([^"]+)"', ext)
     if not m_logo:
         continue
-
     logo = m_logo.group(1)
-    if logo not in LOGO_TO_CHID:
-        continue
-
-    chid = LOGO_TO_CHID[logo]
-    channels_by_logo.setdefault(chid, []).append(block)
+    if logo in LOGO_TO_CHID:
+        channels_by_logo[LOGO_TO_CHID[logo]].append(block)
 
 # =====================================================
 # BUILD LIVE EVENT
@@ -148,7 +173,7 @@ for blk in live_now:
 for blk in next_live:
     out.extend(blk)
 
-# 📺 CHANNEL NORMAL (SEMUA, NAMA TETAP)
+# 📺 CHANNEL NORMAL (TIDAK DIUBAH)
 for blk in blocks:
     out.extend(blk)
 
@@ -158,4 +183,4 @@ for blk in blocks:
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ SUCCESS: LIVE EVENT TERBARU TERINTEGRASI (NAMA TETAP)")
+print("✅ SUCCESS: LIVE EVENT JALAN, MAPPING AUTO, TIDAK ERROR")
