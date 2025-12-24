@@ -113,4 +113,21 @@ for p in sorted(programmes, key=lambda x: x["start"]):
             )
 
         elif p["start"] > NOW:
-            title = f'NEXT LIVE {p["start"].
+            title = f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | {p["cat"]} | {p["title"]}'
+            next_live.append(
+                [f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{title}\n'] + block[1:]
+            )
+
+# 🔴 LIVE NOW
+for blk in live_now:
+    out.extend(blk)
+
+# ⏭ NEXT LIVE
+for blk in next_live:
+    out.extend(blk)
+
+# ================= SAVE =================
+with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
+    f.writelines(out)
+
+print("✅ FINAL: HANYA LIVE NOW & NEXT LIVE | TANPA CHANNEL NORMAL")
