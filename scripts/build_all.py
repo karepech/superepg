@@ -11,7 +11,7 @@ INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
 
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
-NEXT_LIVE_URL = "https://bwifi.my.id/hls/playlist.m3u"
+NEXT_LIVE_URL = "https://bwifi.my.id/hls/video.m3u8"
 
 WIB = timezone(timedelta(hours=7))
 NOW = datetime.now(WIB)
