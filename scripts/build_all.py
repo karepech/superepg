@@ -27,17 +27,43 @@ REPLAY_KEYWORDS = [
 
 MATCH_SIGNS = [" vs ", " v ", " @ ", " - "]
 
+MAJOR_SPORTS = [
+    # Football – dunia
+    "premier league", "epl",
+    "la liga", "laliga",
+    "serie a",
+    "bundesliga",
+    "ligue 1",
+    "champions league", "uefa champions",
+    "europa league", "conference league",
+    "world cup", "euro", "copa america",
+    "afc champions", "club world cup",
+
+    # Football – Indonesia
+    "liga 1", "liga 2", "bri liga", "liga indonesia",
+
+    # Badminton
+    "badminton", "bwf",
+    "thomas cup", "uber cup", "sudirman cup",
+    "all england", "indonesia open", "malaysia open",
+    "china open", "japan open",
+
+    # Volleyball
+    "volleyball", "volley", "voli",
+    "vnl", "volleyball nations league",
+    "world championship", "avc", "proliga",
+
+    # MotoGP & Motorsport
+    "motogp", "moto gp",
+    "motogp race", "motogp sprint", "motogp qualifying",
+    "moto2", "moto3",
+    "grand prix", "gp race",
+    "world superbike", "wsbk"
+]
+
 # ================= HELPER =================
 def norm(txt: str) -> str:
     return re.sub(r"[^a-z0-9]", "", txt.lower())
-
-def is_replay(title: str) -> bool:
-    t = title.lower()
-    return any(k in t for k in REPLAY_KEYWORDS)
-
-def looks_like_match(title: str) -> bool:
-    t = title.lower()
-    return any(s in t for s in MATCH_SIGNS)
 
 def parse_time(t: str) -> datetime:
     dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
@@ -54,6 +80,18 @@ def parse_time(t: str) -> datetime:
     else:
         dt = dt.replace(tzinfo=timezone.utc)
     return dt.astimezone(TZ)
+
+def is_replay(title: str) -> bool:
+    t = title.lower()
+    return any(k in t for k in REPLAY_KEYWORDS)
+
+def looks_like_match(title: str) -> bool:
+    t = title.lower()
+    return any(s in t for s in MATCH_SIGNS)
+
+def is_target_sport(title: str, category: str) -> bool:
+    text = f"{title} {category}".lower()
+    return any(k in text for k in MAJOR_SPORTS)
 
 # ================= LOAD EPG =================
 root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
@@ -77,17 +115,21 @@ for p in root.findall("programme"):
     if not title:
         continue
 
-    # ❌ buang siaran ulang & non-pertandingan
     if is_replay(title):
         continue
+
     if not looks_like_match(title):
+        continue
+
+    category = p.findtext("category", "SPORT").strip()
+    if not is_target_sport(title, category):
         continue
 
     programmes.append({
         "start": parse_time(p.get("start")),
         "stop": parse_time(p.get("stop")),
         "title": title,
-        "cat": p.findtext("category", "SPORT").strip(),
+        "cat": category,
         "cid": p.get("channel")
     })
 
@@ -109,7 +151,7 @@ while i < len(lines):
         blocks.append(block)
     i += 1
 
-# key: normalized channel name → list of blocks
+# key: normalized channel name → list of blocks (duplikat aman)
 m3u_channels = {}
 for block in blocks:
     m = re.search(r",(.+)$", block[0])
@@ -137,7 +179,7 @@ for p in sorted(programmes, key=lambda x: x["start"]):
     for block in m3u_channels[key]:
         logo = epg["logo"]
 
-        # 🔴 LIVE NOW (LIVE ASLI)
+        # 🔴 LIVE NOW
         if (p["start"] - PRELIVE) <= NOW < (p["stop"] + POSTLIVE):
             title = (
                 f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | '
@@ -171,4 +213,4 @@ for blk in next_live:
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ FINAL: HANYA LIVE PERTANDINGAN ASLI (NO REPLAY)")
+print("✅ FINAL: LIVE MATCH ONLY (FOOTBALL + BADMINTON + VOLLEY + MOTOGP)")
