@@ -1,50 +1,38 @@
-name: Build IPTV (EPG Sync & Live Event)
+name: Build Live EPG
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - "scripts/**"
-      - "live_epg_sports.m3u"
-      - "requirements.txt"
-
   schedule:
     - cron: "0 */6 * * *"
-
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install requests
 
-      - name: Build M3U (EPG Sync + Live Event)
-        run: python scripts/build_all.py
-
-      - name: Commit result if changed
+      - name: Build logo mapping
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
+          python mapping/build_logo_mapping.py
 
-          git add live_all.m3u
+      - name: Build live playlist
+        run: |
+          python scripts/build_all.py
 
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Auto update M3U (EPG sync & live event)"
-            git push
-          fi
+      - name: Commit result
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Auto update live playlist" || echo "No changes"
+          git push
