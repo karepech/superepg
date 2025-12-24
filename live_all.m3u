@@ -207,18 +207,40 @@ https://cdnjkt913.transvision.co.id:1000/live/master/3/4028c68571b3914b01720e7ff
 #EXTINF:-1 tvg-id="411949" tvg-name="Horizon Sports" tvg-logo="" group-title="SPORTS",Horizon Sports
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/horizon-sports/master.m3u8
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 14:00 WIB | SPORT | AFC Champions League (L)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 9; SM-A730F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=39c4dc6704cf4ceea2fd4863b88d8a7d:4e9d7954c2ff46759289da4fc9f018ea
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
 https://d2tjypxxy769fn.cloudfront.net/out/v1/89a6e4261cd7470f83e5869e90440cff/index.mpd 
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 14:29 WIB | SPORT | The Outdoor Sports Show 2025 - Episode 11
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/horizon-sports/master.m3u8
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 14:48 WIB | SPORT | AFCON 2025: RSA Vs ANG (L)
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=3ae6a430c1b8420ea280e317143d8d3a:142473ee925db0db0083c74a178c8298
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/3b0660e05eed4d769521eb0275aab3ab/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 18:00 WIB | SPORT | PGA Champions '25 PNC Champs D3
 https://cdnjkt913.transvision.co.id:1000/live/master/3/4028c68571b3914b01720e7ff4376d21/manifest.mpd
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 18:45 WIB | SPORT | Benfica Lisbonne / Famalicao
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=3d756d566ca94e6499518ffb1474d5d0:dbe4ad6803e74739b8f954d23cc58e7b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 19:30 WIB | SPORT | Course dames
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=05165a7d627cad792decdb1e7a4e18d3:72122ff50e1fdc072827039b7ca2fac8
 https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/0woud0fpbk/out/v1/19de3da8f2494fc1a1841c41d460b956/cenc.mpd
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 20:00 WIB | SPORT | PL: Leeds vs Crystal Palace
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=bb2dc3cfa3024039ae59b55e6b0b5de5:03d25d6ceb16fc4e007697e9d2124fac
+#https://get.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=epl1fhd
 https://raw.githubusercontent.com/hnnyo/anyar/refs/heads/main/pl1.m3u8
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 21:00 WIB | SPORT | Motorsport: Indy Car Series
 http://line.extraott-iptv.com:88/2755789541/1300714776/153701
@@ -227,466 +249,971 @@ https://raw.githubusercontent.com/DonzCompIndonesia/donztelevision/refs/heads/ma
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 21:00 WIB | SPORT | World Rugby Sevens Series
 http://line.extraott-iptv.com:88/2755789541/1300714776/189891
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 21:30 WIB | SPORT | The Big Interview:
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 http://my.bianet.es.vip.hk:80///p//y/kontol26/709260
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 00:00 WIB | SPORT | To Be Announced
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=322d06e9326f4753a7ec0908030c13d8:1e3e0ca32d421fbfec86feced0efefda
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesportsplus_hd1/default/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="LIVE NOW",LIVE NOW 06:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="" group-title="LIVE NOW",LIVE NOW 09:30 WIB | SPORT | [無料]杏ちゃん＆しんやの高校ラグビーはじまるよ【花園2025開幕スペシャル】
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NOW",LIVE NOW 09:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="LIVE NOW",LIVE NOW 09:30 WIB | SPORT | Bundesliga 2025/26: Leipzig vs Leverkusen
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 10:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 10:00 WIB | SPORT | [初]高校バスケ ウインターカップ2025 #2 男子1回戦 米子東×藤枝明誠
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 24-12 10:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 10:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 11:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 11:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 11:30 WIB | SPORT | UEFA Women's Champions League 2025/26: Lyon vs Atletico Madrid - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 11:45 WIB | SPORT | [初]高校バスケウインターカップ2025 #4 男子1回戦 土浦日本大学×宇部工業
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 12:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 12:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 13:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 13:30 WIB | SPORT | MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 13:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 13:30 WIB | SPORT | [初]高校バスケ ウインターカップ2025 #10 男子1回戦 福大大濠×報徳学園
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 14:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 14:00 WIB | SPORT | UEFA Conference League 2025/26: Sparta Prague vs Aberdeen - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 24-12 14:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 14:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 15:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 15:15 WIB | SPORT | SUPER GT 2025【ダイジェスト】第8戦 モビリティリゾートもてぎ(11/2)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 15:30 WIB | SPORT | ワールド・オブ・フリースポーツ #8【カヤック】
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 15:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 16:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 16:00 WIB | SPORT | UEFA Women's Champions League 2025/26: Bayern vs Valerenga - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 16:00 WIB | SPORT | 休止
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 16:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 17:00 WIB | SPORT | 走進訓練場 第6集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 17:30 WIB | SPORT | NBA動態 第3509集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 18:00 WIB | SPORT | PSG TV Specials 2025/26
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 18:00 WIB | SPORT | 走進訓練場 第6集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 24-12 18:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 18:30 WIB | SPORT | NBA動態 第3509集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 18:30 WIB | SPORT | This Is Paris 2025/26
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 18:50 WIB | SPORT | MOTOR GAMES #612
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 19:00 WIB | SPORT | PSG TV 2025/26: Vendee Fontenay Foot vs PSG - Coupe de France
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 19:00 WIB | SPORT | 今日NBA[直播]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 19:20 WIB | SPORT | [初]高校バスケ ウインターカップ2025 #12 男子1回戦 宇都宮工業×羽黒
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 21:00 WIB | SPORT | UECL MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 21:00 WIB | SPORT | 賽前熱身[直播]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 21:05 WIB | SPORT | [初]高校バスケウインターカップ2025 男子1回戦 四日市メリノール学院×福岡第一
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 22:00 WIB | SPORT | December
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 24-12 22:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 22:30 WIB | SPORT | 走進訓練場 第7集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 24-12 22:30 WIB | SPORT | UEFA Conference League 2025/26: AZ Alkmaar vs Jagiellonia Bialystok - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 24-12 22:50 WIB | SPORT | 第77回全日本大学バスケットボール選手権男子3位決定戦 日本経済大学×東海大学
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 23:00 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 00:00 WIB | SPORT | 籃球聯盟[直播]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 00:20 WIB | SPORT | Anderlecht vs PSG (2013/14)
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 00:30 WIB | SPORT | Recap Swiss Epic Season 2025 Recap & Season 2026 Preview
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 00:50 WIB | SPORT | 第77回全日本大学バスケットボール選手権 男子決勝 早稲田大学×白鴎大学
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 01:00 WIB | SPORT | Arcadia, California
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 01:30 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 02:00 WIB | SPORT | Miami
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 25-12 02:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 02:30 WIB | SPORT | This Is Paris 2025/26
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 02:30 WIB | SPORT | 籃球廣播室 第1集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 02:50 WIB | SPORT | 【45分】ラグビーリーグワン2025-26 D1 第2節 三重×神戸
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 03:00 WIB | SPORT | TotalEnergies Africa Cup of Nations, Morocco 2025: Senegal vs Botswana - Group S
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 03:00 WIB | SPORT | HARDWOOD經典
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 03:35 WIB | SPORT | 【45分】ラグビーリーグワン2025-26 D1 第2節 相模原×横浜
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 04:20 WIB | SPORT | [無料]【白銀の頂へ！】FISワールドカップ2025/26 ナビ
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 04:35 WIB | SPORT | [生]高校バスケ ウインターカップ2025(12/24 Bコート)男子1回戦
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 04:50 WIB | SPORT | Barcelona vs Lyon (2001/02)
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 05:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 05:00 WIB | SPORT | Cape to Cape
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 05:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 06:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 06:00 WIB | SPORT | UEFA Champions League 2025/26: Athletic Bilbao vs PSG - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 25-12 06:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 06:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 07:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 07:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 07:50 WIB | SPORT | UEFA Champions League 2025/26: Leverkusen vs Newcastle - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 08:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 08:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 09:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 09:00 WIB | SPORT | 野球好き 2025シーズンレビュー #1【2002年度世代選手 大集合】
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 09:30 WIB | SPORT | ガンバレ日本プロ野球!?リターンズ25/26 #2【中田翔編】
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 09:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 09:40 WIB | SPORT | UEFA Champions League 2025/26: Real Madrid vs Man City - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 10:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 10:00 WIB | SPORT | 中日ドラゴンズ ファンフェスタ2025
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 25-12 10:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 10:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 11:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 11:00 WIB | SPORT | [初]サッカーニュース Foot!超高校サッカー通信(12/24)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 11:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 11:30 WIB | SPORT | PSG TV 2025/26: Vendee Fontenay Foot vs PSG - Coupe de France
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 11:45 WIB | SPORT | [無料]ラグビー わんだほー！〜ラグビー情報番組〜 #114
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 12:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 12:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 12:45 WIB | SPORT | [無料]フリースタイルスキー FIS W杯25/26【男女SX】イニヒェン(12/21)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 13:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 13:30 WIB | SPORT | Recap Swiss Epic Season 2025 Recap & Season 2026 Preview
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 13:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 14:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 14:00 WIB | SPORT | UEFA Conference League 2025/26: AEK Athens vs Craiova - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 25-12 14:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 14:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 14:45 WIB | SPORT | スーパーフォーミュラ2025【ダイジェスト】第11戦 鈴鹿サーキット
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 15:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 15:00 WIB | SPORT | [無料]エクストリームH 2025【ハイライト】サウジアラビア
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 15:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 16:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 16:00 WIB | SPORT | UEFA Women's Champions League 2025/26: Twente vs Real Madrid - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 16:00 WIB | SPORT | 休止
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 16:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 17:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 17:30 WIB | SPORT | 籃球廣播室 第2集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 18:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 18:00 WIB | SPORT | Women's Super League 2025/26: Everton vs Arsenal
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 25-12 18:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 18:30 WIB | SPORT | 籃球廣播室 第2集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 19:00 WIB | SPORT | HARDWOOD經典
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 19:00 WIB | SPORT | スノーボード FIS W杯25/26【男女HP】カッパーマウンテン(12/19)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 20:00 WIB | SPORT | Star Maker: The Jimmy Murphy Story
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 21:00 WIB | SPORT | Arcadia, California
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 21:00 WIB | SPORT | HARDWOOD經典
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 22:00 WIB | SPORT | Documentary
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 22:00 WIB | SPORT | インフォメーション
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 25-12 22:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 22:30 WIB | SPORT | 【45分】ラグビーリーグワン2025-26 D1 第2節 埼玉×浦安
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 25-12 22:30 WIB | SPORT | UEFA Conference League 2025/26: Crystal Palace vs KuPS - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 23:00 WIB | SPORT | 史提芬居里
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 25-12 23:15 WIB | SPORT | 第77回全日本大学バスケットボール選手権 男子決勝 早稲田大学×白鴎大学
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 25-12 23:30 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 00:20 WIB | SPORT | UEFA Women's Champions League 2025/26: Roma vs St Polten - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 00:30 WIB | SPORT | NBA動態 第3510集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 01:00 WIB | SPORT | HARDWOOD經典
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 26-12 01:15 WIB | SPORT | [生]高校バスケ ウインターカップ2025(12/25 Bコート)男子2回戦
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 26-12 02:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 02:10 WIB | SPORT | Supporting Each Other
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 02:30 WIB | SPORT | Man United vs Bournemouth
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 03:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 03:00 WIB | SPORT | MUTV 2025/26: Aston Villa vs Man United
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 03:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 04:00 WIB | SPORT | NBA動態 第3510集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 04:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 05:00 WIB | SPORT | Aston Villa vs Man United
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 05:00 WIB | SPORT | 史提芬居里
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 05:30 WIB | SPORT | Christmas Special Edition
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 05:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 06:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 06:00 WIB | SPORT | UEFA Champions League 2025/26: Benfica vs Napoli - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 26-12 06:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 06:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 07:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 07:30 WIB | SPORT | NBA動態 第3510集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 07:50 WIB | SPORT | UEFA Champions League 2025/26: Juventus vs Pafos - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 08:00 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 09:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 26-12 09:00 WIB | SPORT | サッカーニュース Foot!超高校サッカー通信(12/24)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 09:30 WIB | SPORT | 史提芬居里
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 09:40 WIB | SPORT | UEFA Champions League 2025/26: Club Brugge vs Arsenal - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 26-12 09:45 WIB | SPORT | [無料]【白銀の頂へ！】FISワールドカップ2025/26 ナビ
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 10:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 26-12 10:00 WIB | SPORT | [初]高円宮杯第37回全日本U-15サッカー選手権 準決勝-1
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 26-12 10:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 10:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 11:00 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 11:30 WIB | SPORT | Tue,MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 26-12 12:15 WIB | SPORT | [初]高円宮杯第37回全日本U-15サッカー選手権 準決勝-2
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 12:30 WIB | SPORT | Wed,MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 13:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 13:30 WIB | SPORT | December
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 13:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 14:00 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 14:00 WIB | SPORT | UEFA Conference League 2025/26: Larnaca vs Shkendija - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 26-12 14:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 26-12 14:30 WIB | SPORT | J SPORTS セレクション
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 26-12 15:00 WIB | SPORT | インタープロトシリーズ2025【ハイライト】第3戦 富士
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 26-12 15:30 WIB | SPORT | MOTOR GAMES #612
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 16:00 WIB | SPORT | 史提芬居里
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 16:00 WIB | SPORT | UEFA Women's Champions League 2025/26: Juventus vs Man United - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="NEXT LIVE",NEXT LIVE 26-12 16:00 WIB | SPORT | 休止
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=9009b7189e3e68cc09d17811f2beb55a:dd3f96a94c909da48ff40c92aabf8cf3
 https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it8k/out/v1/b77dd424c745443aba2f3f88d418f797/cenc-sd.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 16:30 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 18:00 WIB | SPORT | Women's Super League 2025/26: Man City vs Aston Villa
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 26-12 18:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 18:30 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 20:00 WIB | SPORT | La Philosophie de Cantona: The Rebel Speaks
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 20:30 WIB | SPORT | 籃球廣播室 第2集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 21:00 WIB | SPORT | Midseason Review I & II
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 21:00 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 22:00 WIB | SPORT | Rolex Middle Sea Race
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 26-12 22:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 26-12 22:30 WIB | SPORT | UEFA Conference League 2025/26: Shakhtar vs Rijeka - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 26-12 23:00 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 00:20 WIB | SPORT | UEFA Women's Champions League 2025/26: Bayern vs Valerenga - MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 01:00 WIB | SPORT | NBA攻守時間
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 27-12 02:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 02:10 WIB | SPORT | Trailblazers
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 02:30 WIB | SPORT | Rolex Middle Sea Race
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 03:00 WIB | SPORT | 史提芬居里
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 03:00 WIB | SPORT | TotalEnergies Africa Cup of Nations, Morocco 2025: Cameroon vs Gabon - Group Sta
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 03:30 WIB | SPORT | 教練講場 第6集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 04:00 WIB | SPORT | NBA動態 第3510集
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 04:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 04:50 WIB | SPORT | PSV vs Milan (2008/09)
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 05:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 05:00 WIB | SPORT | PSG TV 2025/26: Vendee Fontenay Foot vs PSG - Coupe de France
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 05:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 06:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 27-12 06:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 06:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 07:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 07:00 WIB | SPORT | Tue,MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 07:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 08:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 08:00 WIB | SPORT | Wed,MD6
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 08:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 09:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 09:00 WIB | SPORT | Midseason Review I & II
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 09:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 10:00 WIB | SPORT | Man United vs Bournemouth
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 10:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129195352224329_86" group-title="NEXT LIVE",NEXT LIVE 27-12 10:00 WIB | SPORT | 請留意下場播映賽事
 http://superintendent.whatevergos.com:8080/ABDULLAH/aHVzDrpCMh/142760
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 10:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 10:30 WIB | SPORT | MUTV 2025/26: Aston Villa vs Man United
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 11:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 11:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 12:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 12:30 WIB | SPORT | Aston Villa vs Man United
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 12:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 13:00 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/02/12/20250212042744660836_80.png" group-title="NEXT LIVE",NEXT LIVE 27-12 13:00 WIB | SPORT | Midseason Review I & II
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 27-12 13:30 WIB | SPORT | 籃球聯盟
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
