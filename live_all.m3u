@@ -1,129 +1,131 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 04:10 WIB | TotalEnergies Africa Cup of Nations, Morocco : Senegal Vs Botswana - Group Stage
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 01:30 WIB | UEFA Women's Champions League : Roma Vs St Polten - MD6
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 04:10 WIB | MUTV : Aston Villa Vs Man United
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 01:30 WIB | UEFA Women's Champions League : Bayern Vs Valerenga - MD6
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 04:10 WIB | TotalEnergies Africa Cup of Nations, Morocco : Cameroon Vs Gabon - Group Stage
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="LIVE NOW",LIVE NOW 18:10 WIB | BWF World Tour: Grp Stage: Crt 1
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=0bbb23a5ad81427fa6817864b2383402:81e055a8d6ddf6392ae9033f0f037b98
 https://load.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=badmintonhd|user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
-#EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 24-12 23:10 WIB | BWF: US Open: HL
-https://bwifi.my.id/hls/playlist.m3u
+#EXTINF:-1 group-title="LIVE NOW",LIVE NOW 23:10 WIB | BWF: US Open: HL
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=0bbb23a5ad81427fa6817864b2383402:81e055a8d6ddf6392ae9033f0f037b98
+https://load.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=badmintonhd|user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 00:10 WIB | BWF: Malaysia Masters: Finals: HL
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 01:10 WIB | BWF World Tour: SF 1
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 06:10 WIB | BWF: Indonesia Open: HL
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 07:10 WIB | BWF: Taipei Open: HL
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 08:10 WIB | BWF World Tour: SF 2
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 13:10 WIB | BWF: Macau Open: HL
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 14:10 WIB | BWF Sudirman Cup: Final: HL
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 15:10 WIB | BWF World Tour 2025: Pre-Show
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 15:40 WIB | BWF World Tour 2025: Finals
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 20:40 WIB | Badminton Unlimited: Episode 11
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 21:10 WIB | BWF: Arctic Open: Rd16
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 04:10 WIB | BWF: Arctic Open: QF
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 12:55 WIB | BWF: Arctic Open: SF 1
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 18:25 WIB | BWF: Arctic Open: SF 2
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 21:25 WIB | BWF: Arctic Open: Finals
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 03:10 WIB | BWF India Open: HL
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 04:10 WIB | BWF: French Open: HL
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 05:10 WIB | BWF: World Championships: HL
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 06:10 WIB | BWF Australian Open: HL
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 07:40 WIB | Badminton Unlimited: Episode 11
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 08:10 WIB | BWF Japan Masters: Rd16
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 01:30 WIB | Anderlecht vs PSG (2013/14)
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 04:10 WIB | TotalEnergies Africa Cup of Nations, Morocco 2025: Senegal vs Botswana - Group S
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 01:30 WIB | UEFA Women's Champions League 2025/26: Roma vs St Polten - MD6
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 03:40 WIB | Man United vs Bournemouth
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 04:10 WIB | MUTV 2025/26: Aston Villa vs Man United
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 01:30 WIB | UEFA Women's Champions League 2025/26: Bayern vs Valerenga - MD6
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 04:10 WIB | TotalEnergies Africa Cup of Nations, Morocco 2025: Cameroon vs Gabon - Group Sta
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 01:40 WIB | Match Hls 25/26: MW17: Fulham Vs Nottingham
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 01:40 WIB | Match Hls 25/26: MW17: Fulham Vs Nottingham
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 03:10 WIB | Match Hls 25/26: MW17: Brighton Vs Sunderland
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 03:10 WIB | Match Hls 25/26: MW17: Brighton Vs Sunderland
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 01:10 WIB | FA Cup: Brackley vs Notts County
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 01:10 WIB | FA Cup: Brackley vs Notts County
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 04:00 WIB | Carabao Cup: Arsenal vs Crystal Palace
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 04:00 WIB | Carabao Cup: Arsenal vs Crystal Palace
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 00:25 WIB | Dutch: Heerenveen vs PSV
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 00:25 WIB | Dutch: Heerenveen vs PSV
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 02:40 WIB | Dutch: Fortuna Sittard vs Ajax
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 02:40 WIB | Dutch: Fortuna Sittard vs Ajax
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 05:10 WIB | DFB: Dortmund vs Leverkusen
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 05:10 WIB | DFB: Dortmund vs Leverkusen
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 00:25 WIB | Dutch: PSV vs Volendam
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 00:25 WIB | Dutch: PSV vs Volendam
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 02:10 WIB | DFB: Freiburg vs Darmstadt
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 02:10 WIB | DFB: Freiburg vs Darmstadt
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 05:40 WIB | DFB: Hamburger vs Holstein
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 05:40 WIB | DFB: Hamburger vs Holstein
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 02:20 WIB | EASL: Fubon Braves vs SK Knights
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 00:10 WIB | PL: Man City vs West Ham
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 02:20 WIB | PL: Tottenham vs Liverpool
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 25-12 05:50 WIB | Match HL 2025/26: WK17: MCI vs WHU
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 02:20 WIB | PL: Fulham vs Nottm Forest
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 26-12 04:30 WIB | PL: Bournemouth vs Burnley
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 02:30 WIB | PL: Everton vs Arsenal
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
 #EXTINF:-1 group-title="NEXT LIVE",NEXT LIVE 27-12 05:40 WIB | PL: Fulham vs Nottm Forest
-https://bwifi.my.id/hls/playlist.m3u
+https://bwifi.my.id/hls/video.m3u8
