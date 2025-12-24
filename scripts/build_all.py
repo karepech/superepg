@@ -11,6 +11,7 @@ BASE = Path(__file__).resolve().parent.parent
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
 
+# EPG SPORTS SAJA (PUNYA KAMU)
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 
 TZ = timezone(timedelta(hours=7))  # WIB
@@ -53,7 +54,7 @@ while i < len(lines):
     i += 1
 
 # =====================================================
-# LOAD & PARSE EPG
+# LOAD & PARSE EPG SPORTS
 # =====================================================
 root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
 
@@ -67,12 +68,13 @@ for p in root.findall("programme"):
 
     start = parse_time(p.get("start"))
     stop = parse_time(p.get("stop"))
-    cat = p.findtext("category", "SPORT").strip()
+
+    category = p.findtext("category", "SPORT").strip()
 
     if start <= NOW < stop:
-        live_now.append((start, title, cat))
+        live_now.append((start, title, category))
     elif start > NOW:
-        next_live.append((start, title, cat))
+        next_live.append((start, title, category))
 
 # =====================================================
 # BUILD PLAYLIST (LIVE ONLY)
@@ -99,4 +101,4 @@ for start, title, cat in sorted(next_live, key=lambda x: x[0]):
 with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.writelines(out)
 
-print("✅ LIVE NOW & NEXT LIVE ONLY — SEMUA CHANNEL TAMPIL, TANPA ERROR")
+print("✅ LIVE NOW & NEXT LIVE (EPG SPORTS SAJA) BERHASIL")
