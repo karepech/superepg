@@ -1,9 +1,7 @@
-import re
+import re, random, requests
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-import requests
-from collections import defaultdict
 
 # ================= CONFIG =================
 BASE = Path(__file__).resolve().parent.parent
@@ -13,216 +11,155 @@ OUTPUT_M3U = BASE / "live_all.m3u"
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 NEXT_LIVE_URL = "https://bwifi.my.id/hls/video.m3u8"
 
-DEBUG = True   # ⬅️ MATIKAN jika sudah puas (False)
-
-WIB = timezone(timedelta(hours=7))
-NOW = datetime.now(WIB)
-CURRENT_YEAR = NOW.year
+TZ = timezone(timedelta(hours=7))
+NOW = datetime.now(TZ)
 
 PRELIVE = timedelta(minutes=5)
-MAX_DAYS = 3
+SOCCER_MAX = timedelta(hours=2)
+RACE_MAX = timedelta(hours=4)
 
-BAD_WORDS = [
-    "replay","rerun","highlight","highlights",
-    "recap","review","classic",
-    " hl"," hls"
-]
-
-# ================= UTIL =================
-def log(msg):
-    if DEBUG:
-        print(msg)
-
-def norm(t):
+# ================= HELPER =================
+def norm(t): 
     return re.sub(r"[^a-z0-9]", "", t.lower())
 
 def parse_time(t):
     dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
-    if len(t) >= 19:
+    tz = timezone.utc
+    if len(t) > 14:
         sign = 1 if t[14] == "+" else -1
-        hh = int(t[15:17])
-        mm = int(t[17:19])
-        dt = dt.replace(tzinfo=timezone(sign * timedelta(hours=hh, minutes=mm)))
-    else:
-        dt = dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(WIB)
+        tz = timezone(sign * timedelta(hours=int(t[15:17]), minutes=int(t[17:19])))
+    return dt.replace(tzinfo=tz).astimezone(TZ)
 
-def extract_logo(extinf):
-    m = re.search(r'tvg-logo="([^"]+)"', extinf)
-    return m.group(1) if m else ""
+def has_year(title):
+    return bool(re.search(r"20\d{2}/20\d{2}", title))
 
-def extract_stream(block):
-    for l in block:
-        if l.startswith("http"):
-            return l.strip()
-    return ""
-
-def is_stream_alive(url):
-    if not url:
-        return False
-    if url.endswith(".mpd") or "clearkey" in url.lower():
-        return True
-    try:
-        r = requests.head(url, timeout=4, allow_redirects=True)
-        return r.status_code < 400
-    except:
-        return False
-
-# ================= FILTER =================
-def bad_event(title):
-    t = " " + title.lower() + " "
-    if any(w in t for w in BAD_WORDS):
-        return "REPLAY"
-    if " md" in t and "live" not in t:
-        return "MD_NO_LIVE"
-    return None
-
-def invalid_year(title):
+def is_replay(title):
     t = title.lower()
-    if re.search(r"20\d{2}\s*/\s*20\d{2}", t):
+    return any(x in t for x in ["replay", "highlight", "hl", "hls"])
+
+def is_football(title):
+    t = title.lower()
+    return any(x in t for x in ["football", "soccer", "liga", "premier", "uefa", "serie", "laliga", "bundesliga"])
+
+def football_valid(title):
+    t = title.lower()
+    has_vs = " vs " in t or " vs." in t
+    has_live = "live" in t
+    has_md = "md" in t
+
+    if has_live and has_vs:
         return True
-    years = re.findall(r"(20\d{2})", t)
-    for y in years:
-        y = int(y)
-        if y < CURRENT_YEAR or y > CURRENT_YEAR + 1:
-            return True
-        if "live" not in t:
-            return True
+    if has_live and has_md:
+        return True
+
+    # ❌ hide rules
+    if has_vs and not has_live:
+        return False
+    if has_md and not has_live:
+        return False
+    if has_year(title) and not has_live:
+        return False
+
     return False
 
-def valid_event(title, cat):
-    t = f"{title} {cat}".lower()
-    if any(k in t for k in ["badminton","bwf","voli","volley","vnl"]):
-        return True
-    if any(k in t for k in ["motogp","moto2","moto3","grand prix"]):
-        return True
-    if " vs " in f" {t} ":
-        return True
-    return False
-
-def live_end(start, stop, title):
-    t = title.lower()
-    if any(k in t for k in ["badminton","bwf","voli","volley","vnl"]):
-        return stop if stop else start + timedelta(hours=3)
-    if "moto" in t:
-        cap = start + timedelta(hours=4)
-        return min(stop, cap) if stop else cap
-    return start + timedelta(hours=2, minutes=30)
+def event_duration(title):
+    return RACE_MAX if "motogp" in title.lower() else SOCCER_MAX
 
 # ================= LOAD EPG =================
-root = ET.fromstring(requests.get(EPG_URL, timeout=60).content)
+root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
 
-epg_map = {}
+channels = {}
+programs = []
+
 for ch in root.findall("channel"):
     cid = ch.get("id")
-    name = ch.findtext("display-name","")
-    if name:
-        epg_map[cid] = norm(name)
+    name = ch.findtext("display-name", "")
+    logo = ch.find("icon").get("src") if ch.find("icon") is not None else ""
+    channels[cid] = {"name": name, "key": norm(name), "logo": logo}
 
-events = []
 for p in root.findall("programme"):
-    title = p.findtext("title","").strip()
-    cat = p.findtext("category","").strip()
-
-    if not title:
-        continue
-
-    reason = bad_event(title)
-    if reason:
-        log(f"[SKIP][{reason}] {title}")
-        continue
-
-    if invalid_year(title):
-        log(f"[SKIP][YEAR] {title}")
-        continue
-
-    if not valid_event(title, cat):
-        log(f"[SKIP][NOT_VALID_EVENT] {title}")
-        continue
-
-    start = parse_time(p.get("start"))
-    if start.date() > (NOW + timedelta(days=MAX_DAYS)).date():
-        log(f"[SKIP][H+3] {title}")
-        continue
-
-    stop = parse_time(p.get("stop")) if p.get("stop") else None
-
-    events.append({
-        "cid": p.get("channel"),
-        "title": title,
-        "start": start,
-        "end": live_end(start, stop, title)
+    programs.append({
+        "start": parse_time(p.get("start")),
+        "stop": parse_time(p.get("stop")),
+        "title": p.findtext("title", ""),
+        "cid": p.get("channel")
     })
 
-# ================= LOAD M3U =================
-with open(INPUT_M3U, encoding="utf-8", errors="ignore") as f:
-    lines = f.readlines()
-
+# ================= PARSE M3U =================
+lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines()
 blocks = []
 i = 0
 while i < len(lines):
     if lines[i].startswith("#EXTINF"):
-        b = [lines[i]]
+        blk = [lines[i] + "\n"]
         i += 1
         while i < len(lines):
-            b.append(lines[i])
+            blk.append(lines[i] + "\n")
             if lines[i].startswith("http"):
                 break
             i += 1
-        blocks.append(b)
+        blocks.append(blk)
     i += 1
 
-m3u = defaultdict(list)
+m3u = {}
 for b in blocks:
     m = re.search(r",(.+)$", b[0])
     if m:
-        m3u[norm(m.group(1))].append(b)
+        m3u[norm(m.group(1))] = b
 
 # ================= BUILD =================
-out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
-next_seen = set()
-next_events = defaultdict(list)
+live_now = []
+next_live = {}
 
-for e in events:
-    key = epg_map.get(e["cid"])
-    if not key or key not in m3u:
-        log(f"[SKIP][NO_M3U] {e['title']}")
+for p in programs:
+    if p["cid"] not in channels:
         continue
 
-    live_start = e["start"] - PRELIVE
+    ch = channels[p["cid"]]
+    if ch["key"] not in m3u:
+        continue
 
-    for blk in m3u[key]:
-        logo = extract_logo(blk[0])
-        stream = extract_stream(blk)
+    title = p["title"]
+    if is_replay(title):
+        continue
 
-        if live_start <= NOW <= e["end"]:
-            if not is_stream_alive(stream):
-                log(f"[SKIP][STREAM_DEAD] {e['title']}")
-                continue
-            log(f"[OK][LIVE] {e['start'].strftime('%H:%M')} | {e['title']}")
-            out.append(
-                f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",'
-                f'LIVE NOW {e["start"].strftime("%H:%M")} WIB | {e["title"]}\n'
-            )
-            out.extend(blk[1:])
+    if is_football(title) and not football_valid(title):
+        continue
 
-        elif NOW < e["start"]:
-            uid = f'{e["title"]}_{e["start"].date()}'
-            if uid in next_seen:
-                continue
-            next_seen.add(uid)
-            log(f"[OK][NEXT] {e['start'].strftime('%d-%m %H:%M')} | {e['title']}")
-            next_events[e["start"].date()].append(
-                f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",'
-                f'{e["start"].strftime("%d %B %Y %H:%M")} WIB | {e["title"]}\n'
-            )
+    start = p["start"]
+    dur = event_duration(title)
+    live_start = start - PRELIVE
+    live_end = start + dur
 
-for d in sorted(next_events):
-    for item in sorted(next_events[d]):
-        out.append(item)
-        out.append(NEXT_LIVE_URL + "\n")
+    if live_start <= NOW <= live_end:
+        live_now.append([
+            f'#EXTINF:-1 tvg-logo="{ch["logo"]}" group-title="LIVE NOW",'
+            f'LIVE NOW {start.strftime("%H:%M")} WIB | {title}\n'
+        ] + m3u[ch["key"]][1:])
 
-with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
-    f.writelines(out)
+    elif NOW < live_start:
+        k = norm(title)
+        next_live.setdefault(k, []).append({
+            "title": title,
+            "start": start,
+            "logo": ch["logo"]
+        })
 
-print("✅ BUILD SELESAI (DEBUG MODE)")
+# ================= OUTPUT =================
+out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
+
+# LIVE NOW (ALL)
+for b in live_now:
+    out.extend(b)
+
+# NEXT LIVE (RANDOM CHANNEL)
+for ev in sorted(next_live.values(), key=lambda x: x[0]["start"]):
+    pick = random.choice(ev)
+    out.append(
+        f'#EXTINF:-1 tvg-logo="{pick["logo"]}" group-title="NEXT LIVE",'
+        f'NEXT LIVE {pick["start"].strftime("%d-%m %H:%M")} WIB | {pick["title"]}\n'
+    )
+    out.append(NEXT_LIVE_URL + "\n")
+
+OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
+print("✅ DONE: Football rules enforced, LIVE clean")
