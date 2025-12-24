@@ -181,13 +181,6 @@ https://raw.githubusercontent.com/Cutsiffa/pl/refs/heads/main/Astpl4.m3u8
 https://cors-proxy.wangzhishi.net/https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default_primary.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129202259231052_79" group-title="LIVE NOW",LIVE NOW 11:10 WIB | SPORT | South Africa tour of India 2025/26
 http://tv.cloudcdn.me/live.ts?channelId=26034&uid=3453&deviceMac=00:1A:79:01:04:AC
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NOW",LIVE NOW 11:28 WIB | SPORT | 2025 非洲國家盃 - 摩洛哥 第5集
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=3ae6a430c1b8420ea280e317143d8d3a:142473ee925db0db0083c74a178c8298
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://d6m3sfa7e58z5.cloudfront.net/out/v1/3b0660e05eed4d769521eb0275aab3ab/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129194515181603_58" group-title="LIVE NOW",LIVE NOW 12:00 WIB | SPORT | 歐洲聯賽冠軍盃 第121集
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -195,13 +188,6 @@ https://d6m3sfa7e58z5.cloudfront.net/out/v1/3b0660e05eed4d769521eb0275aab3ab/ind
 #KODIPROP:inputstream.adaptive.license_key=344d320ca45641a88cf002db351ed9a4:246cc6ee7ab235cb824ed3b904b7040b
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/a265695db5cb461095cbfefc02ad793b/index.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NOW",LIVE NOW 12:10 WIB | SPORT | Nitto ATP Finals (2025)
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=3d756d566ca94e6499518ffb1474d5d0:dbe4ad6803e74739b8f954d23cc58e7b
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd
 #EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018014020330238_34.png" group-title="LIVE NOW",LIVE NOW 12:10 WIB | SPORT | Serie A: Lazio vs Cremonese
 #KODIPROP:inputstream.adaptive.license_type=m3u8
 #KODIPROP:inputstream.adaptive.license_key=79f4028730acca9ab8b00f26158ddb10:91febe843c08c7cc523efd827292e40e
@@ -245,54 +231,34 @@ https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/4yiko4it
 #KODIPROP:inputstream.adaptive.license_key=3d756d566ca94e6499518ffb1474d5d0:dbe4ad6803e74739b8f954d23cc58e7b
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NOW",LIVE NOW 13:10 WIB | SPORT | 籃球聯盟
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
-https://smart.946985.filegear-sg.me/smart.php?id=Nba
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NOW",LIVE NOW 13:10 WIB | SPORT | Match Hls 25/26: MW17: Fulham Vs Nottingham
-#EXTHTTP:{"User-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4ecad9adae8f44f0b1c8bf5c492da613:43ac85382893194802f0d34dbf71059e
-https://load.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=epl2hd|user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NOW",LIVE NOW 13:10 WIB | SPORT | Match Hls 25/26: MW17: Fulham Vs Nottingham
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-http://my.bianet.es.vip.hk:80///p//y/kontol26/709260
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW 13:10 WIB | SPORT | Match HL 2025/26: WK17: FUL vs NFO
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=bb2dc3cfa3024039ae59b55e6b0b5de5:03d25d6ceb16fc4e007697e9d2124fac
-#https://get.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=epl1fhd
-https://raw.githubusercontent.com/hnnyo/anyar/refs/heads/main/pl1.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="NEXT LIVE",NEXT LIVE 24-12 13:40 WIB | SPORT | Nitto ATP Finals (2025)
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/06/10/20240610054207896619_21.png" group-title="LIVE NOW",LIVE NOW 13:40 WIB | SPORT | Nitto ATP Finals (2025)
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3d756d566ca94e6499518ffb1474d5d0:dbe4ad6803e74739b8f954d23cc58e7b
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="NEXT LIVE",NEXT LIVE 24-12 13:40 WIB | SPORT | 籃球聯盟
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129193737395817_37" group-title="LIVE NOW",LIVE NOW 13:40 WIB | SPORT | 籃球聯盟
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
 https://smart.946985.filegear-sg.me/smart.php?id=Nba
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="NEXT LIVE",NEXT LIVE 24-12 13:40 WIB | SPORT | The Final Word
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NOW",LIVE NOW 13:40 WIB | SPORT | The Final Word
 #EXTHTTP:{"User-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"}
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=4ecad9adae8f44f0b1c8bf5c492da613:43ac85382893194802f0d34dbf71059e
 https://load.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=epl2hd|user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="NEXT LIVE",NEXT LIVE 24-12 13:40 WIB | SPORT | The Final Word
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018013047543202_17.png" group-title="LIVE NOW",LIVE NOW 13:40 WIB | SPORT | The Final Word
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 http://my.bianet.es.vip.hk:80///p//y/kontol26/709260
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="NEXT LIVE",NEXT LIVE 24-12 13:40 WIB | SPORT | PL: Fulham vs Nottm Forest
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2024/10/18/20241018011443588338_92.png" group-title="LIVE NOW",LIVE NOW 13:40 WIB | SPORT | PL: Fulham vs Nottm Forest
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=bb2dc3cfa3024039ae59b55e6b0b5de5:03d25d6ceb16fc4e007697e9d2124fac
 #https://get.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=epl1fhd
 https://raw.githubusercontent.com/hnnyo/anyar/refs/heads/main/pl1.m3u8
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="NEXT LIVE",NEXT LIVE 24-12 13:40 WIB | SPORT | 德甲球會集 第14集
+#EXTINF:-1 tvg-logo="https://epg.pw/media/images/epg/2025/01/29/20250129190019981131_56" group-title="LIVE NOW",LIVE NOW 13:40 WIB | SPORT | 德甲球會集 第14集
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
