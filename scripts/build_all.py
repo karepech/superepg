@@ -34,7 +34,6 @@ def parse_time(t: str) -> datetime:
     return dt.astimezone(TZ)
 
 # ================= LOAD EPG =================
-print("📥 Download EPG")
 root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
 
 epg_channels = {}
@@ -78,26 +77,14 @@ while i < len(lines):
         blocks.append(block)
     i += 1
 
-# key: normalized channel name → block
+# key: normalized channel name → LIST block (AMAN DUPLIKAT)
 m3u_channels = {}
 for block in blocks:
     m = re.search(r",(.+)$", block[0])
     if not m:
         continue
     name = m.group(1).strip()
-    m3u_channels[norm(name)] = block
-
-# ================= SINKRON CHANNEL NORMAL =================
-for cid, epg in epg_channels.items():
-    key = epg["key"]
-    if key in m3u_channels:
-        blk = m3u_channels[key]
-        blk[0] = (
-            f'#EXTINF:-1 tvg-id="{cid}" '
-            f'tvg-name="{epg["name"]}" '
-            f'tvg-logo="{epg["logo"]}" '
-            f'group-title="SPORTS",{epg["name"]}\n'
-        )
+    m3u_channels.setdefault(norm(name), []).append(block)
 
 # ================= BUILD OUTPUT =================
 out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
@@ -116,35 +103,14 @@ for p in sorted(programmes, key=lambda x: x["start"]):
     if key not in m3u_channels:
         continue
 
-    block = m3u_channels[key]
-    logo = epg["logo"]
+    for block in m3u_channels[key]:
+        logo = epg["logo"]
 
-    if p["start"] <= NOW < p["stop"]:
-        title = f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | {p["cat"]} | {p["title"]}'
-        live_now.append(
-            [f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{title}\n'] + block[1:]
-        )
+        if p["start"] <= NOW < p["stop"]:
+            title = f'LIVE NOW {p["start"].strftime("%H:%M")} WIB | {p["cat"]} | {p["title"]}'
+            live_now.append(
+                [f'#EXTINF:-1 tvg-logo="{logo}" group-title="LIVE NOW",{title}\n'] + block[1:]
+            )
 
-    elif p["start"] > NOW:
-        title = f'NEXT LIVE {p["start"].strftime("%d-%m %H:%M")} WIB | {p["cat"]} | {p["title"]}'
-        next_live.append(
-            [f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEXT LIVE",{title}\n'] + block[1:]
-        )
-
-# 🔴 LIVE NOW PALING ATAS
-for blk in live_now:
-    out.extend(blk)
-
-# ⏭️ NEXT LIVE
-for blk in next_live:
-    out.extend(blk)
-
-# 📺 CHANNEL NORMAL
-for blk in m3u_channels.values():
-    out.extend(blk)
-
-# ================= SAVE =================
-with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
-    f.writelines(out)
-
-print("✅ SUCCESS: Multi-channel events, LIVE NOW on top, NEXT LIVE below")
+        elif p["start"] > NOW:
+            title = f'NEXT LIVE {p["start"].
