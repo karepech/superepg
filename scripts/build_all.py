@@ -1,25 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import re, sys
+import re
+import sys
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 import xml.etree.ElementTree as ET
 import requests
+from collections import defaultdict
 
 # ================= CONFIG =================
-TZ = timezone(timedelta(hours=7))
+TZ = timezone(timedelta(hours=7))  # WIB
 NOW = datetime.now(TZ)
 
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
-NEXT_EVENT_URL = "https://bwifi.my.id/hls/video.m3u8"
+CUSTOM_URL = "https://bwifi.my.id/hls/video.m3u8"
 
 BASE = Path(__file__).resolve().parent.parent
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
 
-SOCCER_LIMIT = timedelta(hours=2)
-RACE_LIMIT = timedelta(hours=4)
+MAX_CHANNEL_PER_EVENT = 5
+PRELIVE_MINUTES = 5
+
+SOCCER_MAX = timedelta(hours=2)
+RACE_MAX = timedelta(hours=4)
 NEXT_RANGE = timedelta(days=3)
 
 # ================= GUARD =================
@@ -28,108 +33,148 @@ if not INPUT_M3U.exists():
     sys.exit(1)
 
 # ================= HELPERS =================
-def epg_time(t):
-    return datetime.strptime(t[:14], "%Y%m%d%H%M%S").replace(
-        tzinfo=timezone.utc).astimezone(TZ)
+def norm(t):
+    return re.sub(r"[^a-z0-9]", "", t.lower())
 
-def has(p, r): return re.search(r, p, re.I)
-def is_replay(t): return has(t, r"(hl|highlight|replay|rerun)")
-def has_vs(t): return has(t, r"\bvs\b")
-def has_live(t): return has(t, r"\blive\b")
-def has_md(t): return has(t, r"\bmd\d*\b")
-def has_year(t): return has(t, r"20\d{2}")
+def epg_time(t):
+    return datetime.strptime(t[:14], "%Y%m%d%H%M%S") \
+        .replace(tzinfo=timezone.utc).astimezone(TZ)
+
+def has(pattern, text):
+    return re.search(pattern, text, re.I)
+
+def is_replay(t):
+    return has(r"(hl|highlight|replay|rerun|review|recap)", t)
+
+def has_vs(t):
+    return has(r"\bvs\b", t)
+
+def has_live(t):
+    return has(r"\blive\b", t)
+
+def has_md(t):
+    return has(r"\bmd\d*\b", t)
+
+def has_year(t):
+    return has(r"\b20\d{2}\b", t)
 
 def sport_type(t):
     t = t.lower()
     if "motogp" in t or "race" in t:
         return "RACE"
-    if "badminton" in t or "bwf" in t or "voli" in t:
+    if "badminton" in t or "bwf" in t or "voli" in t or "volley" in t:
         return "FLEX"
     return "SOCCER"
 
-# ================= LOAD CHANNEL =================
+# ================= LOAD CHANNEL BLOCKS =================
 channels = []
 cur = None
-for l in INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines():
-    if l.startswith("#EXTINF"):
-        cur = {"ext": l, "name": l.split(",")[-1], "logo": ""}
-        m = re.search(r'tvg-logo="([^"]+)"', l)
-        if m: cur["logo"] = m.group(1)
-    elif l.startswith("http") and cur:
-        cur["url"] = l
+
+for line in INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True):
+    if line.startswith("#EXTINF"):
+        cur = {"block": [line], "name": line.split(",")[-1].strip()}
+    elif cur and not line.startswith("http"):
+        cur["block"].append(line)
+    elif cur and line.startswith("http"):
+        cur["block"].append(line)
         channels.append(cur)
         cur = None
 
-# ================= LOAD EPG =================
-root = ET.fromstring(requests.get(EPG_URL, timeout=30).content)
+# index channel blocks by normalized name
+channel_map = defaultdict(list)
+for ch in channels:
+    channel_map[norm(ch["name"])].append(ch["block"])
 
-programs = []
+# ================= LOAD EPG =================
+root = ET.fromstring(requests.get(EPG_URL, timeout=60).content)
+
+events = []
 for p in root.findall("programme"):
     title = p.findtext("title", "").strip()
     if not title:
         continue
 
-    start = epg_time(p.attrib["start"])
-    stop = epg_time(p.attrib["stop"])
-    sport = sport_type(title)
+    # FILTER KETAT
+    if is_replay(title):
+        continue
+    if has_md(title) and not has_live(title):
+        continue
+    if has_year(title) and not has_live(title):
+        continue
+    if sport_type(title) == "SOCCER" and not has_vs(title):
+        continue
 
-    # ===== FILTER =====
-    if is_replay(title): continue
-    if has_md(title) and not has_live(title): continue
-    if has_year(title) and not has_live(title): continue
-    if sport == "SOCCER" and not has_vs(title): continue
+    start = epg_time(p.get("start"))
+    stop = epg_time(p.get("stop"))
 
-    programs.append({
+    events.append({
         "title": title,
         "start": start,
         "stop": stop,
-        "sport": sport
+        "sport": sport_type(title),
+        "key": norm(title)
     })
 
-# ================= CLASSIFY =================
-live_now = []
-live_next = {}
+# ================= GROUP EVENT =================
+grouped = defaultdict(list)
+for e in events:
+    # satu event = judul + jam kickoff
+    k = f"{e['key']}_{e['start'].strftime('%Y%m%d%H%M')}"
+    grouped[k].append(e)
 
-for p in programs:
-    s, e = p["start"], p["stop"]
+# ================= BUILD =================
+out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
 
-    if s.date() == NOW.date() and NOW >= s:
-        limit = RACE_LIMIT if p["sport"] == "RACE" else SOCCER_LIMIT
-        if NOW - s <= limit:
-            live_now.append(p)
+def add_event_block(group, title, start):
+    jam = start.strftime("%H:%M")
+    out.append(f'#EXTINF:-1 group-title="{group}",{group} {jam} WIB | {title}\n')
+    out.append(CUSTOM_URL + "\n")
+
+def add_channel_blocks(group, title, start, blocks):
+    jam = start.strftime("%H:%M")
+    for blk in blocks:
+        # ganti judul
+        header = re.sub(r",.*$", f",{group} {jam} WIB | {title}\n", blk[0])
+        out.append(header)
+        out.extend(blk[1:])
+
+# ================= PROCESS EVENTS =================
+for ev_list in grouped.values():
+    ev = ev_list[0]
+    start = ev["start"]
+    sport = ev["sport"]
+
+    # cek expired
+    max_dur = RACE_MAX if sport == "RACE" else SOCCER_MAX
+    if NOW - start > max_dur:
         continue
 
-    if NOW < s <= NOW + NEXT_RANGE:
-        live_next.setdefault(p["title"].lower(), p)
+    minutes_to_start = (start - NOW).total_seconds() / 60
 
-# ================= BUILD M3U =================
-out = [f'#EXTM3U url-tvg="{EPG_URL}"']
+    # ================= EVENT MASIH LAMA =================
+    if minutes_to_start > PRELIVE_MINUTES:
+        # NEXT LIVE jika H+1..H+3
+        if NOW < start <= NOW + NEXT_RANGE:
+            add_event_block("LIVE NEXT", ev["title"], start)
+        continue
 
-def add(group, p, ch, url):
-    jam = p["start"].strftime("%H:%M")
-    name = f'{group} | {jam} WIB | {p["title"]}'
-    out.append(f'#EXTINF:-1 group-title="{group}" tvg-logo="{ch["logo"]}",{name}')
-    out.append(url)
-
-# ===== LIVE NOW (max 3 channel / event) =====
-for p in live_now:
+    # ================= EVENT SUDAH DEKAT / LIVE =================
+    # ≤ 5 menit sebelum kickoff sampai selesai → FULL CHANNEL
     used = 0
-    for ch in channels:
-        add("LIVE NOW", p, ch, ch["url"])
-        used += 1
-        if used >= 3:
+    for ch_name, ch_blocks in channel_map.items():
+        if used >= MAX_CHANNEL_PER_EVENT:
             break
+        for blk in ch_blocks:
+            add_channel_blocks("LIVE NOW", ev["title"], start, [blk])
+            used += 1
+            if used >= MAX_CHANNEL_PER_EVENT:
+                break
 
-# ===== FALLBACK =====
-if not live_now:
-    ch = channels[0]
-    out.append(f'#EXTINF:-1 group-title="LIVE NOW",{ "LIVE EVENT" }')
-    out.append(ch["url"])
+# ================= FALLBACK =================
+if len(out) <= 1:
+    out.append('#EXTINF:-1 group-title="LIVE NOW",LIVE EVENT\n')
+    out.append(CUSTOM_URL + "\n")
 
-# ===== LIVE NEXT (1 event = 1 baris) =====
-for p in live_next.values():
-    ch = channels[0]
-    add("LIVE NEXT", p, ch, NEXT_EVENT_URL)
-
-OUTPUT_M3U.write_text("\n".join(out), encoding="utf-8")
-print("[DONE] playlist stabil, tidak duplikat, tidak ngacak")
+# ================= SAVE =================
+OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
+print("✅ BUILD OK | aturan 5 menit → channel utuh diterapkan")
