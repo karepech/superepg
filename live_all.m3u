@@ -1,381 +1,736 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW | 01:40 WIB | TotalEnergies CAF Confederation Cup : Nairobi United FC Vs as Maniema
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 14:00 WIB | Grace At Your Place
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:00 WIB | Grace At Your Place
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 07:57 WIB | LaLiga : Villarreal Vs Barcelona
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:18 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Burkina Faso Vs Equatorial Guinea - Group Stage
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:48 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Algeria Vs Sudan - Group Stage
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 15:18 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Ivory Coast Vs Mozambique - Group Stage
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:48 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Cameroon Vs Gabon - Group Stage
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:00 WIB | LaLiga : Osasuna Vs Alaves
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:50 WIB | LaLiga : Elche Vs Rayo Vallecano
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:40 WIB | TotalEnergies CAF Champions League : Rivers Vs RS Berkane
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 04:10 WIB | LaLiga : Real Betis Vs Getafe
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:00 WIB | LaLiga : Real Madrid Vs Sevilla
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:00 WIB | LFCTV : Tottenham Vs Liverpool
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:45 WIB | LaLiga : Villarreal Vs Barcelona
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:00 WIB | LaLiga : Levante Vs Real Sociedad
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:40 WIB | LFCTV : Tottenham Vs Liverpool
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:18 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Angola Vs Zimbabwe - Group Stage
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:48 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Egypt Vs South Africa - Group Stage
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:15 WIB | The Gracefield Incident
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:30 WIB | PSG TV : Vendee Fontenay Foot Vs PSG - Coupe De France
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:00 WIB | Women's Super League : Everton Vs Arsenal
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 03:00 WIB | MUTV : Aston Villa Vs Man United
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:00 WIB | Women's Super League : Man City Vs Aston Villa
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 03:00 WIB | TotalEnergies Africa Cup of Nations, Morocco : Cameroon Vs Gabon - Group Stage
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 04:50 WIB | UCL Classic Matches: PSV Vs Milan
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:00 WIB | PSG TV : Vendee Fontenay Foot Vs PSG - Coupe De France
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:30 WIB | MUTV : Aston Villa Vs Man United
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:05 WIB | Kenyalang Badminton Talent Ep06
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:00 WIB | ＱＶＣ　Grace Edit 大人の”今”に寄り添う服
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:00 WIB | QVC Grace Edit 大人の”今”に寄り添う服
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1  tvg-id="576059" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW 07:00 WIB | BWF World Tour: SF 2
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a83ee088e5343d095ac7f4d8d3cd945:dc0da9fdfae3c69c322b67db207a87a1
 https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW | 01:40 WIB | TotalEnergies CAF Confederation Cup : Nairobi United FC Vs as Maniema
+#EXTINF:-1  tvg-id="576060" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW 07:00 WIB | BWF World Tour: SF 2
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c9c38c2de3f41afa12f9872ad6c3903:d6f5a6750b32d2addec0c98fff14de9d
 https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW | 01:40 WIB | TotalEnergies CAF Confederation Cup : Nairobi United FC Vs as Maniema
+#EXTINF:-1  tvg-id="576061" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW 07:00 WIB | BWF World Tour: SF 2
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3da197d13d754505887a04aedd17922e:0028b47ca60594991910c6f6048c51a0
 https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW | 00:20 WIB | UCL Classic Matches: Anderlecht Vs PSG
+#EXTINF:-1  tvg-id="580750" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298988'&EntityType='Item'&EntityId='580750'&Width=289&Height=250",LIVE NOW 07:00 WIB | BWF World Tour: SF 2
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea1f7f86732d47e897e38c3168851569:55b7ed4cc25fa476f6682c447af128d5
+https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd
+#EXTINF:-1  tvg-id="580751" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298994'&EntityType='Item'&EntityId='580751'&Width=289&Height=250",LIVE NOW 07:00 WIB | BWF World Tour: SF 2
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=93dccb38f8c84d448d5a7422eb44462b:af8f1c6acedc34551a82f3bb49adfdea
+https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 19:30 WIB | Badminton Unlimited: Episode 11
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:00 WIB | BWF: Arctic Open: Rd16
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 03:00 WIB | BWF: Arctic Open: QF
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:45 WIB | BWF: Arctic Open: SF 1
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:15 WIB | BWF: Arctic Open: SF 2
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:15 WIB | BWF: Arctic Open: Finals
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:30 WIB | Badminton Unlimited: Episode 11
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 07:00 WIB | BWF Japan Masters: Rd16
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 21:45 WIB | Race Against the Machine / My Fair Cat Lady
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:45 WIB | Race Against the Machine / My Fair Cat Lady
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1  tvg-id="576059" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW 06:10 WIB | Rocket Race / Magic / Parents
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a83ee088e5343d095ac7f4d8d3cd945:dc0da9fdfae3c69c322b67db207a87a1
 https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW | 00:20 WIB | UCL Classic Matches: Anderlecht Vs PSG
+#EXTINF:-1  tvg-id="576060" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW 06:10 WIB | Rocket Race / Magic / Parents
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c9c38c2de3f41afa12f9872ad6c3903:d6f5a6750b32d2addec0c98fff14de9d
 https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW | 00:20 WIB | UCL Classic Matches: Anderlecht Vs PSG
+#EXTINF:-1  tvg-id="576061" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW 06:10 WIB | Rocket Race / Magic / Parents
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3da197d13d754505887a04aedd17922e:0028b47ca60594991910c6f6048c51a0
 https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW | 02:00 WIB | FIGHT SPORTS MMA Andrew Van Zyl vs. Champion Dalcha
+#EXTINF:-1  tvg-id="580750" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298988'&EntityType='Item'&EntityId='580750'&Width=289&Height=250",LIVE NOW 06:10 WIB | Rocket Race / Magic / Parents
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea1f7f86732d47e897e38c3168851569:55b7ed4cc25fa476f6682c447af128d5
+https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd
+#EXTINF:-1  tvg-id="580751" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298994'&EntityType='Item'&EntityId='580751'&Width=289&Height=250",LIVE NOW 06:10 WIB | Rocket Race / Magic / Parents
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=93dccb38f8c84d448d5a7422eb44462b:af8f1c6acedc34551a82f3bb49adfdea
+https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:35 WIB | Rescue Wheels: Pups Save the Risky Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 00:25 WIB | The Snow, Sea, Sky, Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:00 WIB | Rocket Race / Magic / Parents
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:25 WIB | The Snow, Sea, Sky, Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1  tvg-id="576059" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW 06:00 WIB | KNOCKOUTS! Carlos Baldomir vs. Vernon Forrest
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a83ee088e5343d095ac7f4d8d3cd945:dc0da9fdfae3c69c322b67db207a87a1
 https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW | 02:00 WIB | FIGHT SPORTS MMA Andrew Van Zyl vs. Champion Dalcha
+#EXTINF:-1  tvg-id="576060" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW 06:00 WIB | KNOCKOUTS! Carlos Baldomir vs. Vernon Forrest
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c9c38c2de3f41afa12f9872ad6c3903:d6f5a6750b32d2addec0c98fff14de9d
 https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW | 02:00 WIB | FIGHT SPORTS MMA Andrew Van Zyl vs. Champion Dalcha
+#EXTINF:-1  tvg-id="576061" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW 06:00 WIB | KNOCKOUTS! Carlos Baldomir vs. Vernon Forrest
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3da197d13d754505887a04aedd17922e:0028b47ca60594991910c6f6048c51a0
 https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW | 02:00 WIB | SOUNDS OF TRACE
+#EXTINF:-1  tvg-id="580750" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298988'&EntityType='Item'&EntityId='580750'&Width=289&Height=250",LIVE NOW 06:00 WIB | KNOCKOUTS! Carlos Baldomir vs. Vernon Forrest
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea1f7f86732d47e897e38c3168851569:55b7ed4cc25fa476f6682c447af128d5
+https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd
+#EXTINF:-1  tvg-id="580751" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298994'&EntityType='Item'&EntityId='580751'&Width=289&Height=250",LIVE NOW 06:00 WIB | KNOCKOUTS! Carlos Baldomir vs. Vernon Forrest
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=93dccb38f8c84d448d5a7422eb44462b:af8f1c6acedc34551a82f3bb49adfdea
+https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:00 WIB | FIGHT SPORTS MMA Andrew Van Zyl vs. Champion Dalcha
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:00 WIB | MEGA Fights Sergio Martinez vs. Paul Williams II
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:00 WIB | KNOCKOUTS! Bernard Hopkins vs. Winky Wright
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:30 WIB | Tuesday Night Fights Hector Camacho vs. Rusty Derouen
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 14:00 WIB | FS MMA Fedor Emelianenko vs. Matt Linland
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 15:00 WIB | MEGA Fights Sergio Martinez vs. Paul Williams II
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:00 WIB | KNOCKOUTS! Bernard Hopkins vs. Winky Wright
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 19:30 WIB | Tuesday Night Fights Hector Camacho vs. Rusty Derouen
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:00 WIB | FS MMA Fedor Emelianenko vs. Matt Linland
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 21:00 WIB | MEGA Fights Sergio Martinez vs. Paul Williams II
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 00:00 WIB | KNOCKOUTS! Bernard Hopkins vs. Winky Wright
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:30 WIB | Tuesday Night Fights Hector Camacho vs. Rusty Derouen
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:00 WIB | FS MMA Fedor Emelianenko vs. Matt Linland
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 03:00 WIB | MEGA Fights Sergio Martinez vs. Paul Williams II
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:00 WIB | KNOCKOUTS! Bernard Hopkins vs. Winky Wright
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 07:30 WIB | Tuesday Night Fights Hector Camacho vs. Rusty Derouen
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:00 WIB | FS MMA Fedor Emelianenko vs. Matt Linland
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:00 WIB | WCCB Janibek Alimkhanuly vs. Anauel Ngamissengue
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:00 WIB | USA vs. World: Part 2
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:00 WIB | KNOCKOUTS! Paul Williams vs. Antonio Margarito
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:30 WIB | Tuesday Night Fights Hector Camacho vs. Todd Foster
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 14:00 WIB | FIGHT SPORTS MMA Garreth McLellan vs. Dricus Du Plessis
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 15:00 WIB | WCCB Janibek Alimkhanuly vs. Anauel Ngamissengue
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:00 WIB | USA vs. World: Part 2
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:00 WIB | KNOCKOUTS! Paul Williams vs. Antonio Margarito
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 19:30 WIB | Tuesday Night Fights Hector Camacho vs. Todd Foster
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:00 WIB | FIGHT SPORTS MMA Garreth McLellan vs. Dricus Du Plessis
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 21:00 WIB | WCCB Janibek Alimkhanuly vs. Anauel Ngamissengue
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:00 WIB | USA vs. World: Part 2
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 00:00 WIB | KNOCKOUTS! Paul Williams vs. Antonio Margarito
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:30 WIB | Tuesday Night Fights Hector Camacho vs. Todd Foster
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:00 WIB | FIGHT SPORTS MMA Garreth McLellan vs. Dricus Du Plessis
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 03:00 WIB | WCCB Janibek Alimkhanuly vs. Anauel Ngamissengue
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:00 WIB | USA vs. World: Part 2
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:00 WIB | KNOCKOUTS! Paul Williams vs. Antonio Margarito
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 07:30 WIB | Tuesday Night Fights Hector Camacho vs. Todd Foster
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:00 WIB | FIGHT SPORTS MMA Garreth McLellan vs. Dricus Du Plessis
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:00 WIB | MEGA Fights In 60 Timothy Bradley vs. Luis Carlos Abregu
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:00 WIB | Greatest Classics Mike Tyson vs. Sammy Scaff
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:00 WIB | KNOCKOUTS! Paulie Malignaggi vs. Lovemore N'Dou
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:30 WIB | Tuesday Night Fights Hector Camacho vs. Luis Maysonet
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:00 WIB | Malaysia Race 2
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:45 WIB | Malaysia Race 1
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:45 WIB | Malaysia Race 2
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:30 WIB | Man United vs Bournemouth
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:00 WIB | Aston Villa vs Man United
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:00 WIB | Rolex Middle Sea Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:30 WIB | Rolex Middle Sea Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:00 WIB | Man United vs Bournemouth
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:30 WIB | Aston Villa vs Man United
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:00 WIB | SOUNDS OF TRACE
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:00 WIB | SOUNDS OF TRACE
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:24 WIB | Lucy Grace(普)
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 03:02 WIB | Amazing Grace(普)
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 16:37 WIB | Lucy Grace(普)
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:58 WIB | Fight Song / Amazing Grace(普)
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:51 WIB | Amazing Grace (arr. Mercurio)(普)
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:00 WIB | 燃點當下:魏爾德 vs. 福瑞(拳擊) / 比莉珍金(網球)S40(22)(普)
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 14:30 WIB | 燃點當下:大坂直美 vs 小威廉斯(網球) / 約書亞 vs. 魯伊斯(拳擊)S40(23)(普)
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:00 WIB | 燃點當下:魏爾德 vs. 福瑞(拳擊) / 比莉珍金(網球)S40(22)(普)
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:10 WIB | China, Race to the Future Ep01
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:10 WIB | China, Race to the Future Ep01
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:10 WIB | China, Race to the Future Ep01
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1  tvg-id="576059" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW 06:00 WIB | PL: Man City vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a83ee088e5343d095ac7f4d8d3cd945:dc0da9fdfae3c69c322b67db207a87a1
 https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW | 02:00 WIB | SOUNDS OF TRACE
+#EXTINF:-1  tvg-id="576060" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW 06:00 WIB | PL: Man City vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c9c38c2de3f41afa12f9872ad6c3903:d6f5a6750b32d2addec0c98fff14de9d
 https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW | 02:00 WIB | SOUNDS OF TRACE
+#EXTINF:-1  tvg-id="576061" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW 06:00 WIB | PL: Man City vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3da197d13d754505887a04aedd17922e:0028b47ca60594991910c6f6048c51a0
 https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW | 01:30 WIB | PL: Man City vs Bournemouth
+#EXTINF:-1  tvg-id="580750" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298988'&EntityType='Item'&EntityId='580750'&Width=289&Height=250",LIVE NOW 06:00 WIB | PL: Man City vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea1f7f86732d47e897e38c3168851569:55b7ed4cc25fa476f6682c447af128d5
+https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd
+#EXTINF:-1  tvg-id="580751" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298994'&EntityType='Item'&EntityId='580751'&Width=289&Height=250",LIVE NOW 06:00 WIB | PL: Man City vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=93dccb38f8c84d448d5a7422eb44462b:af8f1c6acedc34551a82f3bb49adfdea
+https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:15 WIB | PL: Aston Villa vs Manchester Utd
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:30 WIB | PL: Tottenham vs Liverpool
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:45 WIB | PL: Newcastle Utd vs Chelsea
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 15:00 WIB | PL: Brentford vs Man City
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:15 WIB | PL: Manchester City vs Everton
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 19:30 WIB | PL: Tottenham vs Villa
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 21:45 WIB | PL: Newcastle vs Man City
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 00:00 WIB | PL: Tottenham vs Liverpool
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 02:15 WIB | PL: Newcastle Utd vs Chelsea
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 04:30 WIB | PL: Liverpool vs Manchester Utd
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:45 WIB | PL: Fulham vs Man City
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:00 WIB | PL: Newcastle Utd vs Chelsea
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:15 WIB | PL: Aston Villa vs Manchester Utd
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:30 WIB | PL: Manchester Utd vs Brighton
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 15:45 WIB | PL: Tottenham vs Liverpool
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:00 WIB | PL: Arsenal vs Palace
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:15 WIB | PL: Everton vs Tottenham
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:30 WIB | PL: Aston Villa vs Manchester Utd
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 00:45 WIB | PL: Arsenal vs Tottenham
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 03:00 WIB | PL: Tottenham vs Liverpool
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:15 WIB | PL: Tottenham vs Chelsea
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 07:30 WIB | PL: Newcastle Utd vs Chelsea
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:45 WIB | PL: Liverpool vs Aston Villa
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:00 WIB | PL: Tottenham vs Liverpool
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:45 WIB | Raa Raa And The Speedy Racers
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:00 WIB | Dawn Of The Dragon Racers
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 03:30 WIB | Dawn Of The Dragon Racers
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:00 WIB | Dawn Of The Dragon Racers
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 14:05 WIB | Spartan Race 25
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:55 WIB | Spartan Race 25
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 14:00 WIB | Classic Match: Mun Vs New
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 21:00 WIB | Classic Match: Mun Vs New
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:00 WIB | Classic Match: Mun Vs New
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1  tvg-id="576059" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW 06:00 WIB | EFL: Derby vs Leicester
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a83ee088e5343d095ac7f4d8d3cd945:dc0da9fdfae3c69c322b67db207a87a1
 https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW | 01:30 WIB | PL: Man City vs Bournemouth
+#EXTINF:-1  tvg-id="576060" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW 06:00 WIB | EFL: Derby vs Leicester
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c9c38c2de3f41afa12f9872ad6c3903:d6f5a6750b32d2addec0c98fff14de9d
 https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW | 01:30 WIB | PL: Man City vs Bournemouth
+#EXTINF:-1  tvg-id="576061" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW 06:00 WIB | EFL: Derby vs Leicester
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3da197d13d754505887a04aedd17922e:0028b47ca60594991910c6f6048c51a0
 https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW | 01:00 WIB | Race to Survive Alaska
+#EXTINF:-1  tvg-id="580750" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298988'&EntityType='Item'&EntityId='580750'&Width=289&Height=250",LIVE NOW 06:00 WIB | EFL: Derby vs Leicester
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea1f7f86732d47e897e38c3168851569:55b7ed4cc25fa476f6682c447af128d5
+https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd
+#EXTINF:-1  tvg-id="580751" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298994'&EntityType='Item'&EntityId='580751'&Width=289&Height=250",LIVE NOW 06:00 WIB | EFL: Derby vs Leicester
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=93dccb38f8c84d448d5a7422eb44462b:af8f1c6acedc34551a82f3bb49adfdea
+https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:00 WIB | EFL: West Brom vs Sheffield
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:00 WIB | Carabao Cup: Cardiff vs Chelsea
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 14:00 WIB | K-League: Suwon Samsung vs Jeju
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 16:00 WIB | K-League: Bucheon vs Suwon FC
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:00 WIB | Serie A: Cagliari vs Pisa
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 21:00 WIB | Dutch: Feyenoord vs Zwolle,
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:15 WIB | Dutch: Heerenveen vs PSV
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:30 WIB | Dutch: Fortuna Sittard vs Ajax
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 04:00 WIB | DFB: Dortmund vs Leverkusen
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 07:00 WIB | Carabao Cup: Man City vs Brentford
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:00 WIB | DFB: Leipzig vs Magdeburg
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 14:00 WIB | K-League: Jeju vs Suwon Samsung
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 16:00 WIB | K-League: Suwon FC vs Bucheon
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:00 WIB | Serie A: Lazio vs Cremonese
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:00 WIB | DFB: Dortmund vs Leverkusen
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:15 WIB | Dutch: PSV vs Volendam
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:00 WIB | DFB: Freiburg vs Darmstadt
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 04:30 WIB | DFB: Hamburger vs Holstein
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 07:50 WIB | Dutch: NEC vs Ajax
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:20 WIB | (L) EFL: Birmingham vs Derby
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:50 WIB | (L) EFL: Middlesbrough vs Blackburn
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1  tvg-id="576059" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW 07:30 WIB | EASL: Golden Kings vs Black Bears
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a83ee088e5343d095ac7f4d8d3cd945:dc0da9fdfae3c69c322b67db207a87a1
 https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW | 01:00 WIB | Race to Survive Alaska
+#EXTINF:-1  tvg-id="576060" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW 07:30 WIB | EASL: Golden Kings vs Black Bears
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c9c38c2de3f41afa12f9872ad6c3903:d6f5a6750b32d2addec0c98fff14de9d
 https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW | 01:00 WIB | Race to Survive Alaska
+#EXTINF:-1  tvg-id="576061" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW 07:30 WIB | EASL: Golden Kings vs Black Bears
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3da197d13d754505887a04aedd17922e:0028b47ca60594991910c6f6048c51a0
 https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW | 01:10 WIB | PL: Tottenham vs Liverpool
+#EXTINF:-1  tvg-id="580750" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298988'&EntityType='Item'&EntityId='580750'&Width=289&Height=250",LIVE NOW 07:30 WIB | EASL: Golden Kings vs Black Bears
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea1f7f86732d47e897e38c3168851569:55b7ed4cc25fa476f6682c447af128d5
+https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd
+#EXTINF:-1  tvg-id="580751" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298994'&EntityType='Item'&EntityId='580751'&Width=289&Height=250",LIVE NOW 07:30 WIB | EASL: Golden Kings vs Black Bears
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=93dccb38f8c84d448d5a7422eb44462b:af8f1c6acedc34551a82f3bb49adfdea
+https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:30 WIB | (L) EASL: Fubon Braves vs SK Knights
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:00 WIB | UFC 300: Pereira vs Hill
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:30 WIB | UFC 317: Topuria vs Oliveira
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:10 WIB | EASL: Fubon Braves vs SK Knights
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 04:40 WIB | UIM F1H2O GP: Sharjah: Sprint Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:10 WIB | UIM F1H2O GP: Sharjah: Main Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:00 WIB | EASL: Alvark vs LG Sakers
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:40 WIB | EASL: Fubon Braves vs SK Knights
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 14:05 WIB | Spartan Race '25 第5集
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:55 WIB | Spartan Race '25 第2集
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:00 WIB | Race to Survive: New Zealand
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:00 WIB | Race to Survive: New Zealand
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:00 WIB | Sydney To Hobart Yacht Race Tragedy
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:30 WIB | Sydney To Hobart Yacht Race Tragedy
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 15:00 WIB | Sydney To Hobart Yacht Race Tragedy
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:30 WIB | Race Start
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:00 WIB | Race Start
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:32 WIB | Sydney to Hobart Yacht Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:02 WIB | Sydney to Hobart Yacht Race
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:10 WIB | A Graceful Liar 第58集
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:05 WIB | A Graceful Liar 第58集
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:00 WIB | A Graceful Liar 第58集
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:10 WIB | A Graceful Liar 第59集
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:05 WIB | A Graceful Liar 第59集
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:00 WIB | A Graceful Liar 第59集
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:10 WIB | A Graceful Liar 第59集
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:10 WIB | A Graceful Liar
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:05 WIB | A Graceful Liar
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:00 WIB | A Graceful Liar
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:10 WIB | A Graceful Liar
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:05 WIB | A Graceful Liar
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:00 WIB | A Graceful Liar
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:10 WIB | A Graceful Liar
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:15 WIB | A Graceful Liar Ep58
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:10 WIB | A Graceful Liar Ep58
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:05 WIB | A Graceful Liar Ep58
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:15 WIB | A Graceful Liar Ep59
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:10 WIB | A Graceful Liar Ep59
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:05 WIB | A Graceful Liar Ep59
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:15 WIB | A Graceful Liar Ep59
+https://bwifi.my.id/hls/video.m3u8
+#EXTINF:-1  tvg-id="576059" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW 05:00 WIB | MotoGP Rd3 Red Bull GP of the Americas
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a83ee088e5343d095ac7f4d8d3cd945:dc0da9fdfae3c69c322b67db207a87a1
 https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW | 01:10 WIB | PL: Tottenham vs Liverpool
+#EXTINF:-1  tvg-id="576060" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW 05:00 WIB | MotoGP Rd3 Red Bull GP of the Americas
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c9c38c2de3f41afa12f9872ad6c3903:d6f5a6750b32d2addec0c98fff14de9d
 https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd
-#EXTINF:-1 group-title="LIVE NOW" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW | 01:10 WIB | PL: Tottenham vs Liverpool
+#EXTINF:-1  tvg-id="576061" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW 05:00 WIB | MotoGP Rd3 Red Bull GP of the Americas
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3da197d13d754505887a04aedd17922e:0028b47ca60594991910c6f6048c51a0
 https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 14:00 WIB | Grace At Your Place
+#EXTINF:-1  tvg-id="580750" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298988'&EntityType='Item'&EntityId='580750'&Width=289&Height=250",LIVE NOW 05:00 WIB | MotoGP Rd3 Red Bull GP of the Americas
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea1f7f86732d47e897e38c3168851569:55b7ed4cc25fa476f6682c447af128d5
+https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd
+#EXTINF:-1  tvg-id="580751" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298994'&EntityType='Item'&EntityId='580751'&Width=289&Height=250",LIVE NOW 05:00 WIB | MotoGP Rd3 Red Bull GP of the Americas
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=93dccb38f8c84d448d5a7422eb44462b:af8f1c6acedc34551a82f3bb49adfdea
+https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:15 WIB | MotoGP Rd3 Red Bull GP of the Americas
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 03:30 WIB | Mini Match - LaLiga : Girona Vs Atletico Madrid
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:50 WIB | MotoGP Rd4 Qatar Airways GP of Qatar
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 04:27 WIB | LFCTV : Tottenham Vs Liverpool
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:00 WIB | MotoGP Rd4 Qatar Airways GP of Qatar
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 07:57 WIB | LaLiga : Villarreal Vs Barcelona
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:15 WIB | MotoGP Rd4 Qatar Airways GP of Qatar
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:18 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Burkina Faso Vs Equatorial Guinea - Group Stage
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:50 WIB | MotoGP Rd5 GP De Espana
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 12:48 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Algeria Vs Sudan - Group Stage
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:00 WIB | MotoGP Rd5 GP De Espana
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 15:18 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Ivory Coast Vs Mozambique - Group Stage
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:10 WIB | MotoGP Rd5 GP De Espana
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 17:48 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Cameroon Vs Gabon - Group Stage
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:15 WIB | Race
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 22:00 WIB | LaLiga : Osasuna Vs Alaves
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:00 WIB | 25/26 A-League Men Round 9 Western Sydney Wanderers FC vs Auckland FC
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 23:50 WIB | LaLiga : Elche Vs Rayo Vallecano
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:50 WIB | Race
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:40 WIB | TotalEnergies CAF Champions League : Rivers Vs RS Berkane
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:30 WIB | 25/26 A-League Men Round 9 Macarthur FC vs Brisbane Roar FC
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 04:10 WIB | LaLiga : Real Betis Vs Getafe
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:30 WIB | 25/26 A-League Men Round 9 Melbourne City FC vs Melbourne Victory
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:00 WIB | LaLiga : Real Madrid Vs Sevilla
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:15 WIB | Race
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 22:00 WIB | LaLiga : Levante Vs Real Sociedad
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:00 WIB | 25/26 A-League Men Round 9 Macarthur FC vs Brisbane Roar FC
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:18 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Angola Vs Zimbabwe - Group Stage
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 18:45 WIB | Race
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 12:48 WIB | (L) TotalEnergies Africa Cup of Nations, Morocco : Egypt Vs South Africa - Group Stage
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 23:30 WIB | 80th Rolex Sydney Hobart Yacht Race 2025 (Live)
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:15 WIB | The Gracefield Incident
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:30 WIB | 25/26 A-League Men Round 9 Newcastle Jets FC vs Sydney FC
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 03:00 WIB | TotalEnergies Africa Cup of Nations, Morocco : Senegal Vs Botswana - Group Stage
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:10 WIB | Race
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 04:50 WIB | UCL Classic Matches: Barcelona Vs Lyon
+#EXTINF:-1  tvg-id="576059" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW 07:20 WIB | PL: Brighton vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a83ee088e5343d095ac7f4d8d3cd945:dc0da9fdfae3c69c322b67db207a87a1
+https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd
+#EXTINF:-1  tvg-id="576060" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW 07:20 WIB | PL: Brighton vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c9c38c2de3f41afa12f9872ad6c3903:d6f5a6750b32d2addec0c98fff14de9d
+https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd
+#EXTINF:-1  tvg-id="576061" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW 07:20 WIB | PL: Brighton vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3da197d13d754505887a04aedd17922e:0028b47ca60594991910c6f6048c51a0
+https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd
+#EXTINF:-1  tvg-id="580750" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298988'&EntityType='Item'&EntityId='580750'&Width=289&Height=250",LIVE NOW 07:20 WIB | PL: Brighton vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea1f7f86732d47e897e38c3168851569:55b7ed4cc25fa476f6682c447af128d5
+https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd
+#EXTINF:-1  tvg-id="580751" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298994'&EntityType='Item'&EntityId='580751'&Width=289&Height=250",LIVE NOW 07:20 WIB | PL: Brighton vs Sunderland
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=93dccb38f8c84d448d5a7422eb44462b:af8f1c6acedc34551a82f3bb49adfdea
+https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:00 WIB | PL: Leeds vs Crystal Palace
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 11:30 WIB | PSG TV : Vendee Fontenay Foot Vs PSG - Coupe De France
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:10 WIB | PL: Bournemouth vs Burnley
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 18:00 WIB | Women's Super League : Everton Vs Arsenal
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 15:20 WIB | PL: Aston Villa vs Man Utd
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 03:00 WIB | MUTV : Aston Villa Vs Man United
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 20:00 WIB | PL: Everton vs Arsenal
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:00 WIB | MUTV: Match Day Review : Aston Villa Vs Man United
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:10 WIB | PL: Tottenham vs Liverpool
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 18:00 WIB | Women's Super League : Man City Vs Aston Villa
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:10 WIB | PL: Fulham vs Nottm Forest
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 03:00 WIB | TotalEnergies Africa Cup of Nations, Morocco : Cameroon Vs Gabon - Group Stage
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 03:20 WIB | PL: Bournemouth vs Burnley
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 04:50 WIB | UCL Classic Matches: PSV Vs Milan
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:30 WIB | PL: Newcastle vs Chelsea
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:05 WIB | Kenyalang Badminton Talent Ep05
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 08:20 WIB | PL: Man City vs West Ham
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:05 WIB | Kenyalang Badminton Talent Ep06
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:00 WIB | PL: Aston Villa vs Man Utd
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 02:00 WIB | ＱＶＣ　Grace Edit 大人の”今”に寄り添う服
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 15:00 WIB | PL: Leeds vs Crystal Palace
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 02:00 WIB | Grace Edit 大人の”今”に寄り添う服
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 17:10 WIB | PL: Wolves vs Brentford
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:45 WIB | Raceday Review - Strathalbyn
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 19:50 WIB | PL: Brighton vs Sunderland
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 11:30 WIB | Raceday Review - Mornington
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:00 WIB | PL: Aston Villa vs Man Utd
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 11:00 WIB | Raceday Review
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 01:20 WIB | PL: Everton vs Arsenal
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 08:15 WIB | Raceday Review - Caulfield
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 04:30 WIB | PL: Fulham vs Nottm Forest
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:00 WIB | Raceday Review - Nhill
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 06:40 WIB | PL: Bournemouth vs Burnley
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:30 WIB | Raceday Review - Morphettville
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 10:50 WIB | PL: Man City vs West Ham
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 02:00 WIB | QVC Grace Edit 大人の”今”に寄り添う服
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 13:00 WIB | PL: Tottenham vs Liverpool
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 07:00 WIB | BWF World Tour: SF 2
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 21:15 WIB | Race 1
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 19:30 WIB | Badminton Unlimited: Episode 11
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 04:00 WIB | Race 2
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 20:00 WIB | BWF: Arctic Open: Rd16
+#EXTINF:-1  tvg-id="576059" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NOW 07:30 WIB | BWF 年終賽 決賽 12/21(普)
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=1a83ee088e5343d095ac7f4d8d3cd945:dc0da9fdfae3c69c322b67db207a87a1
+https://ls-mp03.eo-edgefunctions7.com/out/v1/7cfe6d15c127407588568af9f4574a21/manifest.mpd
+#EXTINF:-1  tvg-id="576060" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298974'&EntityType='Item'&EntityId='576060'&Width=289&Height=250",LIVE NOW 07:30 WIB | BWF 年終賽 決賽 12/21(普)
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c9c38c2de3f41afa12f9872ad6c3903:d6f5a6750b32d2addec0c98fff14de9d
+https://ls-mp01.eo-edgefunctions7.com/out/v1/5fa3fdc8720b4317b14df756e81b78c1/manifest.mpd
+#EXTINF:-1  tvg-id="576061" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298979'&EntityType='Item'&EntityId='576061'&Width=289&Height=250",LIVE NOW 07:30 WIB | BWF 年終賽 決賽 12/21(普)
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3da197d13d754505887a04aedd17922e:0028b47ca60594991910c6f6048c51a0
+https://ls-mp02.eo-edgefunctions7.com/out/v1/2f39077458694b06bdfb15ef16f55d45/manifest.mpd
+#EXTINF:-1  tvg-id="580750" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298988'&EntityType='Item'&EntityId='580750'&Width=289&Height=250",LIVE NOW 07:30 WIB | BWF 年終賽 決賽 12/21(普)
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ea1f7f86732d47e897e38c3168851569:55b7ed4cc25fa476f6682c447af128d5
+https://ls-mp04.eo-edgefunctions7.com/out/v1/4604623e7ff4462a962275664ccd8ee5/manifest.mpd
+#EXTINF:-1  tvg-id="580751" group-title="Sea Games Thailand 2025" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298994'&EntityType='Item'&EntityId='580751'&Width=289&Height=250",LIVE NOW 07:30 WIB | BWF 年終賽 決賽 12/21(普)
+
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=93dccb38f8c84d448d5a7422eb44462b:af8f1c6acedc34551a82f3bb49adfdea
+https://ls-mp03.eo-edgefunctions7.com/out/v1/926637c1aba44cffa74adc74bf786816/manifest.mpd
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:30 WIB | BWF 年終賽 決賽 12/21(普)
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 03:00 WIB | BWF: Arctic Open: QF
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 07:30 WIB | BWF 年終賽 決賽 12/21(普)
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 11:45 WIB | BWF: Arctic Open: SF 1
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:00 WIB | BWF 年終賽 決賽 12/21(普)
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 17:15 WIB | BWF: Arctic Open: SF 2
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:30 WIB | East Asia Super League 2025/26 Taipei Fubon Braves vs Seoul SK Knights (Live)
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 20:15 WIB | BWF: Arctic Open: Finals
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:30 WIB | Sepang Race 1
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:00 WIB | Badminton Weekly: World Tour Review
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 11:00 WIB | UFC Reloaded UFC 319: Du Plessis vs Chimaev
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 07:00 WIB | BWF Japan Masters: Rd16
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:00 WIB | Sepang Race 1
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 21:45 WIB | Race Against the Machine / My Fair Cat Lady
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 05:00 WIB | Sepang Race 1
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:10 WIB | Rocket Race / Magic / Parents
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 09:30 WIB | Sepang Race 2
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 17:35 WIB | Rescue Wheels: Pups Save the Risky Race
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:00 WIB | TRACE之聲(普)
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 00:25 WIB | The Snow, Sea, Sky, Race
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 22:00 WIB | TRACE之聲(普)
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 03:00 WIB | MEGA Fights Nate Campbell vs. Ali Funeka
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:00 WIB | ガオトラ！タイガース中継2025セレクション「9.19 阪神 vs 横浜DeNA」
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:00 WIB | Wide World of Fights Deandre Latimore vs. Carlos Quintana
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 12:00 WIB | ガオトラ！タイガース中継2025セレクション「9.26 阪神 vs 中日」
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:00 WIB | KNOCKOUTS! Carlos Baldomir vs. Vernon Forrest
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 16:30 WIB | Group E: Australia vs Portugal
 https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 08:00 WIB | FIGHT SPORTS MMA Andrew Van Zyl vs. Champion Dalcha
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:00 WIB | MEGA Fights Sergio Martinez vs. Paul Williams II
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 12:00 WIB | KNOCKOUTS! Bernard Hopkins vs. Winky Wright
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 13:30 WIB | Tuesday Night Fights Hector Camacho vs. Rusty Derouen
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 14:00 WIB | FS MMA Fedor Emelianenko vs. Matt Linland
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:00 WIB | WCCB Janibek Alimkhanuly vs. Anauel Ngamissengue
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 11:00 WIB | USA vs. World: Part 2
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 12:00 WIB | KNOCKOUTS! Paul Williams vs. Antonio Margarito
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 13:30 WIB | Tuesday Night Fights Hector Camacho vs. Todd Foster
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 14:00 WIB | FIGHT SPORTS MMA Garreth McLellan vs. Dricus Du Plessis
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:00 WIB | MEGA Fights In 60 Timothy Bradley vs. Luis Carlos Abregu
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:00 WIB | Greatest Classics Mike Tyson vs. Sammy Scaff
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 12:00 WIB | KNOCKOUTS! Paulie Malignaggi vs. Lovemore N'Dou
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 13:30 WIB | Tuesday Night Fights Hector Camacho vs. Luis Maysonet
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 20:00 WIB | Malaysia Race 2
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:45 WIB | Malaysia Race 1
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 02:30 WIB | Man United vs Bournemouth
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:00 WIB | Aston Villa vs Man United
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 22:00 WIB | Rolex Middle Sea Race
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 22:00 WIB | SOUNDS OF TRACE
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:24 WIB | Lucy Grace(普)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 03:02 WIB | Amazing Grace(普)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 11:58 WIB | Fight Song / Amazing Grace(普)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 12:51 WIB | Amazing Grace (arr. Mercurio)(普)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:00 WIB | 燃點當下:魏爾德 vs. 福瑞(拳擊) / 比莉珍金(網球)S40(22)(普)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 14:30 WIB | 燃點當下:大坂直美 vs 小威廉斯(網球) / 約書亞 vs. 魯伊斯(拳擊)S40(23)(普)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 20:10 WIB | China, Race to the Future Ep01
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 03:45 WIB | PL: Aston Villa vs Manchester Utd
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:00 WIB | PL: Man City vs Sunderland
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:30 WIB | PL: Tottenham vs Liverpool
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 12:45 WIB | PL: Newcastle Utd vs Chelsea
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 15:00 WIB | PL: Brentford vs Man City
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 17:15 WIB | PL: Manchester City vs Everton
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 19:30 WIB | PL: Tottenham vs Villa
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 21:45 WIB | PL: Newcastle vs Man City
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 04:30 WIB | PL: Liverpool vs Manchester Utd
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:45 WIB | PL: Fulham vs Man City
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 13:30 WIB | PL: Manchester Utd vs Brighton
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 18:00 WIB | PL: Arsenal vs Palace
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 20:15 WIB | PL: Everton vs Tottenham
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 00:45 WIB | PL: Arsenal vs Tottenham
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:15 WIB | PL: Tottenham vs Chelsea
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:45 WIB | PL: Liverpool vs Aston Villa
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 18:45 WIB | Raa Raa And The Speedy Racers
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:00 WIB | Dawn Of The Dragon Racers
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 14:05 WIB | Spartan Race 25
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 14:00 WIB | Classic Match: Mun Vs New
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 02:50 WIB | Carabao Cup: Arsenal vs Crystal Palace
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:00 WIB | EFL: Derby vs Leicester
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 08:00 WIB | EFL: West Brom vs Sheffield
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 11:00 WIB | Carabao Cup: Cardiff vs Chelsea
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 14:00 WIB | K-League: Suwon Samsung vs Jeju
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 16:00 WIB | K-League: Bucheon vs Suwon FC
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 18:00 WIB | Serie A: Cagliari vs Pisa
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 21:00 WIB | Dutch: Feyenoord vs Zwolle,
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 23:15 WIB | Dutch: Heerenveen vs PSV
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:30 WIB | Dutch: Fortuna Sittard vs Ajax
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 04:00 WIB | DFB: Dortmund vs Leverkusen
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 07:00 WIB | Carabao Cup: Man City vs Brentford
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:00 WIB | DFB: Leipzig vs Magdeburg
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 14:00 WIB | K-League: Jeju vs Suwon Samsung
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 16:00 WIB | K-League: Suwon FC vs Bucheon
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 18:00 WIB | Serie A: Lazio vs Cremonese
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 23:15 WIB | Dutch: PSV vs Volendam
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:00 WIB | DFB: Freiburg vs Darmstadt
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 04:30 WIB | DFB: Hamburger vs Holstein
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 07:50 WIB | Dutch: NEC vs Ajax
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:20 WIB | (L) EFL: Birmingham vs Derby
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 12:50 WIB | (L) EFL: Middlesbrough vs Blackburn
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 07:30 WIB | EASL: Golden Kings vs Black Bears
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:30 WIB | (L) EASL: Fubon Braves vs SK Knights
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 13:00 WIB | UFC 300: Pereira vs Hill
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 13:30 WIB | UFC 317: Topuria vs Oliveira
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:10 WIB | EASL: Fubon Braves vs SK Knights
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 04:40 WIB | UIM F1H2O GP: Sharjah: Sprint Race
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 06:10 WIB | UIM F1H2O GP: Sharjah: Main Race
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 20:00 WIB | EASL: Alvark vs LG Sakers
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 14:05 WIB | Spartan Race '25 第5集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 20:55 WIB | Spartan Race '25 第2集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:00 WIB | Race to Survive: New Zealand
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:00 WIB | Sydney To Hobart Yacht Race Tragedy
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 23:30 WIB | Race Start
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 23:32 WIB | Sydney to Hobart Yacht Race
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:10 WIB | A Graceful Liar 第58集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:10 WIB | A Graceful Liar 第59集
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:10 WIB | A Graceful Liar
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:15 WIB | A Graceful Liar Ep58
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 10:15 WIB | A Graceful Liar Ep59
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:00 WIB | MotoGP Rd3 Red Bull GP of the Americas
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 18:50 WIB | MotoGP Rd4 Qatar Airways GP of Qatar
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 18:50 WIB | MotoGP Rd5 GP De Espana
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 08:15 WIB | Race
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 13:00 WIB | 25/26 A-League Men Round 9 Western Sydney Wanderers FC vs Auckland FC
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 23:30 WIB | 25/26 A-League Men Round 9 Macarthur FC vs Brisbane Roar FC
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:30 WIB | 25/26 A-League Men Round 9 Melbourne City FC vs Melbourne Victory
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 23:30 WIB | 80th Rolex Sydney Hobart Yacht Race 2025 (Live)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:30 WIB | 25/26 A-League Men Round 9 Newcastle Jets FC vs Sydney FC
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:10 WIB | PL: Wolves vs Brentford
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 07:20 WIB | PL: Brighton vs Sunderland
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 11:00 WIB | PL: Leeds vs Crystal Palace
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 13:10 WIB | PL: Bournemouth vs Burnley
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 15:20 WIB | PL: Aston Villa vs Man Utd
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 20:00 WIB | PL: Everton vs Arsenal
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 01:10 WIB | PL: Fulham vs Nottm Forest
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 05:30 WIB | PL: Newcastle vs Chelsea
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 08:20 WIB | PL: Man City vs West Ham
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 21:15 WIB | Race 1
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 04:00 WIB | Race 2
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 07:30 WIB | BWF 年終賽 決賽 12/21(普)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:30 WIB | East Asia Super League 2025/26 Taipei Fubon Braves vs Seoul SK Knights (Live)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:30 WIB | Sepang Race 1
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 11:00 WIB | UFC Reloaded UFC 319: Du Plessis vs Chimaev
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 09:30 WIB | Sepang Race 2
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 22:00 WIB | TRACE之聲(普)
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 16:30 WIB | Group E: Australia vs Portugal
-https://bwifi.my.id/hls/video.m3u8
-#EXTINF:-1 group-title="LIVE NEXT" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='10298961'&EntityType='Item'&EntityId='576059'&Width=289&Height=250",LIVE NEXT | 16:30 WIB | Group E: Brazil vs Portugal
+#EXTINF:-1 group-title="LIVE NEXT",LIVE NEXT 16:30 WIB | Group E: Brazil vs Portugal
 https://bwifi.my.id/hls/video.m3u8
