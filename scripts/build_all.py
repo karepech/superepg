@@ -1,165 +1,106 @@
-import re
+import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-import requests
 
-# ================== KONFIG ==================
-BASE = Path(__file__).resolve().parents[1]
-
+# ================= PATH =================
+BASE = Path(__file__).resolve().parent.parent
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_all.m3u"
 
-EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
+# ================= EPG =================
+EPG_URL = "https://raw.githubusercontent.com/dbghelp/StarHub-TV-EPG/main/starhub.xml"
 
-CUSTOM_URL = "https://bwifi.my.id/hls/video.m3u8"
+# ================= TIME =================
+WIB = timezone(timedelta(hours=7))
+NOW = datetime.now(WIB)
 
-TZ = timezone(timedelta(hours=7))
-NOW = datetime.now(TZ)
+# ================= FILTER =================
+EURO_LEAGUES = [
+    "premier", "la liga", "serie a",
+    "bundesliga", "ligue 1",
+    "champions", "europa", "conference"
+]
 
-PRE_LIVE_MINUTES = 5
-MAX_LIVE_CHANNEL = 5
+BLOCK_WORDS = ["replay", "highlight", "rerun", "recap"]
 
-# ================== HELPER ==================
-def norm(txt: str) -> str:
-    return re.sub(r"[^a-z0-9]", "", txt.lower())
+# ================= HELPERS =================
+def is_match(title):
+    t = title.lower()
+    return any(x in t for x in EURO_LEAGUES) and not any(b in t for b in BLOCK_WORDS)
 
-def parse_time(t):
-    dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
-    if len(t) > 14 and (t[14] == "+" or t[14] == "-"):
-        sign = 1 if t[14] == "+" else -1
-        hh = int(t[15:17])
-        mm = int(t[17:19])
-        tz = timezone(sign * timedelta(hours=hh, minutes=mm))
-        dt = dt.replace(tzinfo=tz)
-    else:
-        dt = dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(TZ)
+def parse_utc(t):
+    return datetime.strptime(t[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc)
 
-def is_football(title):
-    return " vs " in title.lower()
+def to_wib(dt):
+    return dt.astimezone(WIB)
 
-# ================== LOAD EPG ==================
-print("📥 Load EPG")
-root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
+# ================= LOAD M3U BLOK UTUH =================
+def load_m3u_blocks(path):
+    blocks = []
+    current = []
 
-epg_channels = {}
-programmes = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("#EXTINF"):
+            if current:
+                blocks.append(current)
+            current = [line]
+        else:
+            if current is not None:
+                current.append(line)
 
-for ch in root.findall("channel"):
-    cid = ch.get("id")
-    name = ch.findtext("display-name", "").strip()
-    icon = ""
-    icon_el = ch.find("icon")
-    if icon_el is not None:
-        icon = icon_el.get("src", "")
-    if cid and name:
-        epg_channels[cid] = {
-            "name": name,
-            "key": norm(name),
-            "logo": icon
-        }
+    if current:
+        blocks.append(current)
 
+    return blocks
+
+# ================= LOAD EPG =================
+xml = requests.get(EPG_URL, timeout=30).content
+root = ET.fromstring(xml)
+
+events = []
 for p in root.findall("programme"):
-    title = p.findtext("title", "").strip()
-    programmes.append({
-        "cid": p.get("channel"),
-        "start": parse_time(p.get("start")),
-        "stop": parse_time(p.get("stop")),
-        "title": title,
-        "is_match": is_football(title)
-    })
-
-# ================== PARSE M3U BLOK UTUH ==================
-print("📺 Load playlist")
-lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
-
-blocks = []
-i = 0
-while i < len(lines):
-    if lines[i].startswith("#EXTINF"):
-        blk = [lines[i]]
-        i += 1
-        while i < len(lines):
-            blk.append(lines[i])
-            if lines[i].startswith("http"):
-                break
-            i += 1
-        blocks.append(blk)
-    i += 1
-
-m3u_map = {}
-for blk in blocks:
-    m = re.search(r",(.+)$", blk[0])
-    if not m:
-        continue
-    name = m.group(1).strip()
-    m3u_map[norm(name)] = blk
-
-# ================== BUILD LIVE ==================
-out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
-
-live_now = []
-next_live = []
-
-for p in programmes:
-    if not p["is_match"]:
+    title_el = p.find("title")
+    if title_el is None:
         continue
 
-    cid = p["cid"]
-    if cid not in epg_channels:
+    title = title_el.text or ""
+    if not is_match(title):
         continue
 
-    ch = epg_channels[cid]
-    key = ch["key"]
-    if key not in m3u_map:
-        continue
+    start = to_wib(parse_utc(p.attrib["start"]))
+    stop = to_wib(parse_utc(p.attrib["stop"]))
 
-    blk = m3u_map[key].copy()
-    start = p["start"]
-    stop = p["stop"]
-
-    delta = (start - NOW).total_seconds() / 60
-
-    # Tentukan URL
+    status = None
     if start <= NOW <= stop:
-        url = blk[-1]
-        status = "LIVE NOW"
-    elif 0 <= delta <= PRE_LIVE_MINUTES:
-        url = blk[-1]
-        status = "LIVE NOW"
-    elif delta > PRE_LIVE_MINUTES:
-        url = CUSTOM_URL + "\n"
-        status = "LIVE NEXT"
-    else:
-        continue
+        status = "LIVE"
+    elif start > NOW:
+        status = "NEXT"
 
-    blk[-1] = url
+    if status:
+        events.append({
+            "channel": p.attrib.get("channel", "").lower(),
+            "title": title,
+            "start": start,
+            "status": status
+        })
 
-    title = f"{status} | {start.strftime('%H:%M')} WIB | {p['title']}"
+# ================= BUILD OUTPUT =================
+blocks = load_m3u_blocks(INPUT_M3U)
+output = ["#EXTM3U\n"]
 
-    blk[0] = (
-        f'#EXTINF:-1 tvg-id="{cid}" '
-        f'tvg-name="{ch["name"]}" '
-        f'tvg-logo="{ch["logo"]}" '
-        f'group-title="{status}",{title}\n'
-    )
+for ev in events:
+    for block in blocks:
+        extinf = block[0].lower()
+        if ev["channel"] in extinf:
+            time_str = ev["start"].strftime("%H:%M WIB")
+            new_extinf = block[0].split(",", 1)[0] + \
+                f",{ev['status']} | {time_str} | {ev['title']}"
 
-    if status == "LIVE NOW":
-        live_now.append(blk)
-    else:
-        next_live.append(blk)
+            output.append(new_extinf + "\n")
+            for line in block[1:]:
+                output.append(line + "\n")
 
-# Batasi live now max channel
-live_now = live_now[:MAX_LIVE_CHANNEL]
-
-# ================== OUTPUT ==================
-for b in live_now:
-    out.extend(b)
-
-for b in next_live:
-    out.extend(b)
-
-OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
-
-print("✅ SUCCESS: Logo dari EPG, blok utuh, URL dinamis")
+# ================= SAVE =================
+OUTPUT_M3U.write_text("".join(output), encoding="utf-8")
+print("OK → live_all.m3u (BLOK UTUH)")
