@@ -1,68 +1,77 @@
 import re
-import requests
 import xml.etree.ElementTree as ET
-from pathlib import Path
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
+import requests
 
-# ================= CONFIG =================
-BASE = Path(__file__).resolve().parent.parent
+# ================== KONFIG ==================
+BASE = Path(__file__).resolve().parents[1]
 
 INPUT_M3U = BASE / "live_epg_sports.m3u"
-OUT_FILE  = BASE / "live_football.m3u"
+OUTPUT_M3U = BASE / "live_all.m3u"
 
-EPG_URL = "https://raw.githubusercontent.com/dbghelp/StarHub-TV-EPG/main/starhub.xml"
+EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 
 CUSTOM_URL = "https://bwifi.my.id/hls/video.m3u8"
-
-MAX_CH = 5
-H_NEXT = 3
 
 TZ = timezone(timedelta(hours=7))
 NOW = datetime.now(TZ)
 
-BLOCK_WORDS = [
-    "md", "highlight", "classic", "replay", "rerun",
-    "episode", "movie", "drama", "series", "show"
-]
+PRE_LIVE_MINUTES = 5
+MAX_LIVE_CHANNEL = 5
 
-# ================= HELPERS =================
-def norm(t):
-    return re.sub(r"[^a-z0-9]", "", t.lower())
+# ================== HELPER ==================
+def norm(txt: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", txt.lower())
 
-def valid_match(title):
-    t = title.lower()
-    if "vs" not in t:
-        return False
-    for b in BLOCK_WORDS:
-        if b in t:
-            return False
-    return True
+def parse_time(t):
+    dt = datetime.strptime(t[:14], "%Y%m%d%H%M%S")
+    if len(t) > 14 and (t[14] == "+" or t[14] == "-"):
+        sign = 1 if t[14] == "+" else -1
+        hh = int(t[15:17])
+        mm = int(t[17:19])
+        tz = timezone(sign * timedelta(hours=hh, minutes=mm))
+        dt = dt.replace(tzinfo=tz)
+    else:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(TZ)
 
-# ================= LOAD EPG =================
-print("📥 Load StarHub EPG")
-root = ET.fromstring(requests.get(EPG_URL, timeout=60).content)
+def is_football(title):
+    return " vs " in title.lower()
 
-events = {}
+# ================== LOAD EPG ==================
+print("📥 Load EPG")
+root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
+
+epg_channels = {}
+programmes = []
+
+for ch in root.findall("channel"):
+    cid = ch.get("id")
+    name = ch.findtext("display-name", "").strip()
+    icon = ""
+    icon_el = ch.find("icon")
+    if icon_el is not None:
+        icon = icon_el.get("src", "")
+    if cid and name:
+        epg_channels[cid] = {
+            "name": name,
+            "key": norm(name),
+            "logo": icon
+        }
 
 for p in root.findall("programme"):
     title = p.findtext("title", "").strip()
-    start = p.get("start")
+    programmes.append({
+        "cid": p.get("channel"),
+        "start": parse_time(p.get("start")),
+        "stop": parse_time(p.get("stop")),
+        "title": title,
+        "is_match": is_football(title)
+    })
 
-    if not title or not start:
-        continue
-    if not valid_match(title):
-        continue
-
-    start_dt = datetime.strptime(
-        start[:14], "%Y%m%d%H%M%S"
-    ).replace(tzinfo=timezone.utc).astimezone(TZ)
-
-    if start_dt <= NOW + timedelta(days=H_NEXT):
-        events[title] = start_dt
-
-print("EVENT TERDETEKSI:", len(events))
-
-# ================= LOAD BLOK M3U =================
+# ================== PARSE M3U BLOK UTUH ==================
+print("📺 Load playlist")
 lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
 
 blocks = []
@@ -79,46 +88,78 @@ while i < len(lines):
         blocks.append(blk)
     i += 1
 
-print("CHANNEL BLOK:", len(blocks))
+m3u_map = {}
+for blk in blocks:
+    m = re.search(r",(.+)$", blk[0])
+    if not m:
+        continue
+    name = m.group(1).strip()
+    m3u_map[norm(name)] = blk
 
-# ================= BUILD OUTPUT =================
-out = ["#EXTM3U\n"]
-used_events = set()
+# ================== BUILD LIVE ==================
+out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
 
-for title, dt in events.items():
-    key = norm(title)
-    used = 0
+live_now = []
+next_live = []
 
-    for blk in blocks:
-        if used >= MAX_CH:
-            break
+for p in programmes:
+    if not p["is_match"]:
+        continue
 
-        header = blk[0].lower()
-        if "sport" not in header:
-            continue
+    cid = p["cid"]
+    if cid not in epg_channels:
+        continue
 
-        if key[:8] in norm(header):
-            new_blk = blk.copy()
+    ch = epg_channels[cid]
+    key = ch["key"]
+    if key not in m3u_map:
+        continue
 
-            # GANTI NAMA SAJA
-            new_blk[0] = re.sub(
-                r",.*$",
-                f',LIVE | {dt.strftime("%d-%m %H:%M WIB")} | {title}\n',
-                new_blk[0]
-            )
+    blk = m3u_map[key].copy()
+    start = p["start"]
+    stop = p["stop"]
 
-            # GANTI URL SAJA
-            new_blk[-1] = CUSTOM_URL + "\n"
+    delta = (start - NOW).total_seconds() / 60
 
-            out.extend(new_blk)
-            used += 1
-            used_events.add(title)
+    # Tentukan URL
+    if start <= NOW <= stop:
+        url = blk[-1]
+        status = "LIVE NOW"
+    elif 0 <= delta <= PRE_LIVE_MINUTES:
+        url = blk[-1]
+        status = "LIVE NOW"
+    elif delta > PRE_LIVE_MINUTES:
+        url = CUSTOM_URL + "\n"
+        status = "LIVE NEXT"
+    else:
+        continue
 
-# ================= FALLBACK =================
-if len(out) == 1:
-    out.append('#EXTINF:-1 group-title="LIVE",LIVE FOOTBALL\n')
-    out.append(CUSTOM_URL + "\n")
+    blk[-1] = url
 
-OUT_FILE.write_text("".join(out), encoding="utf-8")
+    title = f"{status} | {start.strftime('%H:%M')} WIB | {p['title']}"
 
-print("✅ SELESAI — BLOK UTUH TERJAGA")
+    blk[0] = (
+        f'#EXTINF:-1 tvg-id="{cid}" '
+        f'tvg-name="{ch["name"]}" '
+        f'tvg-logo="{ch["logo"]}" '
+        f'group-title="{status}",{title}\n'
+    )
+
+    if status == "LIVE NOW":
+        live_now.append(blk)
+    else:
+        next_live.append(blk)
+
+# Batasi live now max channel
+live_now = live_now[:MAX_LIVE_CHANNEL]
+
+# ================== OUTPUT ==================
+for b in live_now:
+    out.extend(b)
+
+for b in next_live:
+    out.extend(b)
+
+OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
+
+print("✅ SUCCESS: Logo dari EPG, blok utuh, URL dinamis")
