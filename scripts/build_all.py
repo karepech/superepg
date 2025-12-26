@@ -1,101 +1,116 @@
+import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-import re
 
 # ================= CONFIG =================
-EPG_FILE = Path("epg_wib_sports.xml")
-INPUT_M3U = Path("live_epg_sports.m3u")
-OUTPUT_M3U = Path("live_all.m3u")
+EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
+INPUT_M3U = "live_epg_sports.m3u"
+OUTPUT_M3U = "live_all.m3u"
 
 TZ = timezone(timedelta(hours=7))  # WIB
 NOW = datetime.now(TZ)
 
-BLOCK_WORDS = [
+# ================= KEYWORDS =================
+REPLAY_KEYWORDS = [
     "MD",
     "HIGHLIGHT",
     "HIGHLIGHTS",
     "CLASSIC",
     "REPLAY",
-    "REWIND",
-    "ARCHIVE"
+    "MATCH HLS",
+    "HLS"
 ]
 
-# ================= HELPERS =================
-def is_replay(title: str) -> bool:
-    t = title.upper()
-    return any(w in t for w in BLOCK_WORDS)
-
-def is_match(title: str) -> bool:
-    return " VS " in title.upper()
-
-def clean_title(title: str) -> str:
-    return re.sub(r"\s+", " ", title).strip()
-
-# ================= LOAD M3U =================
-channels = []
-current = []
-
-for line in INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines():
-    if line.startswith("#EXTINF"):
-        current = [line]
-    elif line.startswith("http"):
-        current.append(line)
-        channels.append("\n".join(current))
-        current = []
+# ================= LOAD EPG =================
+print("⏳ Download EPG...")
+xml_text = requests.get(EPG_URL, timeout=30).text
+root = ET.fromstring(xml_text)
 
 # ================= PARSE EPG =================
-tree = ET.parse(EPG_FILE)
-root = tree.getroot()
-
-live_now = []
-live_next = []
+events = []
 
 for prog in root.findall("programme"):
     title_el = prog.find("title")
     if title_el is None:
         continue
 
-    title = clean_title(title_el.text or "")
+    title = title_el.text.strip()
     title_upper = title.upper()
 
-    if not is_match(title):
+    # ❌ skip replay
+    if any(k in title_upper for k in REPLAY_KEYWORDS):
         continue
 
-    if is_replay(title):
+    # ✅ must be live match
+    if "(L)" not in title_upper and " VS " not in title_upper:
         continue
 
-    is_live = "(L)" in title_upper
-
-    start_raw = prog.get("start")
-    if not start_raw:
+    # parse time
+    start = prog.attrib.get("start")
+    if not start:
         continue
 
-    start = datetime.strptime(start_raw[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).astimezone(TZ)
+    try:
+        start_dt = datetime.strptime(start[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).astimezone(TZ)
+    except:
+        continue
 
-    if start.date() == NOW.date():
-        live_now.append(title)
-    else:
-        live_next.append(title)
+    channel_id = prog.attrib.get("channel", "")
 
-# ================= BUILD OUTPUT =================
-out = ["#EXTM3U"]
+    events.append({
+        "title": title,
+        "start": start_dt,
+        "channel": channel_id
+    })
 
-def write_group(group_name, titles):
-    for title in titles:
-        for ch in channels:
-            if "tvg-name" in ch.lower():
-                out.append(
-                    ch.replace(
-                        "#EXTINF:-1",
-                        f'#EXTINF:-1 group-title="{group_name}", {group_name} | {title}'
-                    )
-                )
+print(f"✅ LIVE EVENT ditemukan: {len(events)}")
 
-write_group("LIVE NOW", live_now)
-write_group("LIVE NEXT", live_next)
+# ================= LOAD M3U =================
+m3u_lines = Path(INPUT_M3U).read_text(encoding="utf-8", errors="ignore").splitlines()
 
-OUTPUT_M3U.write_text("\n".join(out), encoding="utf-8")
+channels = []
+current = {}
 
-print(f"LIVE NOW: {len(live_now)} event")
-print(f"LIVE NEXT: {len(live_next)} event")
+for line in m3u_lines:
+    if line.startswith("#EXTINF"):
+        current = {"extinf": line, "url": ""}
+    elif line.startswith("http"):
+        current["url"] = line
+        channels.append(current)
+        current = {}
+
+# ================= MATCH EVENT ↔ CHANNEL =================
+output = ["#EXTM3U"]
+
+live_count = 0
+
+for ev in events:
+    ev_title_upper = ev["title"].upper()
+
+    matched = False
+
+    for ch in channels:
+        ch_name = ch["extinf"].upper()
+
+        if any(word in ch_name for word in ev_title_upper.split(" VS ")):
+            name = f"LIVE | {ev['start'].strftime('%H:%M')} WIB | {ev['title']}"
+
+            extinf = ch["extinf"]
+
+            # ganti nama saja, URL tetap UTUH
+            extinf = extinf.split(",", 1)[0] + "," + name
+
+            output.append(extinf)
+            output.append(ch["url"])
+
+            live_count += 1
+            matched = True
+
+    if not matched:
+        continue
+
+# ================= WRITE OUTPUT =================
+Path(OUTPUT_M3U).write_text("\n".join(output), encoding="utf-8")
+
+print(f"🎉 LIVE EVENT ditulis: {live_count} channel")
