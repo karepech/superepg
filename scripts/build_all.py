@@ -8,86 +8,84 @@ from datetime import datetime, timedelta, timezone
 BASE = Path(__file__).resolve().parent.parent
 
 INPUT_M3U = BASE / "live_epg_sports.m3u"
-OUT_NOW = BASE / "live_now.m3u"
-OUT_NEXT = BASE / "live_next.m3u"
+OUTPUT_M3U = BASE / "live_all.m3u"
 
 EPG_URL = "https://raw.githubusercontent.com/dbghelp/StarHub-TV-EPG/main/starhub.xml"
 
-MAX_CHANNEL = 5
-TZ = timezone(timedelta(hours=7))  # WIB
-NOW = datetime.now(TZ)
+MAX_CHANNEL_PER_EVENT = 5
+TZ_WIB = timezone(timedelta(hours=7))
 
 EURO_LEAGUES = [
-    "premier league", "la liga", "serie a",
+    "premier", "la liga", "serie a",
     "bundesliga", "ligue 1",
-    "champions league", "europa league",
-    "conference league"
+    "champions", "europa", "conference"
 ]
 
 BLOCK_WORDS = [
-    "md", "highlight", "replay",
-    "classic", "review", "recap"
+    "md", "highlight", "replay", "classic",
+    "recap", "review", "hls"
 ]
-
-CUSTOM_URL = "https://bwifi.my.id/hls/video.m3u8"
 
 # ================= HELPERS =================
 def norm(t):
     return re.sub(r"[^a-z0-9]", "", t.lower())
 
-def parse_time(t):
-    return datetime.strptime(t[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).astimezone(TZ)
-
 def is_valid_event(title, league):
     t = title.lower()
     l = league.lower()
 
+    # wajib vs
     if not re.search(r"\bvs\b|\bv\b", t):
         return False
 
+    # buang ulangan
     for w in BLOCK_WORDS:
         if w in t:
             return False
 
+    # liga besar
     if not any(x in l for x in EURO_LEAGUES):
         return False
 
     return True
 
+def parse_time(t):
+    return datetime.strptime(t[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).astimezone(TZ_WIB)
+
 # ================= LOAD EPG =================
 print("📥 Download EPG StarHub")
-root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
+xml = requests.get(EPG_URL, timeout=120).content
+root = ET.fromstring(xml)
 
-live_now_events = []
+now = datetime.now(TZ_WIB)
+h3 = now + timedelta(days=3)
+
+live_events = []
 next_events = []
 
 for p in root.findall("programme"):
     title = p.findtext("title", "").strip()
     league = p.findtext("category", "").strip()
-    start = p.get("start")
-
-    if not title or not start:
-        continue
 
     if not is_valid_event(title, league):
         continue
 
-    st = parse_time(start)
-    day_diff = (st.date() - NOW.date()).days
+    start = parse_time(p.attrib["start"])
+    stop = parse_time(p.attrib["stop"])
 
-    if day_diff == 0:
-        live_now_events.append(title)
-    elif 1 <= day_diff <= 3:
-        next_events.append((st, title))
+    if start <= now <= stop:
+        live_events.append(title)
+    elif now < start <= h3:
+        next_events.append((start, title))
 
 # unik
-live_now_events = list(dict.fromkeys(live_now_events))
-next_events = list(dict.fromkeys(next_events))
+live_events = list(dict.fromkeys(live_events))
+next_events = sorted(dict.fromkeys(next_events), key=lambda x: x[0])
 
-print(f"LIVE NOW: {len(live_now_events)}")
-print(f"NEXT LIVE (H+3): {len(next_events)}")
+print(f"🟢 LIVE NOW: {len(live_events)}")
+print(f"🟡 NEXT LIVE (H+3): {len(next_events)}")
 
-# ================= LOAD BLOK M3U =================
+# ================= LOAD M3U BLOK =================
 lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
 
 blocks = []
@@ -104,43 +102,41 @@ while i < len(lines):
         blocks.append(blk)
     i += 1
 
-# ================= BUILD LIVE NOW =================
-out_now = ["#EXTM3U\n"]
+# ================= BUILD OUTPUT =================
+out = ["#EXTM3U\n"]
 
-for event in live_now_events:
+def add_event(title, group):
     used = 0
-    ek = norm(event)
+    key = norm(title)[:10]
 
     for blk in blocks:
-        if used >= MAX_CHANNEL:
+        if used >= MAX_CHANNEL_PER_EVENT:
             break
 
-        if ek[:8] in norm(blk[0]):
-            new_blk = blk.copy()
-            new_blk[0] = re.sub(
+        if key in norm(blk[0]):
+            b = blk.copy()
+            b[0] = re.sub(
                 r",.*$",
-                f",LIVE NOW | {event}\n",
-                new_blk[0]
+                f",{group} | {title}\n",
+                b[0]
             )
-            out_now.extend(new_blk)
+            out.extend(b)
             used += 1
 
-if len(out_now) == 1 and live_now_events:
-    out_now.append(f'#EXTINF:-1 group-title="LIVE NOW",LIVE NOW | {live_now_events[0]}\n')
-    out_now.append(CUSTOM_URL + "\n")
+    # fallback
+    if used == 0:
+        out.append(f'#EXTINF:-1 group-title="{group}",{group} | {title}\n')
+        out.append("https://bwifi.my.id/hls/video.m3u8\n")
 
-# ================= BUILD NEXT LIVE =================
-out_next = ["#EXTM3U\n"]
+# LIVE NOW
+for t in live_events:
+    add_event(t, "LIVE NOW")
 
-for st, title in sorted(next_events):
-    label = st.strftime("%d-%m %H:%M WIB")
-    out_next.append(
-        f'#EXTINF:-1 group-title="LIVE NEXT",NEXT LIVE | {label} | {title}\n'
-    )
-    out_next.append(CUSTOM_URL + "\n")
+# NEXT LIVE
+for st, t in next_events:
+    jam = st.strftime("%d-%m %H:%M WIB")
+    add_event(f"{jam} | {t}", "LIVE NEXT")
 
 # ================= SAVE =================
-OUT_NOW.write_text("".join(out_now), encoding="utf-8")
-OUT_NEXT.write_text("".join(out_next), encoding="utf-8")
-
-print("✅ SELESAI: LIVE NOW + NEXT EVENT H+3 (STARHUB)")
+OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
+print("✅ SELESAI: LIVE NOW + NEXT H+3 (STARHUB)")
