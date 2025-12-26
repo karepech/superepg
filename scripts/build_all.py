@@ -25,7 +25,7 @@ EURO_LEAGUES = [
 BLOCK_WORDS = ["replay", "highlight", "rerun", "recap"]
 
 # ================= HELPERS =================
-def is_match(title):
+def is_live_match(title):
     t = title.lower()
     return any(x in t for x in EURO_LEAGUES) and not any(b in t for b in BLOCK_WORDS)
 
@@ -35,72 +35,62 @@ def parse_utc(t):
 def to_wib(dt):
     return dt.astimezone(WIB)
 
-# ================= LOAD M3U BLOK UTUH =================
 def load_m3u_blocks(path):
     blocks = []
-    current = []
+    cur = []
 
     for line in path.read_text(encoding="utf-8").splitlines():
         if line.startswith("#EXTINF"):
-            if current:
-                blocks.append(current)
-            current = [line]
+            if cur:
+                blocks.append(cur)
+            cur = [line]
         else:
-            if current is not None:
-                current.append(line)
+            if cur:
+                cur.append(line)
 
-    if current:
-        blocks.append(current)
-
+    if cur:
+        blocks.append(cur)
     return blocks
 
-# ================= LOAD EPG =================
+# ================= LOAD LIVE EVENTS =================
 xml = requests.get(EPG_URL, timeout=30).content
 root = ET.fromstring(xml)
 
-events = []
+live_events = []
 for p in root.findall("programme"):
     title_el = p.find("title")
     if title_el is None:
         continue
 
     title = title_el.text or ""
-    if not is_match(title):
+    if not is_live_match(title):
         continue
 
     start = to_wib(parse_utc(p.attrib["start"]))
     stop = to_wib(parse_utc(p.attrib["stop"]))
 
-    status = None
     if start <= NOW <= stop:
-        status = "LIVE"
-    elif start > NOW:
-        status = "NEXT"
-
-    if status:
-        events.append({
-            "channel": p.attrib.get("channel", "").lower(),
+        live_events.append({
             "title": title,
-            "start": start,
-            "status": status
+            "start": start
         })
 
 # ================= BUILD OUTPUT =================
 blocks = load_m3u_blocks(INPUT_M3U)
-output = ["#EXTM3U\n"]
+out = ["#EXTM3U\n"]
 
-for ev in events:
+for ev in live_events:
+    time_str = ev["start"].strftime("%H:%M WIB")
+
     for block in blocks:
-        extinf = block[0].lower()
-        if ev["channel"] in extinf:
-            time_str = ev["start"].strftime("%H:%M WIB")
-            new_extinf = block[0].split(",", 1)[0] + \
-                f",{ev['status']} | {time_str} | {ev['title']}"
+        # ganti judul saja, BLOK UTUH TETAP
+        new_extinf = block[0].split(",", 1)[0] + \
+            f",LIVE | {time_str} | {ev['title']}"
 
-            output.append(new_extinf + "\n")
-            for line in block[1:]:
-                output.append(line + "\n")
+        out.append(new_extinf + "\n")
+        for line in block[1:]:
+            out.append(line + "\n")
 
 # ================= SAVE =================
-OUTPUT_M3U.write_text("".join(output), encoding="utf-8")
-print("OK → live_all.m3u (BLOK UTUH)")
+OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
+print("OK → semua channel tampil jika live bola")
