@@ -1,141 +1,157 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import re
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import requests
 
-# =========================
-# CONFIG
-# =========================
-INPUT_M3U = Path("live_epg_sports.m3u")
-OUTPUT_M3U = Path("live_all.m3u")
+# ================= CONFIG =================
+BASE = Path(__file__).resolve().parent.parent
 
-TZ_WIB = timezone(timedelta(hours=7))
-NOW = datetime.now(TZ_WIB)
+INPUT_M3U = BASE / "live_epg_sports.m3u"
+OUTPUT_M3U = BASE / "live_all.m3u"
 
-# Liga besar Eropa
-VALID_LEAGUES = [
-    "premier league",
-    "la liga",
-    "serie a",
-    "bundesliga",
-    "ligue 1",
-    "uefa",
-    "champions league",
-    "europa league",
-    "conference league"
+EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
+
+TZ = timezone(timedelta(hours=7))  # WIB
+NOW = datetime.now(TZ)
+
+# ================= FILTER RULES =================
+BLOCK_KEYWORDS = [
+    "md", "highlight", "highlights", "classic",
+    "hls", "replay", "recap", "magazine", "review"
 ]
 
-# =========================
-# FILTER LOGIC
-# =========================
-def is_replay(title: str) -> bool:
-    t = title.lower()
+VALID_LEAGUES = [
+    "premier league", "liga inggris",
+    "laliga", "liga spanyol",
+    "serie a", "liga italia",
+    "bundesliga",
+    "ligue 1",
+    "afc", "piala afrika"
+]
 
-    # MD = ULANGAN MUTLAK
-    if re.search(r"\bmd\b", t):
-        return True
+# ================= HELPERS =================
+def norm(txt: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", txt.lower())
 
-    replay_words = [
-        "highlight", "highlights",
-        "classic",
-        "hls",
-        "replay",
-        "rerun",
-        "recap",
-        "review",
-        "full match",
-        "mini match"
-    ]
+def has_block_keyword(text: str) -> bool:
+    t = text.lower()
+    return any(k in t for k in BLOCK_KEYWORDS)
 
-    return any(w in t for w in replay_words)
+def is_valid_match(title: str, category: str) -> bool:
+    text = f"{title} {category}".lower()
 
-
-def is_live_event(title: str) -> bool:
-    t = title.lower()
-
-    # (L) = LIVE PALING KUAT
-    if "(l)" in t:
-        return True
-
-    # Ulangan dibuang
-    if is_replay(t):
+    # HARUS ada vs (kecuali nanti mau tambah olahraga lain)
+    if "vs" not in text:
         return False
 
-    # Harus pertandingan
-    if " vs " not in t and " v " not in t:
+    # MD dan keyword terlarang = ULANGAN
+    if has_block_keyword(text):
         return False
 
-    # Harus liga besar
-    if not any(lg in t for lg in VALID_LEAGUES):
+    # Harus liga besar / afc
+    if not any(l in text for l in VALID_LEAGUES):
         return False
 
     return True
 
+# ================= LOAD EPG =================
+print("📥 Download EPG")
+root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
 
-# =========================
-# M3U PARSER
-# =========================
-def parse_m3u(lines):
-    channels = []
-    buf = []
+epg_channels = {}
+programmes = []
 
-    for line in lines:
-        if line.startswith("#EXTINF"):
-            buf = [line]
-        elif line.strip().startswith("http"):
-            buf.append(line)
-            channels.append(buf)
-            buf = []
-        else:
-            if buf:
-                buf.append(line)
+for ch in root.findall("channel"):
+    cid = ch.get("id")
+    name = ch.findtext("display-name", "").strip()
+    logo = ch.find("icon").get("src") if ch.find("icon") is not None else ""
+    if name:
+        epg_channels[cid] = {
+            "name": name,
+            "key": norm(name),
+            "logo": logo
+        }
 
-    return channels
+for p in root.findall("programme"):
+    programmes.append({
+        "start": p.get("start"),
+        "stop": p.get("stop"),
+        "title": p.findtext("title", "").strip(),
+        "cat": p.findtext("category", "").strip(),
+        "cid": p.get("channel")
+    })
 
+# ================= PARSE M3U (BLOCK UTUH) =================
+if not INPUT_M3U.exists():
+    raise FileNotFoundError(f"M3U tidak ditemukan: {INPUT_M3U}")
 
-# =========================
-# MAIN
-# =========================
-def main():
-    if not INPUT_M3U.exists():
-        raise FileNotFoundError(f"{INPUT_M3U} tidak ditemukan")
+lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
 
-    lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines()
-    channels = parse_m3u(lines)
+blocks = []
+i = 0
+while i < len(lines):
+    if lines[i].startswith("#EXTINF"):
+        block = [lines[i]]
+        i += 1
+        while i < len(lines):
+            block.append(lines[i])
+            if lines[i].startswith("http"):
+                break
+            i += 1
+        blocks.append(block)
+    i += 1
 
-    live_now = []
+m3u_map = {}
+for block in blocks:
+    m = re.search(r",(.+)$", block[0])
+    if not m:
+        continue
+    name = m.group(1).strip()
+    m3u_map[norm(name)] = block
 
-    for block in channels:
-        extinf = block[0]
+# ================= BUILD LIVE LIST =================
+live_now = []
+live_next = []
+used_keys = set()
 
-        # Ambil title
-        m = re.search(r",(.*)$", extinf)
-        title = m.group(1).strip() if m else ""
+for p in programmes:
+    cid = p["cid"]
+    if cid not in epg_channels:
+        continue
 
-        if not is_live_event(title):
-            continue
+    epg = epg_channels[cid]
+    key = epg["key"]
 
-        # LIVE NOW (tanpa hitung jam dulu)
-        new_extinf = (
-            '#EXTINF:-1 group-title="LIVE NOW",'
-            f'LIVE NOW | {title}'
-        )
+    if key not in m3u_map:
+        continue
 
-        live_now.append([new_extinf] + block[1:])
+    if not is_valid_match(p["title"], p["cat"]):
+        continue
 
-    # =========================
-    # OUTPUT
-    # =========================
-    out = ["#EXTM3U"]
+    if key in used_keys:
+        continue
 
-    for ch in live_now:
-        out.extend(ch)
+    used_keys.add(key)
 
-    OUTPUT_M3U.write_text("\n".join(out) + "\n", encoding="utf-8")
-    print(f"✅ LIVE EVENT dibuat: {len(live_now)} channel")
+    block = m3u_map[key]
+    title = f"{p['title']}"
 
+    extinf = (
+        f'#EXTINF:-1 tvg-id="{cid}" '
+        f'tvg-name="{epg["name"]}" '
+        f'tvg-logo="{epg["logo"]}" '
+        f'group-title="LIVE NOW",{title}\n'
+    )
 
-if __name__ == "__main__":
-    main()
+    live_now.append([extinf] + block[1:])
+
+# ================= WRITE OUTPUT =================
+out = [f'#EXTM3U url-tvg="{EPG_URL}"\n']
+
+for blk in live_now:
+    out.extend(blk)
+
+OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
+
+print(f"✅ LIVE EVENT dibuat: {len(live_now)} channel")
