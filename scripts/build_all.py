@@ -1,8 +1,8 @@
-import re
 import requests
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
+import re
 
 # ================= CONFIG =================
 BASE = Path(__file__).resolve().parent.parent
@@ -12,45 +12,19 @@ OUTPUT_M3U = BASE / "live_all.m3u"
 
 EPG_URL = "https://raw.githubusercontent.com/dbghelp/StarHub-TV-EPG/main/starhub.xml"
 
-MAX_CHANNEL_PER_EVENT = 5
+MAX_CHANNEL = 5
 TZ_WIB = timezone(timedelta(hours=7))
 
-EURO_LEAGUES = [
-    "premier", "la liga", "serie a",
-    "bundesliga", "ligue 1",
-    "champions", "europa", "conference"
-]
-
-BLOCK_WORDS = [
-    "md", "highlight", "replay", "classic",
-    "recap", "review", "hls"
-]
+FALLBACK_URL = "https://bwifi.my.id/hls/video.m3u8"
 
 # ================= HELPERS =================
 def norm(t):
     return re.sub(r"[^a-z0-9]", "", t.lower())
 
-def is_valid_event(title, league):
-    t = title.lower()
-    l = league.lower()
-
-    # wajib vs
-    if not re.search(r"\bvs\b|\bv\b", t):
-        return False
-
-    # buang ulangan
-    for w in BLOCK_WORDS:
-        if w in t:
-            return False
-
-    # liga besar
-    if not any(x in l for x in EURO_LEAGUES):
-        return False
-
-    return True
-
 def parse_time(t):
-    return datetime.strptime(t[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).astimezone(TZ_WIB)
+    return datetime.strptime(t[:14], "%Y%m%d%H%M%S") \
+        .replace(tzinfo=timezone.utc) \
+        .astimezone(TZ_WIB)
 
 # ================= LOAD EPG =================
 print("📥 Download EPG StarHub")
@@ -60,30 +34,28 @@ root = ET.fromstring(xml)
 now = datetime.now(TZ_WIB)
 h3 = now + timedelta(days=3)
 
-live_events = []
-next_events = []
+live_now = []
+live_next = []
 
 for p in root.findall("programme"):
     title = p.findtext("title", "").strip()
-    league = p.findtext("category", "").strip()
-
-    if not is_valid_event(title, league):
-        continue
-
     start = parse_time(p.attrib["start"])
     stop = parse_time(p.attrib["stop"])
 
+    if not title:
+        continue
+
     if start <= now <= stop:
-        live_events.append(title)
+        live_now.append(title)
     elif now < start <= h3:
-        next_events.append((start, title))
+        live_next.append((start, title))
 
 # unik
-live_events = list(dict.fromkeys(live_events))
-next_events = sorted(dict.fromkeys(next_events), key=lambda x: x[0])
+live_now = list(dict.fromkeys(live_now))
+live_next = list(dict.fromkeys(live_next))
 
-print(f"🟢 LIVE NOW: {len(live_events)}")
-print(f"🟡 NEXT LIVE (H+3): {len(next_events)}")
+print(f"🟢 LIVE NOW: {len(live_now)}")
+print(f"🟡 LIVE NEXT (H+3): {len(live_next)}")
 
 # ================= LOAD M3U BLOK =================
 lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
@@ -107,10 +79,10 @@ out = ["#EXTM3U\n"]
 
 def add_event(title, group):
     used = 0
-    key = norm(title)[:10]
+    key = norm(title)[:12]
 
     for blk in blocks:
-        if used >= MAX_CHANNEL_PER_EVENT:
+        if used >= MAX_CHANNEL:
             break
 
         if key in norm(blk[0]):
@@ -123,20 +95,19 @@ def add_event(title, group):
             out.extend(b)
             used += 1
 
-    # fallback
     if used == 0:
         out.append(f'#EXTINF:-1 group-title="{group}",{group} | {title}\n')
-        out.append("https://bwifi.my.id/hls/video.m3u8\n")
+        out.append(FALLBACK_URL + "\n")
 
 # LIVE NOW
-for t in live_events:
+for t in live_now:
     add_event(t, "LIVE NOW")
 
-# NEXT LIVE
-for st, t in next_events:
+# LIVE NEXT
+for st, t in live_next:
     jam = st.strftime("%d-%m %H:%M WIB")
     add_event(f"{jam} | {t}", "LIVE NEXT")
 
 # ================= SAVE =================
 OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
-print("✅ SELESAI: LIVE NOW + NEXT H+3 (STARHUB)")
+print("✅ SELESAI: TANPA ATURAN | LIVE NOW + NEXT H+3")
