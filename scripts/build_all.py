@@ -1,138 +1,123 @@
-import requests, re
+import re
+import requests
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 
-# ================= CONFIG =================
+# ================== CONFIG ==================
 BASE = Path(__file__).resolve().parent.parent
 
 INPUT_M3U  = BASE / "live_epg_sports.m3u"
-OUTPUT_M3U = BASE / "live_football.m3u"
+OUT_NOW    = BASE / "live_now.m3u"
+OUT_NEXT   = BASE / "live_next.m3u"
 
 EPG_URL = "https://raw.githubusercontent.com/dbghelp/StarHub-TV-EPG/main/starhub.xml"
 
+CUSTOM_URL = "https://bwifi.my.id/hls/video.m3u8"
+
 MAX_CHANNEL = 5
-TZ = timezone(timedelta(hours=7))
-FALLBACK_URL = "https://bwifi.my.id/hls/video.m3u8"
+H_NEXT = 3
 
-BLOCK_WORDS = ["md", "highlight", "classic", "replay", "rerun"]
+TZ = timezone(timedelta(hours=7))  # WIB
+NOW = datetime.now(TZ)
 
-FOOTBALL_KEYS = [
-    "football","soccer","liga","league","premier","la liga",
-    "serie a","bundesliga","ligue","champions",
-    "europa","conference","afc","caf","cup"
+BLOCK_WORDS = [
+    "md","highlight","classic","replay","rerun",
+    "episode","ep ","movie","drama","series","show"
 ]
 
-# ================= HELPERS =================
+# ================== HELPERS ==================
 def norm(t):
     return re.sub(r"[^a-z0-9]", "", t.lower())
 
-def parse_time(t):
-    return datetime.strptime(t[:14], "%Y%m%d%H%M%S") \
-        .replace(tzinfo=timezone.utc) \
-        .astimezone(TZ)
-
-def is_football(title, category):
+def is_valid_match(title):
     t = title.lower()
-    c = category.lower()
-
-    if not re.search(r"\bvs\b|\sv\s", t):
+    if "vs" not in t:
         return False
-
     for b in BLOCK_WORDS:
         if b in t:
             return False
+    return True
 
-    return any(k in t or k in c for k in FOOTBALL_KEYS)
+# ================== LOAD EPG ==================
+print("📥 Download StarHub EPG")
+root = ET.fromstring(requests.get(EPG_URL, timeout=60).content)
 
-# ================= LOAD EPG =================
-print("📥 Download EPG")
-root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
-
-now = datetime.now(TZ)
-h3  = now + timedelta(days=3)
-
-live_now  = []
-live_next = []
+events_now = {}
+events_next = {}
 
 for p in root.findall("programme"):
     title = p.findtext("title","").strip()
-    cat   = p.findtext("category","").strip()
-    if not title:
+    start = p.get("start")
+
+    if not title or not start:
+        continue
+    if not is_valid_match(title):
         continue
 
-    if not is_football(title, cat):
-        continue
+    start_dt = datetime.strptime(start[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).astimezone(TZ)
 
-    start = parse_time(p.attrib["start"])
-    stop  = parse_time(p.attrib["stop"])
+    if start_dt <= NOW <= start_dt + timedelta(hours=4):
+        events_now.setdefault(title, start_dt)
+    elif NOW < start_dt <= NOW + timedelta(days=H_NEXT):
+        events_next.setdefault(title, start_dt)
 
-    if start <= now <= stop:
-        live_now.append(title)
-    elif now < start <= h3:
-        live_next.append((start, title))
+print(f"LIVE NOW : {len(events_now)}")
+print(f"NEXT LIVE: {len(events_next)}")
 
-live_now  = list(dict.fromkeys(live_now))
-live_next = list(dict.fromkeys(live_next))
-
-print(f"⚽ LIVE NOW : {len(live_now)}")
-print(f"⚽ NEXT H+3 : {len(live_next)}")
-
-# ================= LOAD M3U (LOGO-BASED) =================
+# ================== LOAD M3U (BLOK UTUH) ==================
 lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
 
-channels = []
+blocks = []
 i = 0
 while i < len(lines):
     if lines[i].startswith("#EXTINF"):
         blk = [lines[i]]
-        logo = ""
-
-        m = re.search(r'tvg-logo="([^"]+)"', lines[i])
-        if m:
-            logo = norm(m.group(1))
-
         i += 1
         while i < len(lines):
             blk.append(lines[i])
             if lines[i].startswith("http"):
                 break
             i += 1
-
-        channels.append({
-            "logo": logo,
-            "block": blk
-        })
+        blocks.append(blk)
     i += 1
 
-# ================= BUILD OUTPUT =================
-out = ["#EXTM3U\n"]
+# ================== BUILD PLAYLIST ==================
+def build(events, outfile, label):
+    out = ["#EXTM3U\n"]
 
-def add_event(title, group):
-    used = 0
-    key = norm(title)[:10]
+    for title, dt in events.items():
+        used = 0
+        key = norm(title)
 
-    for ch in channels:
-        if used >= MAX_CHANNEL:
-            break
+        for blk in blocks:
+            if used >= MAX_CHANNEL:
+                break
 
-        if key in ch["logo"]:
-            blk = ch["block"].copy()
-            blk[0] = re.sub(r",.*$", f",{group} | {title}\n", blk[0])
-            out.extend(blk)
-            used += 1
+            logo = ""
+            m = re.search(r'tvg-logo="([^"]+)"', blk[0])
+            if m:
+                logo = norm(m.group(1))
 
-    if used == 0:
-        out.append(f'#EXTINF:-1 group-title="{group}",{group} | {title}\n')
-        out.append(FALLBACK_URL + "\n")
+            if key[:8] in logo:
+                new_blk = blk.copy()
+                new_blk[0] = re.sub(
+                    r",.*$",
+                    f',{label} | {dt.strftime("%H:%M WIB")} | {title}\n',
+                    new_blk[0]
+                )
+                new_blk[-1] = CUSTOM_URL + "\n"
+                out.extend(new_blk)
+                used += 1
 
-for t in live_now:
-    add_event(t, "LIVE NOW")
+    if len(out) == 1:
+        out.append(f'#EXTINF:-1 group-title="{label}",{label} | NO EVENT\n')
+        out.append(CUSTOM_URL + "\n")
 
-for st, t in live_next:
-    jam = st.strftime("%d-%m %H:%M WIB")
-    add_event(f"{jam} | {t}", "LIVE NEXT")
+    outfile.write_text("".join(out), encoding="utf-8")
 
-# ================= SAVE =================
-OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
-print("✅ SELESAI (LOGO-BASED MATCHING)")
+# ================== SAVE ==================
+build(events_now, OUT_NOW, "LIVE NOW")
+build(events_next, OUT_NEXT, "LIVE NEXT")
+
+print("✅ SELESAI (STABIL & AMAN)")
