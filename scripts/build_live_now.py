@@ -16,7 +16,6 @@ EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.
 WIB = timezone(timedelta(hours=7))
 NOW = datetime.now(WIB)
 
-# kata kunci sepakbola (judul EPG)
 FOOTBALL_KEYWORDS = [
     "football", "soccer", "liga", "league", "premier",
     "la liga", "serie a", "bundesliga",
@@ -24,7 +23,6 @@ FOOTBALL_KEYWORDS = [
     "world cup", "afc", "fifa"
 ]
 
-# logo yang HARUS DIABAIKAN (event / generic)
 IGNORE_LOGO_KEYWORDS = [
     "timnas", "sea", "worldcup", "world cup",
     "afc", "fifa", "event", "default", "logo_bw"
@@ -37,26 +35,39 @@ def is_football(title: str) -> bool:
     return any(k in t for k in FOOTBALL_KEYWORDS)
 
 def parse_epg_time(t: str) -> datetime:
-    # epg_wib_sports.xml sudah WIB
     return datetime.strptime(t[:14], "%Y%m%d%H%M%S").replace(tzinfo=WIB)
 
 def extract_logo(extinf: str):
     m = re.search(r'tvg-logo="([^"]+)"', extinf, re.I)
     if not m:
         return None
-    logo = m.group(1).strip().lower()
+    logo = m.group(1).lower().strip()
     for bad in IGNORE_LOGO_KEYWORDS:
         if bad in logo:
             return None
     return logo
 
+def format_time(dt: datetime):
+    return dt.strftime("%H:%M WIB")
+
 # ===================== LOAD EPG =====================
-def load_live_football_epg():
+def load_live_matches():
+    """
+    return:
+    {
+      match_key: {
+        title,
+        start,
+        stop,
+        channels: set(epg_channel_ids)
+      }
+    }
+    """
     print("📡 Download EPG...")
     xml = requests.get(EPG_URL, timeout=30).content
     root = etree.fromstring(xml)
 
-    live_channels = set()
+    matches = {}
 
     for p in root.findall("programme"):
         title_el = p.find("title")
@@ -70,13 +81,27 @@ def load_live_football_epg():
         start = parse_epg_time(p.get("start"))
         stop  = parse_epg_time(p.get("stop"))
 
-        if start <= NOW <= stop:
-            ch = p.get("channel")
-            if ch:
-                live_channels.add(ch.lower())
+        if not (start <= NOW <= stop):
+            continue
 
-    print(f"⚽ LIVE football EPG channels : {len(live_channels)}")
-    return live_channels
+        ch = p.get("channel", "").lower()
+        if not ch:
+            continue
+
+        match_key = f"{title.lower()}|{start.strftime('%Y%m%d%H%M')}"
+
+        if match_key not in matches:
+            matches[match_key] = {
+                "title": title,
+                "start": start,
+                "stop": stop,
+                "channels": set()
+            }
+
+        matches[match_key]["channels"].add(ch)
+
+    print(f"⚽ LIVE matches ditemukan : {len(matches)}")
+    return matches
 
 # ===================== LOAD M3U =====================
 def load_m3u_blocks():
@@ -91,7 +116,6 @@ def load_m3u_blocks():
                 buf = [line]
             else:
                 buf.append(line)
-
         if buf:
             blocks.append(buf)
 
@@ -99,37 +123,53 @@ def load_m3u_blocks():
 
 # ===================== BUILD =====================
 def build_live_now():
-    live_epg_channels = load_live_football_epg()
+    matches = load_live_matches()
     m3u_blocks = load_m3u_blocks()
 
-    # mapping logo -> list of blocks
+    # logo -> blocks
     logo_blocks = defaultdict(list)
-
     for block in m3u_blocks:
         logo = extract_logo(block[0])
         if logo:
             logo_blocks[logo].append(block)
 
     output = ["#EXTM3U\n"]
-    used = set()
-    count = 0
+    used_blocks = set()
+    total = 0
 
-    for logo, blocks in logo_blocks.items():
-        # jika logo muncul di channel mana pun yang live di EPG
-        for epg_ch in live_epg_channels:
-            if any(x in logo for x in epg_ch.split("_")):
-                for b in blocks:
-                    key = "".join(b)
-                    if key not in used:
-                        output.extend(b)
-                        used.add(key)
-                        count += 1
-                break
+    for match in matches.values():
+        title = match["title"]
+        start = match["start"]
+        epg_channels = match["channels"]
+
+        match_header = f"{title} | {format_time(start)}"
+
+        for logo, blocks in logo_blocks.items():
+            for epg_ch in epg_channels:
+                # matching kasar tapi stabil: epg id vs logo url
+                tokens = epg_ch.replace(".", "_").split("_")
+                if any(t and t in logo for t in tokens):
+                    for block in blocks:
+                        key = "".join(block)
+                        if key in used_blocks:
+                            continue
+
+                        # ubah judul channel → nama pertandingan
+                        new_block = []
+                        for line in block:
+                            if line.startswith("#EXTINF"):
+                                line = re.sub(r",.*$", f",{match_header}", line)
+                            new_block.append(line)
+
+                        output.extend(new_block)
+                        used_blocks.add(key)
+                        total += 1
+                    break
 
     with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
         f.writelines(output)
 
-    print(f"✅ OUTPUT : {count} channel LIVE sepakbola")
+    print(f"✅ OUTPUT : {total} channel (multi-channel per match digabung)")
 
 # ===================== RUN =====================
 if __name__ == "__main__":
