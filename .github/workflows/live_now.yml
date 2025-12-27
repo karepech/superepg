@@ -1,10 +1,22 @@
-name: Live Football Now (WIB)
+name: Live Football Auto Update (WIB)
 
 on:
-  schedule:
-    # jalan tiap 5 menit
-    - cron: "*/5 * * * *"
+  # Jalan otomatis jika ada perubahan file di repo
+  push:
+    branches:
+      - main
+    paths:
+      - "**.py"
+      - "**.m3u"
+      - "requirements.txt"
+      - ".github/workflows/**"
+
+  # Opsional: manual trigger
   workflow_dispatch:
+
+  # Opsional: tetap pakai cron (disarankan)
+  schedule:
+    - cron: "*/5 * * * *"
 
 jobs:
   build:
