@@ -1,0 +1,42 @@
+name: Live Football Now (WIB)
+
+on:
+  schedule:
+    # jalan tiap 5 menit
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build live_now.m3u
+        run: |
+          python scripts/build_live_now.py
+
+      - name: Commit & Push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          if git status --porcelain | grep .; then
+            git add live_now.m3u
+            git commit -m "auto: update live football now (WIB)"
+            git push
+          else
+            echo "No changes"
+          fi
