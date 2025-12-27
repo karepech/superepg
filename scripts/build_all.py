@@ -1,95 +1,105 @@
-import re
 import requests
-import xml.etree.ElementTree as ET
+from lxml import etree
 from pathlib import Path
+from datetime import datetime, timezone, timedelta
+import re
 
-# ================= CONFIG =================
-BASE = Path(__file__).resolve().parent.parent
+# ================== CONFIG ==================
+BASE = Path(__file__).resolve().parents[1]
 
 INPUT_M3U = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_now.m3u"
 
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 
-MAX_CHANNEL = 5
+WIB = timezone(timedelta(hours=7))
+NOW = datetime.now(WIB)
 
-BLOCK_WORDS = [
-    "replay", "highlight", "rerun",
-    "recap", "review", "classic",
-    "full match", "magazine", "md"
+FOOTBALL_KEYWORDS = [
+    "football", "soccer", "liga", "league", "premier",
+    "la liga", "serie a", "bundesliga", "uefa", "champions",
+    "europa", "world cup", "afc", "fifa"
 ]
 
-# ================= HELPERS =================
-def norm(t):
-    return re.sub(r"[^a-z0-9]", "", t.lower())
+# ================== UTIL ==================
+def normalize(text):
+    return re.sub(r"\s+", " ", text.lower().strip())
 
-def is_live_match(title):
+def is_football(title):
     t = title.lower()
+    return any(k in t for k in FOOTBALL_KEYWORDS)
 
-    # harus pertandingan
-    if not re.search(r"\bvs\b|\bv\b", t):
-        return False
+def parse_epg_time(t):
+    # format: YYYYMMDDHHMMSS +0700 (WIB)
+    return datetime.strptime(t[:14], "%Y%m%d%H%M%S").replace(tzinfo=WIB)
 
-    # buang ulangan
-    for w in BLOCK_WORDS:
-        if w in t:
-            return False
+# ================== LOAD EPG ==================
+def load_live_football_channels():
+    print("📡 Download EPG...")
+    xml = requests.get(EPG_URL, timeout=30).content
+    root = etree.fromstring(xml)
 
-    return True
+    live_channels = set()
 
-# ================= LOAD EPG =================
-print("📥 Load EPG")
-xml_data = requests.get(EPG_URL, timeout=120).content
-root = ET.fromstring(xml_data)
+    for prog in root.findall("programme"):
+        title_el = prog.find("title")
+        if title_el is None:
+            continue
 
-events = []
-for p in root.findall("programme"):
-    title = p.findtext("title", "").strip()
-    if title and is_live_match(title):
-        events.append(title)
+        title = title_el.text or ""
+        if not is_football(title):
+            continue
 
-# unik
-events = list(dict.fromkeys(events))
-print(f"🎯 LIVE EVENT ditemukan: {len(events)}")
+        start = parse_epg_time(prog.get("start"))
+        stop  = parse_epg_time(prog.get("stop"))
 
-# ================= LOAD M3U BLOK UTUH =================
-lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
+        if start <= NOW <= stop:
+            ch = normalize(prog.get("channel"))
+            live_channels.add(ch)
 
-blocks = []
-i = 0
-while i < len(lines):
-    if lines[i].startswith("#EXTINF"):
-        blk = [lines[i]]
-        i += 1
-        while i < len(lines):
-            blk.append(lines[i])
-            if lines[i].startswith("http"):
-                break
-            i += 1
-        blocks.append(blk)
-    i += 1
+    print(f"⚽ LIVE football channels (EPG): {len(live_channels)}")
+    return live_channels
 
-# ================= BUILD OUTPUT =================
-out = ["#EXTM3U\n"]
+# ================== LOAD M3U ==================
+def load_m3u_blocks():
+    blocks = []
+    with open(INPUT_M3U, encoding="utf-8", errors="ignore") as f:
+        buf = []
+        for line in f:
+            if line.startswith("#EXTINF"):
+                if buf:
+                    blocks.append(buf)
+                buf = [line]
+            else:
+                buf.append(line)
+        if buf:
+            blocks.append(buf)
+    return blocks
 
-for title in events:
-    used = 0
-    key = norm(title)[:10]
+def extract_channel_name(extinf):
+    return normalize(extinf.split(",", 1)[-1])
 
-    for blk in blocks:
-        if used >= MAX_CHANNEL:
-            break
+# ================== BUILD OUTPUT ==================
+def build_live_now():
+    live_epg_channels = load_live_football_channels()
+    m3u_blocks = load_m3u_blocks()
 
-        if key in norm(blk[0]):
-            new_blk = blk.copy()
-            new_blk[0] = re.sub(
-                r",.*$",
-                f",LIVE NOW | {title}\n",
-                new_blk[0]
-            )
-            out.extend(new_blk)
-            used += 1
+    output = ["#EXTM3U\n"]
+    count = 0
 
-# ================= SAVE =================
-OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
-print("✅ SELESAI (VERSI AWAL)")
+    for block in m3u_blocks:
+        extinf = block[0]
+        name = extract_channel_name(extinf)
+
+        if name in live_epg_channels:
+            output.extend(block)
+            count += 1
+
+    with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
+        f.writelines(output)
+
+    print(f"✅ OUTPUT dibuat: {count} channel LIVE sepakbola")
+
+# ================== RUN ==================
+if __name__ == "__main__":
+    build_live_now()
