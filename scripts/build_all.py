@@ -1,97 +1,90 @@
 import re
 import requests
-import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
 from pathlib import Path
 
-# ================== CONFIG ==================
+# ================= CONFIG =================
 BASE = Path(__file__).resolve().parent.parent
 
-INPUT_M3U  = BASE / "live_epg_sports.m3u"
-OUT_M3U    = BASE / "live_football.m3u"
+INPUT_M3U = BASE / "live_epg_sports.m3u"
+OUTPUT_M3U = BASE / "live_now.m3u"   # OUTPUT GABUNG
 
-EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
+GOAL_URL = "https://www.goal.com/id/berita/jadwal-tv-hari-ini-siaran-langsung"
 
-TZ = timezone(timedelta(hours=7))  # WIB
-TODAY = datetime.now(TZ).date()
-
-MAX_CHANNEL = 5
+TZ_OFFSET = 7  # WIB
+MAX_CHANNEL_PER_MATCH = 5
 
 BLOCK_WORDS = [
     "md", "highlight", "highlights", "classic",
-    "replay", "recap", "rerun", "full match"
+    "replay", "rerun", "recap", "full match"
 ]
 
-# ================== HELPERS ==================
-def norm(txt):
-    return re.sub(r"[^a-z0-9]", "", txt.lower())
+# ================= HELPERS =================
+def norm(t: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", t.lower())
 
-def is_replay(title):
+def is_replay(title: str) -> bool:
     t = title.lower()
-    return any(w in t for w in BLOCK_WORDS)
+    if any(w in t for w in BLOCK_WORDS):
+        return True
 
-def has_old_year(title):
-    years = re.findall(r"\b(19\d{2}|20\d{2})\b", title)
+    # tahun < 2025 dianggap ulangan
+    years = re.findall(r"(19\d{2}|20\d{2})", t)
     for y in years:
         if int(y) < 2025:
             return True
     return False
 
-def is_football(title, category):
-    t = title.lower()
-    c = category.lower()
+def is_match(title: str) -> bool:
+    return bool(re.search(r"\bvs\b|\sv\s", title.lower()))
 
-    if not re.search(r"\bvs\b|\bv\b", t):
-        return False
+# ================= LOAD GOAL =================
+print("📥 Ambil jadwal dari GOAL Indonesia")
+html = requests.get(GOAL_URL, timeout=30).text
+soup = BeautifulSoup(html, "html.parser")
 
-    football_keys = [
-        "league", "liga", "cup", "champions",
-        "premier", "bundesliga", "serie",
-        "la liga", "uefa", "africa"
-    ]
-    return any(k in c or k in t for k in football_keys)
+today = (datetime.utcnow() + timedelta(hours=TZ_OFFSET)).date()
 
-# ================== LOAD EPG ==================
-print("📥 Download EPG...")
-xml_data = requests.get(EPG_URL, timeout=120).content
-root = ET.fromstring(xml_data)
+events = []  # list of {date, title}
 
-events_now = []
-events_next = []
+current_date = None
 
-for p in root.findall("programme"):
-    title = p.findtext("title", "").strip()
-    cat   = p.findtext("category", "").strip()
-    start = p.get("start", "")
+for el in soup.find_all(["h2", "tr"]):
+    # Header tanggal (contoh: 27 Desember 2025)
+    if el.name == "h2":
+        text = el.get_text(strip=True)
+        m = re.search(r"(\d{1,2})\s+(\w+)\s+(\d{4})", text)
+        if m:
+            try:
+                current_date = datetime.strptime(
+                    m.group(0), "%d %B %Y"
+                ).date()
+            except:
+                current_date = None
 
-    if not title or not start:
-        continue
+    # Baris pertandingan
+    if el.name == "tr" and current_date:
+        cols = [c.get_text(" ", strip=True) for c in el.find_all("td")]
+        if len(cols) < 2:
+            continue
 
-    if is_replay(title):
-        continue
+        match = cols[1]
+        league = cols[2] if len(cols) > 2 else ""
 
-    if has_old_year(title):
-        continue
+        title = f"{league}: {match}".strip(" :")
 
-    if not is_football(title, cat):
-        continue
+        if not is_match(title):
+            continue
+        if is_replay(title):
+            continue
 
-    dt = datetime.strptime(start[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).astimezone(TZ)
-    d  = dt.date()
+        events.append({
+            "date": current_date,
+            "title": title
+        })
 
-    if d == TODAY:
-        events_now.append((dt, title))
-    elif TODAY < d <= TODAY + timedelta(days=3):
-        events_next.append((dt, title))
-
-# unik & urut waktu
-events_now  = sorted(dict.fromkeys(events_now), key=lambda x: x[0])
-events_next = sorted(dict.fromkeys(events_next), key=lambda x: x[0])
-
-print(f"🟢 LIVE NOW  : {len(events_now)}")
-print(f"🔵 LIVE NEXT : {len(events_next)}")
-
-# ================== LOAD M3U BLOK ==================
+# ================= LOAD M3U (BLOK UTUH) =================
 lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
 
 blocks = []
@@ -108,36 +101,50 @@ while i < len(lines):
         blocks.append(blk)
     i += 1
 
-# ================== BUILD OUTPUT ==================
+# ================= BUILD OUTPUT (GABUNG) =================
 out = ["#EXTM3U\n"]
 
-def append_events(events, group):
-    for dt, title in events:
-        used = 0
-        key = norm(title)[:10]
+def append_event(event_date, title):
+    key = norm(title)
+    used = 0
 
-        for blk in blocks:
-            if used >= MAX_CHANNEL:
-                break
+    if event_date == today:
+        label = "LIVE NOW"
+    elif today < event_date <= today + timedelta(days=3):
+        label = f"LIVE NEXT | {event_date.strftime('%d-%m-%Y')}"
+    else:
+        return
 
-            if key in norm(blk[0]):
-                new_blk = blk.copy()
+    for blk in blocks:
+        if used >= MAX_CHANNEL_PER_MATCH:
+            break
+
+        # nama channel tetap, hanya group-title yang diubah
+        if key[:8] in norm(blk[0]):
+            new_blk = blk.copy()
+
+            if 'group-title="' in new_blk[0]:
                 new_blk[0] = re.sub(
-                    r",.*$",
-                    f',{group} | {dt.strftime("%d-%m-%Y %H:%M WIB")} | {title}\n',
+                    r'group-title="[^"]*"',
+                    f'group-title="{label} | {title}"',
                     new_blk[0]
                 )
-                out.extend(new_blk)
-                used += 1
 
-append_events(events_now,  "LIVE NOW")
-append_events(events_next, "LIVE NEXT")
+            out.extend(new_blk)
+            used += 1
+
+# urutkan event berdasarkan tanggal
+events.sort(key=lambda x: x["date"])
+
+for ev in events:
+    append_event(ev["date"], ev["title"])
 
 # fallback kalau kosong
 if len(out) == 1:
-    out.append('#EXTINF:-1 group-title="LIVE NOW",LIVE NOW | NO LIVE MATCH\n')
+    out.append('#EXTINF:-1 group-title="LIVE",LIVE | Tidak ada pertandingan\n')
     out.append("https://bwifi.my.id/hls/video.m3u8\n")
 
-OUT_M3U.write_text("".join(out), encoding="utf-8")
+# ================= SAVE =================
+OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
 
-print("✅ SELESAI: LIVE FOOTBALL (STABIL)")
+print("✅ SELESAI — LIVE NOW + LIVE NEXT digabung")
