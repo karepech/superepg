@@ -3,7 +3,6 @@ import re
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from collections import defaultdict
-from lxml import etree
 
 # ================= CONFIG =================
 BASE = Path(__file__).resolve().parents[1]
@@ -11,18 +10,16 @@ BASE = Path(__file__).resolve().parents[1]
 INPUT_M3U  = BASE / "live_epg_sports.m3u"
 OUTPUT_M3U = BASE / "live_now.m3u"
 
-EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
-SOFA_LIVE = "https://api.sofascore.com/api/v1/sport/football/events/live"
-
 WIB = timezone(timedelta(hours=7))
 NOW = datetime.now(WIB)
-LIVE_DURATION = timedelta(hours=3)
 
-IGNORE_LOGO_KEYWORDS = ["timnas", "sea", "event", "default", "logo_bw"]
+IGNORE_LOGO_KEYWORDS = [
+    "timnas", "sea", "event", "default", "logo_bw"
+]
 
 # ================= UTIL =================
 def extract_logo(extinf):
-    m = re.search(r'tvg-logo="([^"]+)"', extinf)
+    m = re.search(r'tvg-logo="([^"]+)"', extinf, re.I)
     if not m:
         return None
     logo = m.group(1).lower()
@@ -32,39 +29,34 @@ def extract_logo(extinf):
     return logo
 
 # ================= SOFASCORE =================
-def load_sofa_live_matches():
-    print("🌐 Ambil LIVE dari SofaScore...")
-    r = requests.get(SOFA_LIVE, timeout=30)
+def load_sofa_today_matches():
+    today = NOW.strftime("%Y-%m-%d")
+    url = f"https://api.sofascore.com/api/v1/sport/football/scheduled-events/{today}"
+
+    print("🌐 Ambil jadwal SofaScore hari ini...")
+    r = requests.get(url, timeout=30)
     data = r.json()
 
     matches = []
 
     for e in data.get("events", []):
-        start = datetime.fromtimestamp(e["startTimestamp"], tz=timezone.utc).astimezone(WIB)
+        start = datetime.fromtimestamp(
+            e["startTimestamp"], tz=timezone.utc
+        ).astimezone(WIB)
 
-        if not (start <= NOW <= start + LIVE_DURATION):
-            continue
+        status = e.get("status", {}).get("type", "")
 
         matches.append({
             "title": f"{e['homeTeam']['name']} vs {e['awayTeam']['name']}",
-            "start": start
+            "start": start,
+            "status": status  # inprogress / notstarted / finished
         })
 
-    print(f"⚽ LIVE SofaScore : {len(matches)}")
+    # urutkan berdasarkan jam
+    matches.sort(key=lambda x: x["start"])
+
+    print(f"⚽ Total match hari ini : {len(matches)}")
     return matches
-
-# ================= EPG =================
-def load_epg_live():
-    xml = requests.get(EPG_URL, timeout=30).content
-    root = etree.fromstring(xml)
-
-    live = set()
-    for p in root.findall("programme"):
-        s = datetime.strptime(p.get("start")[:14], "%Y%m%d%H%M%S").replace(tzinfo=WIB)
-        e = datetime.strptime(p.get("stop")[:14], "%Y%m%d%H%M%S").replace(tzinfo=WIB)
-        if s <= NOW <= e:
-            live.add(p.get("channel","").lower())
-    return live
 
 # ================= M3U =================
 def load_m3u_blocks():
@@ -83,14 +75,14 @@ def load_m3u_blocks():
 
 # ================= BUILD =================
 def build_live_now():
-    matches = load_sofa_live_matches()
+    matches = load_sofa_today_matches()
     if not matches:
-        print("❌ Tidak ada LIVE match")
+        print("❌ Tidak ada jadwal hari ini")
         return
 
     m3u_blocks = load_m3u_blocks()
-    logo_blocks = defaultdict(list)
 
+    logo_blocks = defaultdict(list)
     for b in m3u_blocks:
         logo = extract_logo(b[0])
         if logo:
@@ -101,9 +93,12 @@ def build_live_now():
     total = 0
 
     for m in matches:
-        header = f"{m['title']} | {m['start'].strftime('%H:%M WIB')}"
+        if m["status"] == "inprogress":
+            header = f"🔴 LIVE | {m['title']} | {m['start'].strftime('%H:%M WIB')}"
+        else:
+            header = f"{m['title']} | {m['start'].strftime('%H:%M WIB')}"
 
-        for logo, blocks in logo_blocks.items():
+        for blocks in logo_blocks.values():
             for b in blocks:
                 key = "".join(b)
                 if key in used:
@@ -122,7 +117,7 @@ def build_live_now():
     with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
         f.writelines(output)
 
-    print(f"✅ OUTPUT LIVE : {total} channel")
+    print(f"✅ OUTPUT FINAL : {total} channel")
 
 # ================= RUN =================
 if __name__ == "__main__":
