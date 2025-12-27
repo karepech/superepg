@@ -16,60 +16,72 @@ TZ = timezone(timedelta(hours=7))  # WIB
 NOW = datetime.now(TZ)
 
 MAX_CHANNEL_PER_MATCH = 5
+CUSTOM_URL = "https://bwifi.my.id/hls/video.m3u8"
 
-# kata yang PASTI ulangan
 BLOCK_WORDS = [
     "md", "highlight", "replay", "classic",
     "recap", "review", "rerun", "magazine"
 ]
 
-# ================= HELPER =================
+# ================= HELPERS =================
 def norm(t):
     return re.sub(r"[^a-z0-9]", "", t.lower())
 
-def is_replay(title):
-    t = title.lower()
-    return any(w in t for w in BLOCK_WORDS)
+def has_old_year(title):
+    years = re.findall(r"(19\d{2}|20\d{2})", title)
+    for y in years:
+        if int(y) < 2025:
+            return True
+    return False
 
-def is_match(title):
-    return bool(re.search(r"\bvs\b|\bv\b", title.lower()))
+def is_valid_match(title):
+    t = title.lower()
+
+    if not re.search(r"\bvs\b|\bv\b", t):
+        return False
+
+    if has_old_year(title):
+        return False
+
+    for w in BLOCK_WORDS:
+        if w in t:
+            return False
+
+    return True
+
+def parse_time(t):
+    return datetime.strptime(t[:14], "%Y%m%d%H%M%S") \
+        .replace(tzinfo=timezone.utc) \
+        .astimezone(TZ)
 
 # ================= LOAD EPG =================
-print("📥 Download EPG")
-xml = requests.get(EPG_URL, timeout=120).content
-root = ET.fromstring(xml)
+print("📥 Load EPG")
+root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
 
-live_now = []
-live_next = []
+live_now = {}
+live_next = {}
 
 for p in root.findall("programme"):
     title = p.findtext("title", "").strip()
-    start = p.get("start", "")[:14]
+    start_raw = p.get("start")
 
-    if not title or not start:
+    if not title or not start_raw:
         continue
 
-    if not is_match(title):
-        continue
-
-    if is_replay(title):
+    if not is_valid_match(title):
         continue
 
     try:
-        start_time = datetime.strptime(start, "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).astimezone(TZ)
+        start_time = parse_time(start_raw)
     except:
         continue
 
     delta = start_time - NOW
 
     if timedelta(minutes=-120) <= delta <= timedelta(hours=3):
-        live_now.append(title)
+        live_now[title] = start_time
     elif timedelta(hours=3) < delta <= timedelta(days=3):
-        live_next.append(title)
-
-# unik
-live_now = list(dict.fromkeys(live_now))
-live_next = list(dict.fromkeys(live_next))
+        live_next[title] = start_time
 
 print(f"✅ LIVE NOW : {len(live_now)}")
 print(f"✅ LIVE NEXT (H+3): {len(live_next)}")
@@ -103,42 +115,43 @@ for blk in blocks:
 # ================= BUILD OUTPUT =================
 out = ["#EXTM3U\n"]
 
-def add_match(title, group, use_custom_url):
+def add_match(title, date_obj, group, use_custom_url):
     used = 0
-    title_key = norm(title)
+    key = norm(title)
+    date_str = date_obj.strftime("%d-%m-%Y")
 
     for logo, blks in logo_map.items():
         for blk in blks:
             if used >= MAX_CHANNEL_PER_MATCH:
                 return
 
-            if title_key[:8] in norm(blk[0]):
+            if key[:8] in norm(blk[0]):
                 new_blk = blk.copy()
                 new_blk[0] = re.sub(
                     r",.*$",
-                    f',{group} | {title}\n',
+                    f',{group} | {date_str} | {title}\n',
                     new_blk[0]
                 )
 
                 if use_custom_url:
-                    new_blk[-1] = "https://bwifi.my.id/hls/video.m3u8\n"
+                    new_blk[-1] = CUSTOM_URL + "\n"
 
                 out.extend(new_blk)
                 used += 1
 
 # LIVE NOW
-for t in live_now:
-    add_match(t, "LIVE NOW", use_custom_url=False)
+for t, d in live_now.items():
+    add_match(t, d, "LIVE NOW", use_custom_url=False)
 
 # LIVE NEXT
-for t in live_next:
-    add_match(t, "LIVE NEXT", use_custom_url=True)
+for t, d in live_next.items():
+    add_match(t, d, "LIVE NEXT", use_custom_url=True)
 
 # fallback aman
 if len(out) == 1:
     out.append('#EXTINF:-1 group-title="LIVE NOW",LIVE NOW | Tidak ada pertandingan\n')
-    out.append("https://bwifi.my.id/hls/video.m3u8\n")
+    out.append(CUSTOM_URL + "\n")
 
 # ================= SAVE =================
 OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
-print("🎉 SELESAI: LIVE FOOTBALL (STABIL)")
+print("🎉 SELESAI: LIVE FOOTBALL + TANGGAL + FILTER TAHUN")
