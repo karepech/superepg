@@ -1,92 +1,97 @@
 import re
 import requests
 import xml.etree.ElementTree as ET
-from pathlib import Path
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
-# ================= CONFIG =================
+# ================== CONFIG ==================
 BASE = Path(__file__).resolve().parent.parent
 
-INPUT_M3U = BASE / "live_epg_sports.m3u"
-OUTPUT_M3U = BASE / "live_football.m3u"
+INPUT_M3U  = BASE / "live_epg_sports.m3u"
+OUT_M3U    = BASE / "live_football.m3u"
 
 EPG_URL = "https://raw.githubusercontent.com/karepech/Epgku/main/epg_wib_sports.xml"
 
 TZ = timezone(timedelta(hours=7))  # WIB
-NOW = datetime.now(TZ)
+TODAY = datetime.now(TZ).date()
 
-MAX_CHANNEL_PER_MATCH = 5
-CUSTOM_URL = "https://bwifi.my.id/hls/video.m3u8"
+MAX_CHANNEL = 5
 
 BLOCK_WORDS = [
-    "md", "highlight", "replay", "classic",
-    "recap", "review", "rerun", "magazine"
+    "md", "highlight", "highlights", "classic",
+    "replay", "recap", "rerun", "full match"
 ]
 
-# ================= HELPERS =================
-def norm(t):
-    return re.sub(r"[^a-z0-9]", "", t.lower())
+# ================== HELPERS ==================
+def norm(txt):
+    return re.sub(r"[^a-z0-9]", "", txt.lower())
+
+def is_replay(title):
+    t = title.lower()
+    return any(w in t for w in BLOCK_WORDS)
 
 def has_old_year(title):
-    years = re.findall(r"(19\d{2}|20\d{2})", title)
+    years = re.findall(r"\b(19\d{2}|20\d{2})\b", title)
     for y in years:
         if int(y) < 2025:
             return True
     return False
 
-def is_valid_match(title):
+def is_football(title, category):
     t = title.lower()
+    c = category.lower()
 
     if not re.search(r"\bvs\b|\bv\b", t):
         return False
 
-    if has_old_year(title):
-        return False
+    football_keys = [
+        "league", "liga", "cup", "champions",
+        "premier", "bundesliga", "serie",
+        "la liga", "uefa", "africa"
+    ]
+    return any(k in c or k in t for k in football_keys)
 
-    for w in BLOCK_WORDS:
-        if w in t:
-            return False
+# ================== LOAD EPG ==================
+print("📥 Download EPG...")
+xml_data = requests.get(EPG_URL, timeout=120).content
+root = ET.fromstring(xml_data)
 
-    return True
-
-def parse_time(t):
-    return datetime.strptime(t[:14], "%Y%m%d%H%M%S") \
-        .replace(tzinfo=timezone.utc) \
-        .astimezone(TZ)
-
-# ================= LOAD EPG =================
-print("📥 Load EPG")
-root = ET.fromstring(requests.get(EPG_URL, timeout=120).content)
-
-live_now = {}
-live_next = {}
+events_now = []
+events_next = []
 
 for p in root.findall("programme"):
     title = p.findtext("title", "").strip()
-    start_raw = p.get("start")
+    cat   = p.findtext("category", "").strip()
+    start = p.get("start", "")
 
-    if not title or not start_raw:
+    if not title or not start:
         continue
 
-    if not is_valid_match(title):
+    if is_replay(title):
         continue
 
-    try:
-        start_time = parse_time(start_raw)
-    except:
+    if has_old_year(title):
         continue
 
-    delta = start_time - NOW
+    if not is_football(title, cat):
+        continue
 
-    if timedelta(minutes=-120) <= delta <= timedelta(hours=3):
-        live_now[title] = start_time
-    elif timedelta(hours=3) < delta <= timedelta(days=3):
-        live_next[title] = start_time
+    dt = datetime.strptime(start[:14], "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc).astimezone(TZ)
+    d  = dt.date()
 
-print(f"✅ LIVE NOW : {len(live_now)}")
-print(f"✅ LIVE NEXT (H+3): {len(live_next)}")
+    if d == TODAY:
+        events_now.append((dt, title))
+    elif TODAY < d <= TODAY + timedelta(days=3):
+        events_next.append((dt, title))
 
-# ================= LOAD M3U BLOK =================
+# unik & urut waktu
+events_now  = sorted(dict.fromkeys(events_now), key=lambda x: x[0])
+events_next = sorted(dict.fromkeys(events_next), key=lambda x: x[0])
+
+print(f"🟢 LIVE NOW  : {len(events_now)}")
+print(f"🔵 LIVE NEXT : {len(events_next)}")
+
+# ================== LOAD M3U BLOK ==================
 lines = INPUT_M3U.read_text(encoding="utf-8", errors="ignore").splitlines(True)
 
 blocks = []
@@ -103,55 +108,36 @@ while i < len(lines):
         blocks.append(blk)
     i += 1
 
-# ================= INDEX BLOK BY LOGO =================
-logo_map = {}
-
-for blk in blocks:
-    m = re.search(r'tvg-logo="([^"]+)"', blk[0])
-    if m:
-        logo = m.group(1)
-        logo_map.setdefault(logo, []).append(blk)
-
-# ================= BUILD OUTPUT =================
+# ================== BUILD OUTPUT ==================
 out = ["#EXTM3U\n"]
 
-def add_match(title, date_obj, group, use_custom_url):
-    used = 0
-    key = norm(title)
-    date_str = date_obj.strftime("%d-%m-%Y")
+def append_events(events, group):
+    for dt, title in events:
+        used = 0
+        key = norm(title)[:10]
 
-    for logo, blks in logo_map.items():
-        for blk in blks:
-            if used >= MAX_CHANNEL_PER_MATCH:
-                return
+        for blk in blocks:
+            if used >= MAX_CHANNEL:
+                break
 
-            if key[:8] in norm(blk[0]):
+            if key in norm(blk[0]):
                 new_blk = blk.copy()
                 new_blk[0] = re.sub(
                     r",.*$",
-                    f',{group} | {date_str} | {title}\n',
+                    f',{group} | {dt.strftime("%d-%m-%Y %H:%M WIB")} | {title}\n',
                     new_blk[0]
                 )
-
-                if use_custom_url:
-                    new_blk[-1] = CUSTOM_URL + "\n"
-
                 out.extend(new_blk)
                 used += 1
 
-# LIVE NOW
-for t, d in live_now.items():
-    add_match(t, d, "LIVE NOW", use_custom_url=False)
+append_events(events_now,  "LIVE NOW")
+append_events(events_next, "LIVE NEXT")
 
-# LIVE NEXT
-for t, d in live_next.items():
-    add_match(t, d, "LIVE NEXT", use_custom_url=True)
-
-# fallback aman
+# fallback kalau kosong
 if len(out) == 1:
-    out.append('#EXTINF:-1 group-title="LIVE NOW",LIVE NOW | Tidak ada pertandingan\n')
-    out.append(CUSTOM_URL + "\n")
+    out.append('#EXTINF:-1 group-title="LIVE NOW",LIVE NOW | NO LIVE MATCH\n')
+    out.append("https://bwifi.my.id/hls/video.m3u8\n")
 
-# ================= SAVE =================
-OUTPUT_M3U.write_text("".join(out), encoding="utf-8")
-print("🎉 SELESAI: LIVE FOOTBALL + TANGGAL + FILTER TAHUN")
+OUT_M3U.write_text("".join(out), encoding="utf-8")
+
+print("✅ SELESAI: LIVE FOOTBALL (STABIL)")
