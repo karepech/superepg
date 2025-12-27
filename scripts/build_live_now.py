@@ -1,8 +1,7 @@
 import requests
 import re
 from pathlib import Path
-from datetime import datetime, timedelta, timezone
-from collections import defaultdict
+from datetime import datetime, timezone, timedelta
 
 # ================= CONFIG =================
 BASE = Path(__file__).resolve().parents[1]
@@ -12,21 +11,6 @@ OUTPUT_M3U = BASE / "live_now.m3u"
 
 WIB = timezone(timedelta(hours=7))
 NOW = datetime.now(WIB)
-
-IGNORE_LOGO_KEYWORDS = [
-    "timnas", "sea", "event", "default", "logo_bw"
-]
-
-# ================= UTIL =================
-def extract_logo(extinf):
-    m = re.search(r'tvg-logo="([^"]+)"', extinf, re.I)
-    if not m:
-        return None
-    logo = m.group(1).lower()
-    for bad in IGNORE_LOGO_KEYWORDS:
-        if bad in logo:
-            return None
-    return logo
 
 # ================= SOFASCORE =================
 def load_sofa_today_matches():
@@ -49,13 +33,11 @@ def load_sofa_today_matches():
         matches.append({
             "title": f"{e['homeTeam']['name']} vs {e['awayTeam']['name']}",
             "start": start,
-            "status": status  # inprogress / notstarted / finished
+            "status": status
         })
 
-    # urutkan berdasarkan jam
     matches.sort(key=lambda x: x["start"])
-
-    print(f"⚽ Total match hari ini : {len(matches)}")
+    print(f"⚽ Match hari ini : {len(matches)}")
     return matches
 
 # ================= M3U =================
@@ -71,6 +53,7 @@ def load_m3u_blocks():
                 buf.append(line)
         if buf:
             blocks.append(buf)
+    print(f"📺 Total channel M3U : {len(blocks)}")
     return blocks
 
 # ================= BUILD =================
@@ -80,16 +63,12 @@ def build_live_now():
         print("❌ Tidak ada jadwal hari ini")
         return
 
-    m3u_blocks = load_m3u_blocks()
-
-    logo_blocks = defaultdict(list)
-    for b in m3u_blocks:
-        logo = extract_logo(b[0])
-        if logo:
-            logo_blocks[logo].append(b)
+    blocks = load_m3u_blocks()
+    if not blocks:
+        print("❌ M3U kosong")
+        return
 
     output = ["#EXTM3U\n"]
-    used = set()
     total = 0
 
     for m in matches:
@@ -98,26 +77,20 @@ def build_live_now():
         else:
             header = f"{m['title']} | {m['start'].strftime('%H:%M WIB')}"
 
-        for blocks in logo_blocks.values():
-            for b in blocks:
-                key = "".join(b)
-                if key in used:
-                    continue
+        for block in blocks:
+            new_block = []
+            for line in block:
+                if line.startswith("#EXTINF"):
+                    line = re.sub(r",.*$", f",{header}", line)
+                new_block.append(line)
 
-                new_block = []
-                for line in b:
-                    if line.startswith("#EXTINF"):
-                        line = re.sub(r",.*$", f",{header}", line)
-                    new_block.append(line)
-
-                output.extend(new_block)
-                used.add(key)
-                total += 1
+            output.extend(new_block)
+            total += 1
 
     with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
         f.writelines(output)
 
-    print(f"✅ OUTPUT FINAL : {total} channel")
+    print(f"✅ OUTPUT DIBUAT : {total} baris channel")
 
 # ================= RUN =================
 if __name__ == "__main__":
